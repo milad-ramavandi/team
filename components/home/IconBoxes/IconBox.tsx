@@ -1,0 +1,15 @@
+import { IIconBox } from "@/types/icon-boxes";
+
+const IconBox = ({ imageUrl, title, description }: IIconBox) => {
+  return (
+    <div className="col-sm-8 col-lg-4">
+      <div className="mil-iconbox mil-tac mil-mb60">
+        <img src={imageUrl} alt="icon" className="mil-mb30 mil-up" />
+        <h4 className="mil-head4 mil-mb30 mil-up">{title}</h4>
+        <p className="mil-text-md mil-shortened mil-up">{description}</p>
+      </div>
+    </div>
+  );
+};
+
+export default IconBox;
