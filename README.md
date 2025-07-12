@@ -34,3 +34,47 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
+team
+├── /app                  ⬅️ مسیرهای صفحه‌ها (App Router)
+│   ├── /api              ⬅️ API routes (اختیاری - Server Functions)
+│   ├── /dashboard        ⬅️ صفحات داشبورد
+│   │   └── page.tsx
+│   ├── /about
+│   │   └── page.tsx
+│   └── layout.tsx        ⬅️ ریشه لایه اصلی سایت
+│   └── page.tsx          ⬅️ صفحه اصلی
+│
+├── /components           ⬅️ تمام کامپوننت‌های قابل استفاده مجدد
+│   ├── ui/               ⬅️ دکمه‌ها، اینپوت‌ها، مدال‌ها...
+│   ├── layout/           ⬅️ Header، Footer، Sidebar و ...
+│   └── shared/           ⬅️ عناصر مشترک چند صفحه
+│
+├── /lib                  ⬅️ توابع کاربردی، configها، کلاس‌های کمکی
+│   ├── utils.ts
+│   ├── api.ts
+│   └── constants.ts
+│
+├── /hooks                ⬅️ هوک‌های سفارشی React/Next
+│   └── useAuth.ts
+│
+├── /store                ⬅️ (اگر نیاز به state global داری - مثلاً Zustand یا Redux)
+│   └── userStore.ts
+│
+├── /types                ⬅️ تمام TypeScript type/interface ها
+│   └── user.ts
+│
+├── /public               ⬅️ عکس‌ها و فایل‌های استاتیک
+│   └── logo.svg
+│
+├── /styles               ⬅️ استایل‌های global و ماژول‌ها (اگر از CSS Modules استفاده بشه)
+│   └── globals.css
+│
+├── /middleware.ts        ⬅️ برای ریدایرکت، احراز هویت و غیره
+├── /next.config.js
+├── /tsconfig.json
+└── /package.json
+
+
