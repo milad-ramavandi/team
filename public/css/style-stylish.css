@@ -420,7 +420,7 @@ b {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: #D2D2D0;
 }
 
 .mil-text-link {
@@ -2158,7 +2158,7 @@ hero 5
 .mil-hero-5 .mil-hero-main .mil-hero-text .mil-circle-text-frame {
   position: static;
   background-color: transparent;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 .mil-hero-5 .mil-hero-main .mil-hero-text .mil-circle-text-frame .mil-circle-text .mil-arrow {
   background-color: #CD512F;
@@ -2857,8 +2857,9 @@ top panel
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 1px;
-  color: #D2D2D0;
+  /* color: #D2D2D0; */
 }
+
 
 .mil-menu-btn {
   padding: 20px 10px 20px;
@@ -4985,7 +4986,7 @@ footer
 ------------------------------------------- */
 .mil-footer {
   position: relative;
-  top: 11vh;
+  /* top: 11vh; */
 }
 /* .mil-footer:before {
   content: "";

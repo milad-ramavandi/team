@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import ReviewBlog from "./ReviewBlog";
-import { reviewsBlogList } from "../../../../data/home/reviews-blog-list";
+import { reviewsBlogList } from '../../../data/home/reviews-blog-list';
 
 const ReviewsSlider = () => {
   const prevRef = useRef<HTMLDivElement>(null);

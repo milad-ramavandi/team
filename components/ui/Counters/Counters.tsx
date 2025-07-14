@@ -4,7 +4,7 @@ import Counter from "./Counter";
 
 const Counters = ({ counters }: { counters: ICounter[] }) => {
   return (
-    <div className="mil-p-0-130">
+    <div className="mil-p-160-100" id="counters">
       <div className="container text-center">
         <div className="row">
           {counters.map((item, index) => {
