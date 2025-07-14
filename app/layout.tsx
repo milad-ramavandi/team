@@ -1,15 +1,21 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Outfit, Anton } from "next/font/google";
 import "../styles/globals.css";
+import Header from "../components/ui/Header/Header";
+import Footer from "../components/ui/Footer/Footer";
+import Providers from "../components/providers";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const outfit = Outfit({
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-outfit",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const anton = Anton({
+  weight: "400",
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-anton",
 });
 
 export const metadata: Metadata = {
@@ -23,11 +29,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <header />
-        {children}
-        <footer />
+    <html lang="en" className={`${outfit.variable} ${anton.variable}`}>
+      <body className={outfit.className}>
+        <Providers>
+          <Header />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

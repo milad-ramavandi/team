@@ -1,0 +1,76 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&display=swap");
+
+/* Import Bootstrap CSS */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+/* Import Custom CSS */
+@import "../public/css/style-stylish.css";
+@import "../public/css/plugins/bootstrap-grid.css";
+@import "../public/css/plugins/fontawesome.min.css";
+
+/* CSS Variables for Fonts */
+:root {
+  --font-outfit: "Outfit", sans-serif;
+  --font-anton: "Anton", sans-serif;
+}
+
+/* Override body font to use CSS variables */
+body {
+  font-family: var(--font-outfit);
+  color: rgba(210, 210, 208, 0.6);
+  font-weight: 300;
+  font-size: 14px;
+  background-color: #000000;
+}
+
+/* Override headings to use Anton font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.mil-h1,
+.mil-h2,
+.mil-h3,
+.mil-h4,
+.mil-h5,
+.mil-h6 {
+  font-family: var(--font-anton);
+  color: #d2d2d0;
+  font-weight: 100;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: -2%;
+}
+
+/* Header Scroll Effects */
+.mil-top-panel-2 {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.mil-top-panel-2.mil-scroll {
+  background-color: rgba(24, 24, 23, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-bottom: solid 1px rgba(210, 210, 208, 0.1);
+  height: 120px;
+  -webkit-filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.1));
+}
+
+/* Smooth transition for header elements */
+.mil-top-panel-2 .mil-logo,
+.mil-top-panel-2 .mil-onepage-nav ul li a,
+.mil-top-panel-2 .mil-tp-btn {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+

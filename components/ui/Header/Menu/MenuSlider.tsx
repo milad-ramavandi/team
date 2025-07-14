@@ -1,29 +1,11 @@
 "use client";
-
 import { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import { IBlog } from "../../../../types/blog";
 import MenuSliderCard from "./MenuSliderCard";
+import { blogsList } from "../../../../data/blogs-list";
 
-const blogsList: IBlog[] = [
-  {
-    imageUrl: "/img/blog/9 (1).jpg",
-    title: "How to Become a Graphic Designer in 10 Simple Steps",
-  },
-  {
-    imageUrl: "/img/blog/10 (1).jpg",
-    title: "10 Essential Tools Every Graphic Designer Should Master",
-  },
-  {
-    imageUrl: "/img/blog/11 (1).jpg",
-    title: "The Ultimate Guide to UI/UX Design for Beginners",
-  },
-  {
-    imageUrl: "/img/blog/12 (1).jpg",
-    title: "How to Create Stunning Visuals with Minimal Effort",
-  },
-];
+
 
 const MenuSlider = () => {
   const swiperRef = useRef<any>(null);
