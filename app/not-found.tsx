@@ -6,7 +6,8 @@ export default function NotFound() {
       <div className="mil-transition-fade" id="swup">
         <div className="mil-transition-frame">
           <div id="smooth-content" className="mil-content">
-            <div className="mil-hero-4 mil-up" id="top">
+            {/* <div className="mil-hero-4 mil-up" id="top"> */}
+            <div className="mil-hero-4 " id="top">
               <div id="scene" className="mil-hero-scene">
                 <div className="mil-anim-frame" data-depth="0.25">
                   <img
