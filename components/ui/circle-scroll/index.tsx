@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { texts } from "../../../lib/texts";
 
 const CircleScroll = ({
   Goto,
@@ -43,7 +44,7 @@ const CircleScroll = ({
               <text letterSpacing={2}>
                 {/* <!-- circle text --> */}
                 <textPath xlinkHref="#circlePath">
-                  We are what we think - We are what we think -{" "}
+                  {texts.homePage.hero.circlescroll}
                 </textPath>
               </text>
             </g>
