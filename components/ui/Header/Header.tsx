@@ -3,17 +3,19 @@ import Link from "next/link";
 import useScroll from "../../../hooks/use-scroll";
 import Menu from "./Menu/Menu";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const { isScrolled } = useScroll();
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const pathname = usePathname();
   return (
     <>
       <div className="mil-fixed">
         <div className={`mil-top-panel-2 ${menuOpen && "mil-menu-open"} ${isScrolled && !menuOpen && "mil-scroll"}`}>
           <div className="container">
             <div className="mil-left-side mil-tp-transition" id="swupTpLeft">
-              <Link href="#top" className="mil-logo mil-scroll-to" data-no-swup>
+              <Link href="/" className="mil-logo mil-scroll-to" data-no-swup>
                 <i className="far fa-cube"></i>
                 <span>Pixy</span>
               </Link>
@@ -25,7 +27,7 @@ export default function Header() {
                   <Link
                     href="/about"
                     data-no-swup
-                    // style={{ color: `${pathname === "/about" && "#cd512f"}` }}
+                    className={`${pathname === "/about" ? "mil-a1" : "mil-m1"}`}
                   >
                     About
                   </Link>

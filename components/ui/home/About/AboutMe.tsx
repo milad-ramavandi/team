@@ -1,3 +1,5 @@
+import { texts } from "../../../../lib/texts";
+
 const AboutMe = () => {
   return (
     <div className="mil-p-160-100 mil-bug-fix" id="aboutme">
@@ -5,30 +7,20 @@ const AboutMe = () => {
         <div className="row mil-jcb">
           <div className="col-lg-4">
             <h2 className="mil-head1 mil-mb60">
-              Story <br />
-              About <span className="mil-a2">Me</span>
+              {texts.homePage.aboutMe.h2.span1}<br />
+              {texts.homePage.aboutMe.h2.span2}<span className="mil-a2">
+              {texts.homePage.aboutMe.h2.span3}</span>
             </h2>
             <p className="mil-text-sm mil-deco-text mil-mb60">
-              Welcome to <span className="mil-a2">PIXY</span> where your ideas
-              come to life. We specialize in crafting unique brands, captivating
-              advertising campaigns, and effective digital strategies.
+              {texts.homePage.aboutMe.p1.span1}<span className="mil-a2">{texts.homePage.aboutMe.p1.span2}</span> {texts.homePage.aboutMe.p1.span3}
             </p>
           </div>
           <div className="col-lg-6">
             <p className="mil-text-md mil-mb30">
-              Our team of talented designers, copywriters, and marketers works
-              with passion and dedication to make your business stand out. We
-              take the time to understand your vision and tailor our approach to
-              ensure your message resonates with your target audience.
+              {texts.homePage.aboutMe.p2}
             </p>
             <p className="mil-text-md mil-mb60">
-              Our goal is to help you build an emotional connection with your
-              audience using cutting-edge tools and approaches. We combine our
-              expertise with your unique insights, creating compelling
-              narratives that not only engage but also inspire. Trust us with
-              your idea, and we'll transform it into a successful project that
-              will impress both you and your clients, driving growth and lasting
-              impact.
+             {texts.homePage.aboutMe.p3}
             </p>
           </div>
         </div>

@@ -1,3 +1,5 @@
+import { texts } from "../../../../lib/texts";
+
 const AboutUs = () => {
   return (
     <div id="about">
@@ -6,30 +8,26 @@ const AboutUs = () => {
           <div className="col-lg-5 mil-mb130">
             <p className="mil-stylized mil-m2 mil-mb60">About us</p>
             <h2 className="mil-head1 mil-mb60">
-              Discover <br />
-              Our <span className="mil-a1">agency</span>
+              {texts.homePage.aboutUS.h2.span1}<br />
+              {texts.homePage.aboutUS.h2.span2}<span className="mil-a1">
+              {texts.homePage.aboutUS.h2.span3}
+              </span>
             </h2>
             <p className="mil-text-md mil-mb30">
-              We specialize in crafting unique brands, captivating advertising
-              campaigns, and effective digital strategies. Our team of talented
-              designers, copywriters, and marketers works with passion and
-              dedication to make your business stand out. We take the time to
-              understand your vision and tailor our approach to ensure your
-              message resonates with your target audience.
+              {texts.homePage.aboutUS.p1}
             </p>
             <p className="mil-text-md mil-mb60">
-              Our goal is to help you build an emotional connection with your
-              audience using cutting-edge tools and approaches.
+              {texts.homePage.aboutUS.p2}
             </p>
             <div className="mil-team-quote">
               <div className="mil-portrait">
                 <img src="img/team/ceo.jpg" alt="SEO portrait" />
               </div>
               <p className="mil-text-md mil-m1">
-                <span className="mil-bold">Passionately Creating</span> Design
-                Wonders: <br />
-                <span className="mil-bold">Unleashing</span> Boundless
-                Creativity
+                <span className="mil-bold">{texts.homePage.aboutUS.p3.span1}</span>
+                {texts.homePage.aboutUS.p3.span2} <br />
+                <span className="mil-bold">{texts.homePage.aboutUS.p3.span3}</span>
+                {texts.homePage.aboutUS.p3.span4}
               </p>
             </div>
           </div>
@@ -51,7 +49,7 @@ const AboutUs = () => {
                     href="#home"
                     className="mil-btn mil-btn-border mil-c-gone"
                   >
-                    Read more about us
+                    {texts.homePage.aboutUS.button}
                   </a>
                 </div>
               </div>

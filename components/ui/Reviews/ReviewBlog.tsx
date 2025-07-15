@@ -1,4 +1,5 @@
-import { IReviewBlog } from "../../../../types/reviews-blog";
+import { IReviewBlog } from "../../../types/reviews-blog";
+
 
 const ReviewBlog = ({ imageUrl, author, title, description }: IReviewBlog) => {
   return (

@@ -1,3 +1,5 @@
+import { texts } from "../../../../lib/texts";
+
 const Portfolio = () => {
   return (
     <div id="portfolio">
@@ -5,7 +7,7 @@ const Portfolio = () => {
         <div className="row mil-aie mil-mb30">
           <div className="col-md-7">
             <h2 className="mil-head1 mil-mb60">
-              Designing a <span className="mil-a2">Better</span> World Today
+              {texts.homePage.portfolio.h2.span1}<span className="mil-a2">{texts.homePage.portfolio.h2.span2}</span>{texts.homePage.portfolio.h2.span3}
             </h2>
           </div>
           <div className="col-md-5">
@@ -37,13 +39,13 @@ const Portfolio = () => {
                 <a href="project-1-stl.html" className="mil-descr">
                   <div className="mil-text-frame">
                     <h4 className="mil-head4 mil-max-1row-text mil-m1 mil-c-gone">
-                      Cyberfeature
+                      {texts.homePage.portfolio.item1}
                     </h4>
                   </div>
                   <div className="mil-768-gone mil-c-gone">
                     <div className="mil-stylized-btn mil-a1">
                       <i className="fal fa-arrow-up"></i>
-                      <span>Read more</span>
+                      <span>{texts.homePage.portfolio.button2}</span>
                     </div>
                   </div>
                 </a>
@@ -65,13 +67,13 @@ const Portfolio = () => {
                 <a href="project-2-stl.html" className="mil-descr">
                   <div className="mil-text-frame">
                     <h4 className="mil-head4 mil-max-1row-text mil-m1 mil-c-gone">
-                      Projection
+                      {texts.homePage.portfolio.item2}
                     </h4>
                   </div>
                   <div className="mil-768-gone mil-c-gone">
                     <div className="mil-stylized-btn mil-a1">
                       <i className="fal fa-arrow-up"></i>
-                      <span>Read more</span>
+                      <span>{texts.homePage.portfolio.button2}</span>
                     </div>
                   </div>
                 </a>
@@ -93,13 +95,13 @@ const Portfolio = () => {
                 <a href="#home" className="mil-descr">
                   <div className="mil-text-frame">
                     <h4 className="mil-head4 mil-max-1row-text mil-m1 mil-c-gone">
-                      Ultrahole
+                      {texts.homePage.portfolio.item3}
                     </h4>
                   </div>
                   <div className="mil-768-gone mil-c-gone">
                     <div className="mil-stylized-btn mil-a1">
                       <i className="fal fa-arrow-up"></i>
-                      <span>Read more</span>
+                      <span>{texts.homePage.portfolio.button2}</span>
                     </div>
                   </div>
                 </a>
@@ -123,13 +125,13 @@ const Portfolio = () => {
                 <a href="#home" className="mil-descr">
                   <div className="mil-text-frame">
                     <h4 className="mil-head4 mil-max-1row-text mil-m1 mil-c-gone">
-                      The alien car
+                      {texts.homePage.portfolio.item4}
                     </h4>
                   </div>
                   <div className="mil-768-gone mil-c-gone">
                     <div className="mil-stylized-btn mil-a1">
                       <i className="fal fa-arrow-up"></i>
-                      <span>Read more</span>
+                      <span>{texts.homePage.portfolio.button2}</span>
                     </div>
                   </div>
                 </a>
@@ -151,13 +153,13 @@ const Portfolio = () => {
                 <a href="#home" className="mil-descr">
                   <div className="mil-text-frame">
                     <h4 className="mil-head4 mil-max-1row-text mil-m1 mil-c-gone">
-                      Exit into the sunset
+                      {texts.homePage.portfolio.item5}
                     </h4>
                   </div>
                   <div className="mil-768-gone mil-c-gone">
                     <div className="mil-stylized-btn mil-a1">
                       <i className="fal fa-arrow-up"></i>
-                      <span>Read more</span>
+                      <span>{texts.homePage.portfolio.button2}</span>
                     </div>
                   </div>
                 </a>
@@ -179,13 +181,13 @@ const Portfolio = () => {
                 <a href="#home" className="mil-descr">
                   <div className="mil-text-frame">
                     <h4 className="mil-head4 mil-max-1row-text mil-m1 mil-c-gone">
-                      Neutral point of gravity
+                      {texts.homePage.portfolio.item6}
                     </h4>
                   </div>
                   <div className="mil-768-gone mil-c-gone">
                     <div className="mil-stylized-btn mil-a1">
                       <i className="fal fa-arrow-up"></i>
-                      <span>Read more</span>
+                      <span>{texts.homePage.portfolio.button2}</span>
                     </div>
                   </div>
                 </a>
@@ -196,8 +198,8 @@ const Portfolio = () => {
         <div className="row mil-aic mil-p-0-130">
           <div className="col-md-6 mil-mb30">
             <p className="mil-text-md mil-deco-text">
-              We've been working for several years to build a portfolio <br />
-              that truly reflects our diversity.
+              {texts.homePage.portfolio.p1}<br />
+              {texts.homePage.portfolio.p2}
             </p>
           </div>
           <div className="col-md-6 mil-jce mil-768-jcs mil-mb30">
@@ -207,7 +209,7 @@ const Portfolio = () => {
                 href="#home"
                 className="mil-btn mil-a2 mil-c-gone"
               >
-                View all projects
+                {texts.homePage.portfolio.button3}
               </a>
             </span>
           </div>
