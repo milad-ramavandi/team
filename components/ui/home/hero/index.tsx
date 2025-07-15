@@ -1,4 +1,5 @@
 import CircleScroll from "../../circle-scroll";
+import { texts } from "../../../../lib/texts";
 
 const Hero = () => {
   return (
@@ -25,8 +26,8 @@ const Hero = () => {
               we think
             </p> */}
             <h1 className="mil-display4 mil-mb40">
-              Develop Ideas into <br />
-              Digital Reality
+              {texts.homePage.hero.heading1}<br />
+              {texts.homePage.hero.heading2}
             </h1>
           </div>
           <CircleScroll Goto="#aboutme" />

@@ -1,13 +1,9 @@
 
 import { IMember } from "../../../../types/team";
 import Member from "./TeamMember";
+import { texts } from "../../../../lib/texts";
 
-const members: IMember[] = [
-  { imageUrl: "img/team/9 2.jpg", name: "James", career: "UI/UX Designer" },
-  { imageUrl: "img/team/10 2.jpg", name: "Edward", career: "QA engineer" },
-  { imageUrl: "img/team/11 2.jpg", name: "Monica", career: "Web Developer" },
-  { imageUrl: "img/team/12 2.jpg", name: "Paul", career: "Art Director" },
-];
+const members: IMember[] = texts.homePage.team.members;
 
 const Team = () => {
   return (
@@ -16,13 +12,13 @@ const Team = () => {
         <div className="row mil-aie mil-mb30">
           <div className="col-lg-6">
             <h2 className="mil-head1 mil-mb60">
-              Meet Our <span className="mil-a1">Team</span>
+              {texts.homePage.team.h2.span1}<span className="mil-a1">{texts.homePage.team.h2.span2}</span>
             </h2>
           </div>
           <div className="col-lg-6">
             <p className="mil-stylized mil-m1 mil-tar mil-768-tal mil-mb60">
               <a href="#home" className="mil-arrow-link mil-c-gone">
-                View all members
+                {texts.homePage.team.button}
               </a>
             </p>
           </div>

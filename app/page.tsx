@@ -9,7 +9,7 @@ import Team from "../components/ui/home/Team/Team";
 import Reviews from "../components/ui/Reviews/Reviews";
 import counters_list from "../data/home/counters-list";
 import Hero from "../components/ui/home/hero";
-
+import { texts } from "../lib/texts";
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
       <IconBoxes/>
       <Portfolio/>
       <Team/>
-      <Reviews title="reviews"/>
+      <Reviews title={texts.homePage.reviews.title}/>
       <Partners/>
       <CallAction/>
     </main>

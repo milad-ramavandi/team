@@ -1,21 +1,22 @@
 import React from "react";
+import { texts } from "../../../../lib/texts";
 
 const CallAction = () => {
   return (
     <div className="container overflow-hidden" id="contact">
       <div className="mil-half-container mil-stl">
         <div className="mil-text-box mil-g-m4 mil-p-160-160">
-          <p className="mil-stylized mil-m2 mil-mb60">Contact</p>
+          <p className="mil-stylized mil-m2 mil-mb60">{texts.homePage.callaction.title}</p>
           <h2 className="mil-display3 mil-mb60 mil-m1">
-            Let’s <span className="mil-a1">make </span> <br />
-            an <span className="mil-a1">impact </span>
-            <br />
-            together.
+            {texts.homePage.callaction.h2.span1}<span className="mil-a1">
+            {texts.homePage.callaction.h2.span2}</span> <br />
+            {texts.homePage.callaction.h2.span3}<span className="mil-a1">
+            {texts.homePage.callaction.h2.span4}</span><br />
+            {texts.homePage.callaction.h2.span5}
           </h2>
           <p className="mil-text-md mil-deco-text mil-shortened">
-            Welcome to <span className="mil-a2">PIXY</span> where your ideas
-            come to life. We specialize in crafting unique brands, captivating
-            advertising campaigns, and effective digital strategies.
+            {texts.homePage.callaction.p1.span1}<span className="mil-a2">{texts.homePage.callaction.p1.span2}</span> 
+            {texts.homePage.callaction.p1.span3}
           </p>
         </div>
         <div className="mil-image-box">
@@ -46,15 +47,15 @@ const CallAction = () => {
       <div className="row mil-aic mil-jcb mil-no-g">
         <div className="col-lg-4 mil-992-gone">
           <p className="mil-text-sm">
-            We accept your requests 24/7. Feel free to{" "}
+            {texts.homePage.callaction.p2.span1}
             <a
               // href="contact-stl.html"
               href="#home"
               className="mil-text-link mil-a2 mil-c-gone"
             >
-              write to us
-            </a>{" "}
-            whenever it is convenient for you
+            {texts.homePage.callaction.p2.span2}
+            </a>
+            {texts.homePage.callaction.p2.span3}
           </p>
         </div>
         <div className="col-lg-6 p-0">
@@ -65,7 +66,7 @@ const CallAction = () => {
                 href="#home"
                 className="mil-btn mil-btn-border mil-m1 mil-c-gone"
               >
-                Get in touch
+                {texts.homePage.callaction.button}
               </a>
             </span>
           </div>
