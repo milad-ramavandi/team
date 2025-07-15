@@ -1,4 +1,5 @@
 export const texts = {
+  circleScroll: "We are what we think - We are what we think - ",
   homePage: {
     hero: {
       heading1: "Develop Ideas into",
@@ -201,6 +202,99 @@ export const texts = {
       },
 
       button: "Get in touch",
+    },
+  },
+  aboutPage: {
+    hero: {
+      heading1: "Pixy is a",
+      heading2: "agency that transforms",
+      heading3: "into masterpieces. We craft",
+      heading4: "magic, breathe new life into brands, and make the impossible",
+      heading5: "Choose",
+      heading6: "because we are worth it!",
+      span1: "creative",
+      span2: "ideas",
+      span3: "design",
+      span4: "possible",
+      span5: "Pixy",
+    },
+    counters: [
+      { number: "14", title: "SERVICE OFFERING" },
+      { number: "45", title: "APPLIED RESEARCH" },
+      { number: "57", title: "COMPLETED PROJECTS" },
+    ],
+    team: {
+      p: "Team members",
+      h2: {
+        span1: "Meet Our ",
+        span2: "Team",
+      },
+      p2: " Our team at PIXY is a symbol of creativity and innovation. We ambitiously bring forward-thinking ideas to life across various creative disciplines. With great enthusiasm and dedication, we approach each project with seriousness and a commitment to high standards.",
+      p3: {
+        para1: "Design Wonders:",
+        span1: "Passionately Creating",
+        span2: "Unleashing",
+        para2: "Boundless Creativity"
+      },
+      button: "View all members",
+      members: [
+        {
+          imageUrl: "img/team/9 2.jpg",
+          name: "James",
+          career: "UI/UX Designer",
+        },
+        {
+          imageUrl: "img/team/10 2.jpg",
+          name: "Edward",
+          career: "QA engineer",
+        },
+        {
+          imageUrl: "img/team/11 2.jpg",
+          name: "Monica",
+          career: "Web Developer",
+        },
+        { imageUrl: "img/team/12 2.jpg", name: "Paul", career: "Art Director" },
+      ],
+    },
+    reviews: {
+      title: "about team",
+      h2: {
+        span1: "Customer Voices: ",
+        span2: "Hear What ",
+        span3: "They Say",
+        span4: "!",
+      },
+
+      reviewBlog: [
+        {
+          imageUrl: "img/reviews/2.jpg",
+          author: "Paul Trueman",
+          title: "Envato market",
+          description:
+            "I had the pleasure of working with this creative agency, and I must say, they truly impressed me. They consistently think outside the box, resulting in impressive and impactful work. I highly recommend this agency for their consistent delivery of exceptional creative solutions.",
+        },
+        {
+          imageUrl: "img/reviews/1.jpg",
+          author: "Emma Newman",
+          title: "Envato market",
+          description:
+            "This creative agency stands out with their exceptional talent and expertise. Their ability to think outside the box and bring unique ideas to life is truly impressive. With meticulous attention to detail, they consistently deliver visually stunning and impactful work.",
+        },
+        {
+          imageUrl: "img/reviews/3.jpg",
+          author: "Viktoria Freeman",
+          title: "Envato market",
+          description:
+            " This creative agency stands out with their exceptional talent and expertise. Their ability to think outside the box and bring unique ideas to life is truly impressive. With meticulous attention to detail, they consistently deliver visually stunning and impactful work.",
+        },
+        {
+          imageUrl: "img/reviews/4.jpg",
+          author: "Oscar Oldman",
+          title: "Envato market",
+          description:
+            "I had the pleasure of working with this creative agency, and I must say, they truly impressed me. They consistently think outside the box, resulting in impressive and impactful work. I highly recommend this agency for their consistent delivery of exceptional creative solutions.",
+        },
+      ],
     },
   },
 };

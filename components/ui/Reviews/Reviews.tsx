@@ -1,7 +1,8 @@
 import ReviewsSlider from "./ReviewsSlider";
 import { texts } from "../../../lib/texts";
+import { IReviewBlog } from "../../../types/reviews-blog";
 
-const Reviews = ({title}:{title:string}) => {
+const Reviews = ({title, reviewsBlogList}:{title:string, reviewsBlogList: IReviewBlog[]}) => {
   return (
     <div className="mil-p-100-100 mil-mb130 overflow-hidden">
       <div className="container">
@@ -16,7 +17,7 @@ const Reviews = ({title}:{title:string}) => {
             </h2>
           </div>
           <div className="col-lg-6 mil-relative">
-            <ReviewsSlider/>
+            <ReviewsSlider reviewsBlogList={reviewsBlogList}/>
           </div>
         </div>
       </div>

@@ -44,7 +44,7 @@ const CircleScroll = ({
               <text letterSpacing={2}>
                 {/* <!-- circle text --> */}
                 <textPath xlinkHref="#circlePath">
-                  {texts.homePage.hero.circlescroll}
+                  {texts.circleScroll}
                 </textPath>
               </text>
             </g>

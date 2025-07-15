@@ -21,7 +21,7 @@ export default function Home() {
       <IconBoxes/>
       <Portfolio/>
       <Team/>
-      <Reviews title={texts.homePage.reviews.title}/>
+      <Reviews title={texts.homePage.reviews.title} reviewsBlogList={texts?.homePage?.reviews?.reviewBlog}/>
       <Partners/>
       <CallAction/>
     </main>

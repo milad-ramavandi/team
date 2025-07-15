@@ -1,13 +1,8 @@
-
+import { texts } from "../../../../lib/texts";
 import { IMember } from "../../../../types/team";
 import Member from "./Member";
 
-const members: IMember[] = [
-  { imageUrl: "../img/team/9 2.jpg", name: "James", career: "UI/UX Designer" },
-  { imageUrl: "../img/team/10 2.jpg", name: "Edward", career: "QA engineer" },
-  { imageUrl: "../img/team/11 2.jpg", name: "Monica", career: "Web Developer" },
-  { imageUrl: "../img/team/12 2.jpg", name: "Paul", career: "Art Director" },
-];
+const members: IMember[] = texts?.aboutPage?.team?.members;
 
 const Team = () => {
   return (
@@ -15,33 +10,38 @@ const Team = () => {
       <div className="container">
         <div className="row mil-jcb mil-aic">
           <div className="col-lg-5 mil-mb60">
-            <p className="mil-stylized mil-m2 mil-mb60">Team members</p>
+            <p className="mil-stylized mil-m2 mil-mb60">
+              {texts?.aboutPage?.team?.p}
+            </p>
             <h2 className="mil-head1 mil-mb30">
-              Meet Our <span className="mil-a2">Team</span>
+              {texts?.aboutPage?.team?.h2?.span1}{" "}
+              <span className="mil-a2">
+                {texts?.aboutPage?.team?.h2?.span1}
+              </span>
             </h2>
             <div>
-            <p className="mil-text-md mil-mb30 mil-bar">
-              Our team at PIXY is a symbol of creativity and innovation. We
-              ambitiously bring forward-thinking ideas to life across various
-              creative disciplines. With great enthusiasm and dedication, we
-              approach each project with seriousness and a commitment to high
-              standards.
-            </p>
+              <p className="mil-text-md mil-mb30 mil-bar">
+                {texts?.aboutPage?.team?.p2}
+              </p>
             </div>
             <div className="mil-team-quote mil-mb60">
               <div className="mil-portrait">
                 <img src="../img/team/ceo.jpg" alt="SEO portrait" />
               </div>
               <p className="mil-text-md mil-m1">
-                <span className="mil-bold">Passionately Creating</span> Design
-                Wonders: <br />
-                <span className="mil-bold">Unleashing</span> Boundless
-                Creativity
+                <span className="mil-bold">
+                  {texts?.aboutPage?.team?.p3?.span1}
+                </span>{" "}
+                {texts?.aboutPage?.team?.p3?.para1} <br />
+                <span className="mil-bold">
+                  {texts?.aboutPage?.team?.p3?.span2}
+                </span>{" "}
+                {texts?.aboutPage?.team?.p3?.para2}
               </p>
             </div>
             <div>
               <a href="team-frl.html" className="mil-btn mil-a1 mil-c-gone">
-                Read more
+              {texts?.aboutPage?.team?.button}
               </a>
             </div>
           </div>

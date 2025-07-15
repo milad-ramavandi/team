@@ -19,12 +19,6 @@ const Hero = () => {
             data-value-1="1.3"
             data-value-2="0.95"
           >
-            {/* <i className="fal fa-award mil-mb15"></i>
-            <p className="mil-stylized mil-m2 mil-mb60">
-              We are what 
-              <br />
-              we think
-            </p> */}
             <h1 className="mil-display4 mil-mb40">
               {texts.homePage.hero.heading1}<br />
               {texts.homePage.hero.heading2}

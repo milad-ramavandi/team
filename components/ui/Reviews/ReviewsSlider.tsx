@@ -6,12 +6,12 @@ import "swiper/css/pagination";
 import "swiper/css/parallax";
 import "../../../public/css/style-stylish.css";
 import ReviewBlog from "./ReviewBlog";
-import { reviewsBlogList } from "../../../data/home/reviews-blog-list";
 import Script from "next/script";
+import { IReviewBlog } from "../../../types/reviews-blog";
 
 
 
-const ReviewsSlider = () => {
+const ReviewsSlider = ({reviewsBlogList}: {reviewsBlogList: IReviewBlog[]}) => {
   useEffect(() => {
     if (window.Swiper) {
       new window.Swiper(".mil-reviews-slider", {
