@@ -14,7 +14,7 @@ const CircleScroll = ({
         isRight ? "justify-content-end" : "justify-content-center"
       }`}
     >
-      <div className={`mil-circle-text-frame`}>
+      <div className={`${isRight ? "mil-circle-text-frame-bg-transparent" : "mil-circle-text-frame"}`}>
         <Link
           href={`${Goto}`}
           className="mil-circle-text mil-scroll-to mil-c-gone"

@@ -14,18 +14,20 @@ const Team = () => {
     <div className="mil-team-about-bg mil-team-about-p">
       <div className="container">
         <div className="row mil-jcb mil-aic">
-          <div className="col-lg-5">
+          <div className="col-lg-5 mil-mb60">
             <p className="mil-stylized mil-m2 mil-mb60">Team members</p>
             <h2 className="mil-head1 mil-mb30">
               Meet Our <span className="mil-a2">Team</span>
             </h2>
-            <p className="mil-text-md mil-mb30">
+            <div>
+            <p className="mil-text-md mil-mb30 mil-bar">
               Our team at PIXY is a symbol of creativity and innovation. We
               ambitiously bring forward-thinking ideas to life across various
               creative disciplines. With great enthusiasm and dedication, we
               approach each project with seriousness and a commitment to high
               standards.
             </p>
+            </div>
             <div className="mil-team-quote mil-mb60">
               <div className="mil-portrait">
                 <img src="../img/team/ceo.jpg" alt="SEO portrait" />
