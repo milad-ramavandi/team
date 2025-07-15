@@ -2,7 +2,7 @@ import ReviewsSlider from "./ReviewsSlider";
 
 const Reviews = ({title}:{title:string}) => {
   return (
-    <div className="mil-p-100-100 mil-mb130">
+    <div className="mil-p-100-100 mil-mb130 overflow-hidden">
       <div className="container">
         <div className="row mil-jcc">
           <div className="col-lg-12 mil-tac">

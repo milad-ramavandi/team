@@ -11,10 +11,10 @@ const members: IMember[] = [
 
 const Team = () => {
   return (
-    <div className="mil-p-160-40">
+    <div className="mil-team-about-bg mil-team-about-p">
       <div className="container">
         <div className="row mil-jcb mil-aic">
-          <div className="col-lg-5 mil-mb90">
+          <div className="col-lg-5">
             <p className="mil-stylized mil-m2 mil-mb60">Team members</p>
             <h2 className="mil-head1 mil-mb30">
               Meet Our <span className="mil-a2">Team</span>
@@ -43,7 +43,7 @@ const Team = () => {
               </a>
             </div>
           </div>
-          <div className="col-lg-6 mil-mb90">
+          <div className="col-lg-6">
             <div className="row">
               <div className="col-md-6">
                 {members.slice(0, 2).map((item, index) => {

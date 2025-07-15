@@ -5190,3 +5190,11 @@ footer
 .mil-subscribe-form button i {
   font-size: 24px;
 }
+
+.mil-team-about-bg {
+  background: linear-gradient(to right, #101010, #0C0C0C);
+}
+.mil-team-about-p {
+  padding-top: 92px;
+  padding-bottom: 92px;
+}
