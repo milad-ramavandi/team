@@ -1,4 +1,64 @@
 export const texts = {
+  header: {
+    name: "PIXY",
+    items: ["About", "Portfolio", "Reviews", "Contact"],
+  },
+
+  menu: {
+    items: [
+      {
+        label: "Template Style",
+        children: [{ label: "Friendly" }, { label: "Stylish" }],
+      },
+      {
+        label: "Home type",
+        children: [
+          { label: "Corporate" },
+          { label: "Agency" },
+          { label: "Personal" },
+        ],
+      },
+      {
+        label: "Portfolio",
+        children: [
+          { label: "Grid type 1" },
+          { label: "Grid type 2" },
+          { label: "Grid type 3" },
+        ],
+      },
+      {
+        label: "Pages",
+        children: [
+          { label: "Team" },
+          { label: "Contact" },
+          { label: "Services" },
+          { label: "Service single" },
+          { label: "Blog" },
+          { label: "Publication" },
+          { label: "404" },
+        ],
+      },
+    ],
+
+    rights: "©2024. All rights reserved.",
+
+    items2: [
+      { label: "Privacy policy" },
+      { label: "Terms and conditions" },
+      { label: "Site map" },
+      { label: "Careers" },
+    ],
+
+    blog_title: "Latest from blog",
+  },
+
+  footer: {
+    h6: "Let’s TALK",
+    button: "Read more",
+    items: ["Home", "Services", "About", "Portfolio", "Contact"],
+    p: "©2024. All rights reserved.",
+  },
+
   circleScroll: "We are what we think - We are what we think - ",
   homePage: {
     hero: {
@@ -204,6 +264,7 @@ export const texts = {
       button: "Get in touch",
     },
   },
+
   aboutPage: {
     hero: {
       heading1: "Pixy is a",
@@ -234,7 +295,7 @@ export const texts = {
         para1: "Design Wonders:",
         span1: "Passionately Creating",
         span2: "Unleashing",
-        para2: "Boundless Creativity"
+        para2: "Boundless Creativity",
       },
       button: "View all members",
       members: [
@@ -253,7 +314,11 @@ export const texts = {
           name: "Monica",
           career: "Web Developer",
         },
-        { imageUrl: "img/team/12 2.jpg", name: "Paul", career: "Art Director" },
+        {
+          imageUrl: "img/team/12 2.jpg",
+          name: "Paul",
+          career: "Art Director",
+        },
       ],
     },
     reviews: {

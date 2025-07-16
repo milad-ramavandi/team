@@ -1,3 +1,5 @@
+import { texts } from "../../../lib/texts";
+
 const Footer = () => {
   return (
     <footer className="mil-footer mil-p-160-100">
@@ -5,10 +7,10 @@ const Footer = () => {
         <div className="row mil-no-g">
           <div className="col-lg-6">
             <a href="contact-stl.html" className="mil-footer-contact mil-mb90">
-              <h6 className="mil-footer-link mil-m1">Let’s TALK</h6>
+              <h6 className="mil-footer-link mil-m1">{texts.footer.h6}</h6>
               <span className="mil-stylized-btn mil-c-gone">
                 <i className="fal fa-arrow-up"></i>
-                <span>Read more</span>
+                <span>{texts.footer.button}</span>
               </span>
             </a>
           </div>
@@ -17,27 +19,27 @@ const Footer = () => {
               <ul className="mil-footer-menu">
                 <li>
                   <a href="#." className="mil-c-gone">
-                    Home
+                    {texts.footer.items[0]}
                   </a>
                 </li>
                 <li>
                   <a href="#." className="mil-c-gone">
-                    Services
+                    {texts.footer.items[1]}
                   </a>
                 </li>
                 <li>
                   <a href="#." className="mil-c-gone">
-                    About
+                    {texts.footer.items[2]}
                   </a>
                 </li>
                 <li>
                   <a href="#." className="mil-c-gone">
-                    Portfolio
+                    {texts.footer.items[3]}
                   </a>
                 </li>
                 <li>
                   <a href="#." className="mil-c-gone">
-                    Contact
+                    {texts.footer.items[4]}
                   </a>
                 </li>
               </ul>
@@ -72,7 +74,7 @@ const Footer = () => {
           </div>
           <div className="col-lg-12">
             <div className="mil-footer-bottom">
-              <p className="mil-text-sm">©2024. All rights reserved.</p>
+              <p className="mil-text-sm">{texts.footer.p}</p>
               {/* <p className="mil-text-sm">
                 Design by:{" "}
                 <a

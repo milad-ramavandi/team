@@ -1,5 +1,8 @@
 import Link from "next/link";
 import MenuSlider from "./MenuSlider";
+import { texts } from "../../../../lib/texts";
+import { text } from "stream/consumers";
+
 export default function Menu({
   open,
   onClose,
@@ -19,78 +22,78 @@ export default function Menu({
                 <div className="mil-menu-part mil-inner-scroll" id="swupMenu">
                   <ul className="mil-main-menu mil-c-gone">
                     <li className="mil-has-children">
-                      <Link href="#.">Template style</Link>
+                      <Link href="#.">{texts.menu.items[0].label}</Link>
                       <ul>
                         <li>
                           <Link href="home-1.html" target="_blank" data-no-swup>
-                            Friendly
+                            {texts.menu.items[0].children[0].label}
                           </Link>
                         </li>
                         <li className="mil-current">
                           <Link href="home-4.html" target="_blank" data-no-swup>
-                            Stylish
+                            {texts.menu.items[0].children[1].label}
                           </Link>
                         </li>
                       </ul>
                     </li>
                     <li className="mil-has-children">
-                      <Link href="#.">Home type</Link>
+                      <Link href="#.">{texts.menu.items[1].label}</Link>
                       <ul>
                         <li>
-                          <Link href="home-4.html">Corporate</Link>
+                          <Link href="home-4.html">{texts.menu.items[1].children[0].label}</Link>
                         </li>
                         <li className="mil-current">
-                          <Link href="home-5.html">Agency</Link>
+                          <Link href="home-5.html">{texts.menu.items[1].children[1].label}</Link>
                         </li>
                         <li>
-                          <Link href="home-6.html">Personal</Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="mil-has-children">
-                      <Link href="#.">Portfolio</Link>
-                      <ul>
-                        <li>
-                          <Link href="portfolio-1-stl.html">Grid type 1</Link>
-                        </li>
-                        <li>
-                          <Link href="portfolio-2-stl.html">Grid type 2</Link>
-                        </li>
-                        <li>
-                          <Link href="portfolio-3-stl.html">Grid type 3</Link>
+                          <Link href="home-6.html">{texts.menu.items[1].children[2].label}</Link>
                         </li>
                       </ul>
                     </li>
                     <li className="mil-has-children">
-                      <Link href="#.">Pages</Link>
+                      <Link href="#.">{texts.menu.items[2].label}</Link>
                       <ul>
                         <li>
-                          <Link href="team-stl.html">Team</Link>
+                          <Link href="portfolio-1-stl.html">{texts.menu.items[2].children[0].label}</Link>
                         </li>
                         <li>
-                          <Link href="contact-stl.html">Contact</Link>
+                          <Link href="portfolio-2-stl.html">{texts.menu.items[2].children[1].label}</Link>
                         </li>
                         <li>
-                          <Link href="services-stl.html">Services</Link>
+                          <Link href="portfolio-3-stl.html">{texts.menu.items[2].children[2].label}</Link>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="mil-has-children">
+                      <Link href="#.">{texts.menu.items[3].label}</Link>
+                      <ul>
+                        <li>
+                          <Link href="team-stl.html">{texts.menu.items[3].children[0].label}</Link>
                         </li>
                         <li>
-                          <Link href="service-stl.html">Service single</Link>
+                          <Link href="contact-stl.html">{texts.menu.items[3].children[1].label}</Link>
                         </li>
                         <li>
-                          <Link href="blog-stl.html">Blog</Link>
+                          <Link href="services-stl.html">{texts.menu.items[3].children[2].label}</Link>
                         </li>
                         <li>
-                          <Link href="publication-stl.html">Publication</Link>
+                          <Link href="service-stl.html">{texts.menu.items[3].children[3].label}</Link>
                         </li>
                         <li>
-                          <Link href="404-stl.html">404</Link>
+                          <Link href="blog-stl.html">{texts.menu.items[3].children[4].label}</Link>
+                        </li>
+                        <li>
+                          <Link href="publication-stl.html">{texts.menu.items[3].children[5].label}</Link>
+                        </li>
+                        <li>
+                          <Link href="404-stl.html">{texts.menu.items[3].children[6].label}</Link>
                         </li>
                       </ul>
                     </li>
                   </ul>
                 </div>
                 <div className="mil-bottom-part">
-                  <p className="mil-text-sm">©2024. All rights reserved.</p>
+                  <p className="mil-text-sm">{texts.menu.rights}</p>
                 </div>
               </div>
             </div>
@@ -99,16 +102,16 @@ export default function Menu({
                 <div className="mil-links-part">
                   <ul className="mil-links">
                     <li>
-                      <Link href="#.">Privacy policy</Link>
+                      <Link href="#.">{texts.menu.items2[0].label}</Link>
                     </li>
                     <li>
-                      <Link href="#.">Therms and conditions</Link>
+                      <Link href="#.">{texts.menu.items2[1].label}</Link>
                     </li>
                     <li>
-                      <Link href="#.">Site map</Link>
+                      <Link href="#.">{texts.menu.items2[2].label}</Link>
                     </li>
                     <li>
-                      <Link href="#.">Careers</Link>
+                      <Link href="#.">{texts.menu.items2[3].label}</Link>
                     </li>
                   </ul>
                 </div>
@@ -116,7 +119,7 @@ export default function Menu({
                   <div className="mil-blog-section">
                     <div className="mil-jcb mil-aic">
                       <h4 className="mil-head4 mil-mb30 slider-text">
-                        Latest from blog
+                        {texts.menu.blog_title}
                       </h4>
                       <div className="mil-sb-nav mil-mb30">
                         <div className="mil-slider-btn mil-sb-prev mil-c-gone">

@@ -4,6 +4,7 @@ import useScroll from "../../../hooks/use-scroll";
 import Menu from "./Menu/Menu";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import { texts } from "../../../lib/texts";
 
 export default function Header() {
   const { isScrolled } = useScroll();
@@ -17,7 +18,7 @@ export default function Header() {
             <div className="mil-left-side mil-tp-transition" id="swupTpLeft">
               <Link href="/" className="mil-logo mil-scroll-to" data-no-swup>
                 <i className="far fa-cube"></i>
-                <span>Pixy</span>
+                <span>{texts.header.name}</span>
               </Link>
             </div>
 
@@ -29,7 +30,7 @@ export default function Header() {
                     data-no-swup
                     className={`${pathname === "/about" ? "mil-a1" : "mil-m1"}`}
                   >
-                    About
+                    {texts.header.items[0]}
                   </Link>
                 </li>
                 <li>
@@ -38,17 +39,17 @@ export default function Header() {
                     className="mil-scroll-to"
                     data-no-swup
                   >
-                    Portfolio
+                    {texts.header.items[1]}
                   </Link>
                 </li>
                 <li>
                   <Link href="#reviews" className="mil-scroll-to" data-no-swup>
-                    Reviews
+                    {texts.header.items[2]}
                   </Link>
                 </li>
                 <li>
                   <Link href="#contact" className="mil-scroll-to" data-no-swup>
-                    Contact
+                    {texts.header.items[3]}
                   </Link>
                 </li>
               </ul>
