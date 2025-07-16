@@ -2,9 +2,9 @@
 import React from "react";
 import { IMember } from "../../../../types/team";
 
-const Member = ({ imageUrl, name, career, isOffset }: IMember) => {
+const Member = ({ imageUrl, name, career, isLarge }: IMember) => {
   return (
-    <div className={`mil-team-card mil-mb30 ${isOffset && "mil-team-offset"}`}>
+    <div className={`mil-team-card mil-mb30 ${isLarge ? "mil-team-card-large" : "mil-team-card-small"}`}>
       <div className="mil-hover-frame">
         <img
           src={imageUrl}

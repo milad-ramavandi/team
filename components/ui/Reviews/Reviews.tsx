@@ -4,7 +4,7 @@ import { IReviewBlog } from "../../../types/reviews-blog";
 
 const Reviews = ({title, reviewsBlogList}:{title:string, reviewsBlogList: IReviewBlog[]}) => {
   return (
-    <div className="mil-p-100-100 mil-mb130 overflow-hidden">
+    <div className="pb-4 mil-mb130 overflow-hidden">
       <div className="container">
         <div className="row mil-jcc">
           <div className="col-lg-12 mil-tac">

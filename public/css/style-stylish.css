@@ -3942,12 +3942,24 @@ team
   overflow: hidden;
   padding-bottom: 130%;
 }
+.mil-team-card-large {
+  height: 540px;
+}
+.mil-team-card-small {
+  height: 452.87px;
+}
 .mil-team-card.mil-team-offset {
   margin-top: 60px;
 }
 @media (max-width: 992px) {
   .mil-team-card.mil-team-offset {
     margin-top: 0;
+  }
+  .mil-team-card-large {
+    height: auto;
+  }
+  .mil-team-card-small {
+    height: auto;
   }
 }
 .mil-team-card .mil-hover-frame {
