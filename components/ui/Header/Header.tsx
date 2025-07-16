@@ -57,7 +57,7 @@ export default function Header() {
 
             <div className={`mil-buttons-tp-frame mil-c-gone ${menuOpen && "mil-active"}`}>
               <div className="mil-buttons">
-                <Link href="contact-stl.html" className="mil-tp-btn">
+                <Link href="/contact" className="mil-tp-btn">
                   <i className="fal fa-envelope"></i>
                 </Link>
                 <div className="mil-tp-btn">
