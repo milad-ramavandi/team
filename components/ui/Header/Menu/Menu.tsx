@@ -1,19 +1,36 @@
+"use client";
 import Link from "next/link";
 import MenuSlider from "./MenuSlider";
 import { texts } from "../../../../lib/texts";
-import { text } from "stream/consumers";
+import { useEffect } from "react";
 
-export default function Menu({
-  open,
-  onClose,
-}: {
-  open: boolean;
-  onClose: () => void;
-}) {
+export default function Menu({ open }: { open: boolean }) {
+  useEffect(() => {
+    document.querySelectorAll(".mil-has-children > a").forEach((link) => {
+      link.addEventListener("click", function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+
+        const parentElement = (link as HTMLElement).parentElement;
+        const isActive = parentElement?.classList.contains("mil-active");
+
+        document.querySelectorAll(".mil-has-children").forEach((el) => {
+          const ul = el.querySelector("ul");
+          el.classList.remove("mil-active");
+          if (ul) (ul as HTMLElement).style.maxHeight = "0";
+        });
+
+        if (!isActive) {
+          parentElement?.classList.add("mil-active");
+          const ul = parentElement?.querySelector("ul");
+          if (ul) (ul as HTMLElement).style.maxHeight = `${ul.scrollHeight}px`;
+        }
+      });
+    });
+  }, []);
+
   return (
-    <div
-      className={`mil-menu-frame mil-menu-frame-2 ${open && "mil-active"}`}
-    >
+    <div className={`mil-menu-frame mil-menu-frame-2 ${open && "mil-active"}`}>
       <div className="mil-menu-window">
         <div className="container">
           <div className="row mil-no-g">
@@ -40,13 +57,19 @@ export default function Menu({
                       <Link href="#.">{texts.menu.items[1].label}</Link>
                       <ul>
                         <li>
-                          <Link href="home-4.html">{texts.menu.items[1].children[0].label}</Link>
+                          <Link href="home-4.html">
+                            {texts.menu.items[1].children[0].label}
+                          </Link>
                         </li>
                         <li className="mil-current">
-                          <Link href="home-5.html">{texts.menu.items[1].children[1].label}</Link>
+                          <Link href="home-5.html">
+                            {texts.menu.items[1].children[1].label}
+                          </Link>
                         </li>
                         <li>
-                          <Link href="home-6.html">{texts.menu.items[1].children[2].label}</Link>
+                          <Link href="home-6.html">
+                            {texts.menu.items[1].children[2].label}
+                          </Link>
                         </li>
                       </ul>
                     </li>
@@ -54,13 +77,19 @@ export default function Menu({
                       <Link href="#.">{texts.menu.items[2].label}</Link>
                       <ul>
                         <li>
-                          <Link href="portfolio-1-stl.html">{texts.menu.items[2].children[0].label}</Link>
+                          <Link href="portfolio-1-stl.html">
+                            {texts.menu.items[2].children[0].label}
+                          </Link>
                         </li>
                         <li>
-                          <Link href="portfolio-2-stl.html">{texts.menu.items[2].children[1].label}</Link>
+                          <Link href="portfolio-2-stl.html">
+                            {texts.menu.items[2].children[1].label}
+                          </Link>
                         </li>
                         <li>
-                          <Link href="portfolio-3-stl.html">{texts.menu.items[2].children[2].label}</Link>
+                          <Link href="portfolio-3-stl.html">
+                            {texts.menu.items[2].children[2].label}
+                          </Link>
                         </li>
                       </ul>
                     </li>
@@ -68,25 +97,39 @@ export default function Menu({
                       <Link href="#.">{texts.menu.items[3].label}</Link>
                       <ul>
                         <li>
-                          <Link href="team-stl.html">{texts.menu.items[3].children[0].label}</Link>
+                          <Link href="team-stl.html">
+                            {texts.menu.items[3].children[0].label}
+                          </Link>
                         </li>
                         <li>
-                          <Link href="contact-stl.html">{texts.menu.items[3].children[1].label}</Link>
+                          <Link href="contact-stl.html">
+                            {texts.menu.items[3].children[1].label}
+                          </Link>
                         </li>
                         <li>
-                          <Link href="services-stl.html">{texts.menu.items[3].children[2].label}</Link>
+                          <Link href="services-stl.html">
+                            {texts.menu.items[3].children[2].label}
+                          </Link>
                         </li>
                         <li>
-                          <Link href="service-stl.html">{texts.menu.items[3].children[3].label}</Link>
+                          <Link href="service-stl.html">
+                            {texts.menu.items[3].children[3].label}
+                          </Link>
                         </li>
                         <li>
-                          <Link href="blog-stl.html">{texts.menu.items[3].children[4].label}</Link>
+                          <Link href="blog-stl.html">
+                            {texts.menu.items[3].children[4].label}
+                          </Link>
                         </li>
                         <li>
-                          <Link href="publication-stl.html">{texts.menu.items[3].children[5].label}</Link>
+                          <Link href="publication-stl.html">
+                            {texts.menu.items[3].children[5].label}
+                          </Link>
                         </li>
                         <li>
-                          <Link href="404-stl.html">{texts.menu.items[3].children[6].label}</Link>
+                          <Link href="404-stl.html">
+                            {texts.menu.items[3].children[6].label}
+                          </Link>
                         </li>
                       </ul>
                     </li>

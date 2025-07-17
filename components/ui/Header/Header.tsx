@@ -69,7 +69,7 @@ export default function Header() {
             </div>
           </div>
         </div>
-        <Menu open={menuOpen} onClose={() => setMenuOpen(false)}/>
+        <Menu open={menuOpen}/>
       </div>
     </>
   );

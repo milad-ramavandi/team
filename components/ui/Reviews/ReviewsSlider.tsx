@@ -11,7 +11,7 @@ import { IReviewBlog } from "../../../types/reviews-blog";
 
 
 
-const ReviewsSlider = ({reviewsBlogList}: {reviewsBlogList: IReviewBlog[]}) => {
+const ReviewsSlider = ({reviewsBlogList, isTitle}: {reviewsBlogList: IReviewBlog[], isTitle?:boolean}) => {
   useEffect(() => {
     if (window.Swiper) {
       new window.Swiper(".mil-reviews-slider", {
@@ -43,7 +43,7 @@ const ReviewsSlider = ({reviewsBlogList}: {reviewsBlogList: IReviewBlog[]}) => {
       <div className="swiper-container mil-reviews-slider mil-c-swipe mil-c-dark">
         <div className="swiper-wrapper">
           {reviewsBlogList.map((item, index) => {
-            return <ReviewBlog key={index} {...item} />;
+            return <ReviewBlog key={index} {...item} isTitle={isTitle} />;
           })}
         </div>
       </div>

@@ -43,7 +43,7 @@ const Footer = () => {
                   </a>
                 </li>
               </ul>
-              <ul className="mil-social mil-c-gone">
+              {/* <ul className="mil-social mil-c-gone">
                 <li>
                   <a href="#." target="_blank" data-no-swup>
                     <i className="fab fa-instagram"></i>
@@ -69,7 +69,7 @@ const Footer = () => {
                     <i className="fab fa-github"></i>
                   </a>
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </div>
           <div className="col-lg-12">

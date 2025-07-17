@@ -14,16 +14,23 @@ import { texts } from "../lib/texts";
 export default function Home() {
   return (
     <main>
-      <Hero/>
-      <AboutMe/>
-      <Counters counters={counters_list}/>
-      <AboutUs/>
-      <IconBoxes/>
-      <Portfolio/>
-      <Team/>
-      <Reviews title={texts.homePage.reviews.title} reviewsBlogList={texts?.homePage?.reviews?.reviewBlog}/>
-      <Partners/>
-      <CallAction/>
+      <div className="overflow-hidden">
+        <Hero />
+        <AboutMe />
+        <Counters counters={counters_list} />
+        <AboutUs />
+        <IconBoxes />
+        <Portfolio />
+        <Team />
+        <Reviews
+          title={texts.homePage.reviews.title}
+          reviewsBlogList={texts?.homePage?.reviews?.reviewBlog}
+          isDescription
+          isTitle
+        />
+        <Partners />
+        <CallAction />
+      </div>
     </main>
   );
 }

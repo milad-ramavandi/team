@@ -3,7 +3,7 @@ import { texts } from "../../../../lib/texts";
 
 const CallAction = () => {
   return (
-    <div className="container overflow-hidden" id="contact">
+    <div className="container" id="contact">
       <div className="mil-half-container mil-stl">
         <div className="mil-text-box mil-g-m4 mil-p-160-160">
           <p className="mil-stylized mil-m2 mil-mb60">{texts.homePage.callaction.title}</p>

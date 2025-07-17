@@ -1,7 +1,7 @@
 export const texts = {
   header: {
     name: "PIXY",
-    items: ["About", "Portfolio", "Reviews", "Contact"],
+    items: ["About", "Portfolio", "Blog", "Us"],
   },
 
   menu: {
@@ -55,7 +55,7 @@ export const texts = {
   footer: {
     h6: "Let’s TALK",
     button: "Read more",
-    items: ["Home", "Services", "About", "Portfolio", "Contact"],
+    items: ["Home", "About", "Portfolio", "Blog", "US"],
     p: "©2024. All rights reserved.",
   },
 
@@ -267,17 +267,17 @@ export const texts = {
 
   aboutPage: {
     hero: {
-      heading1: "Pixy is a",
-      heading2: "agency that transforms",
-      heading3: "into masterpieces. We craft",
-      heading4: "magic, breathe new life into brands, and make the impossible",
-      heading5: "Choose",
-      heading6: "because we are worth it!",
-      span1: "creative",
-      span2: "ideas",
-      span3: "design",
-      span4: "possible",
-      span5: "Pixy",
+      heading1: "we are a",
+      heading2: "that turns ideas into smart solutions. we build powerful platforms, transform how businesses",
+      // heading3: "",
+      heading3: ", and bring the future to life today. choose techway because",
+      // heading5: "",
+      // heading6: "because we are worth it!",
+      span1: "tech company",
+      span2: "grow",
+      span3: "we make it happen!",
+      // span4: "possible",
+      // span5: "Pixy",
     },
     counters: [
       { number: "14", title: "SERVICE OFFERING" },
@@ -287,10 +287,10 @@ export const texts = {
     team: {
       p: "Team members",
       h2: {
-        span1: "Meet Our ",
+        span1: "Know our ",
         span2: "Team",
       },
-      p2: " Our team at PIXY is a symbol of creativity and innovation. We ambitiously bring forward-thinking ideas to life across various creative disciplines. With great enthusiasm and dedication, we approach each project with seriousness and a commitment to high standards.",
+      p2: " We are a team driven by creativity and innovation, passionately bringing forward-thinking ideas to life across diverse creative fields. Each project is approached with enthusiasm, dedication, and a strong commitment to excellence.",
       p3: {
         para1: "Design Wonders:",
         span1: "Passionately Creating",
@@ -339,11 +339,25 @@ export const texts = {
             "I had the pleasure of working with this creative agency, and I must say, they truly impressed me. They consistently think outside the box, resulting in impressive and impactful work. I highly recommend this agency for their consistent delivery of exceptional creative solutions.",
         },
         {
+          imageUrl: "img/reviews/2.jpg",
+          author: "Seamless Integration",
+          title: "Envato market",
+          description:
+            "We build software that fits. From APIs to cloud systems, we ensure smooth, secure, and scalable integration with your tools.",
+        },
+        {
           imageUrl: "img/reviews/1.jpg",
           author: "Emma Newman",
           title: "Envato market",
           description:
             "This creative agency stands out with their exceptional talent and expertise. Their ability to think outside the box and bring unique ideas to life is truly impressive. With meticulous attention to detail, they consistently deliver visually stunning and impactful work.",
+        },
+        {
+          imageUrl: "img/reviews/1.jpg",
+          author: "Custom-Built for Impact",
+          title: "Envato market",
+          description:
+            "No templates, no shortcuts. We design and develop custom software that fits your exact needs — from concept to launch. Every line of code is written to solve real problems and deliver measurable results.",
         },
         {
           imageUrl: "img/reviews/3.jpg",

@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Spinner from "../spinner";
+import ArrowRight from "../../svg/ArrowRight";
 
 interface FormData {
   name: string;
@@ -66,7 +67,7 @@ const ContactForm = () => {
       <div className="mil-contact-form-container-textarea">
         <textarea
           placeholder="YOUR MESSAGE"
-          rows={9}
+          rows={32}
           name="message"
           value={formData?.message}
           onChange={handleInputChange}
@@ -79,15 +80,7 @@ const ContactForm = () => {
             {isSubmiting ? (
               <Spinner/>
             ) : (
-              <svg
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-              >
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg>
+              <ArrowRight/>
             )}
           </button>
         </div>

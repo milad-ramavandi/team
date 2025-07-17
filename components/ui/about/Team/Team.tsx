@@ -16,15 +16,15 @@ const Team = () => {
             <h2 className="mil-head1 mil-mb30">
               {texts?.aboutPage?.team?.h2?.span1}{" "}
               <span className="mil-a2">
-                {texts?.aboutPage?.team?.h2?.span1}
+                {texts?.aboutPage?.team?.h2?.span2}
               </span>
             </h2>
-            <div>
-              <p className="mil-text-md mil-mb30 mil-bar">
-                {texts?.aboutPage?.team?.p2}
-              </p>
-            </div>
-            <div className="mil-team-quote mil-mb60">
+
+            <p className="mil-text-md mil-mb30 mil-deco-text mil-mb90">
+              {texts?.aboutPage?.team?.p2}
+            </p>
+
+            {/* <div className="mil-team-quote mil-mb60">
               <div className="mil-portrait">
                 <img src="../img/team/ceo.jpg" alt="SEO portrait" />
               </div>
@@ -38,10 +38,10 @@ const Team = () => {
                 </span>{" "}
                 {texts?.aboutPage?.team?.p3?.para2}
               </p>
-            </div>
+            </div> */}
             <div>
               <a href="team-frl.html" className="mil-btn mil-a1 mil-c-gone">
-              {texts?.aboutPage?.team?.button}
+                {texts?.aboutPage?.team?.button}
               </a>
             </div>
           </div>
@@ -50,7 +50,7 @@ const Team = () => {
               <div className="col-md-6">
                 {members.slice(0, 2).map((item, index) => {
                   const isLarge = index === 1;
-                  return <Member key={index} {...item} isLarge={isLarge}/>;
+                  return <Member key={index} {...item} isLarge={isLarge} />;
                 })}
               </div>
               <div className="col-md-6">
