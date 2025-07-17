@@ -2,20 +2,16 @@
 import React, { useState } from "react";
 import Spinner from "../spinner";
 import ArrowRight from "../../svg/ArrowRight";
-
-interface FormData {
-  name: string;
-  email: string;
-  message: string;
-}
+import { IContactForm } from "../../../../types/contact-form";
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState<FormData>({
+  const [formData, setFormData] = useState<IContactForm>({
     name: "",
     email: "",
     message: "",
   });
-  const allFilled = formData?.name.trim() && formData?.email.trim() && formData?.message.trim();
+  const allFilled =
+    formData?.name.trim() && formData?.email.trim() && formData?.message.trim();
   const [isSubmiting, setIsSubmiting] = useState<boolean>(false);
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -64,24 +60,29 @@ const ContactForm = () => {
         required
         autoComplete="off"
       />
-      <div className="mil-contact-form-container-textarea">
-        <textarea
-          placeholder="YOUR MESSAGE"
-          rows={32}
-          name="message"
-          value={formData?.message}
-          onChange={handleInputChange}
-          className="mil-contact-form-textarea"
-          required
-          autoComplete="0ff"
-        />
+      <div className="position-relative">
+        <div className="mil-contact-form-container-textarea">
+          <textarea
+            placeholder="YOUR MESSAGE"
+            rows={32}
+            name="message"
+            value={formData?.message}
+            onChange={handleInputChange}
+            className="mil-contact-form-textarea"
+            required
+            autoComplete="0ff"
+          />
+        </div>
         <div className="mil-contact-form-container-button">
-          <button type="submit" className={`mil-contact-form-button ${allFilled || isSubmiting ? "mil-contact-form-button-border" : "mil-contact-form-button-no-border"}`}>
-            {isSubmiting ? (
-              <Spinner/>
-            ) : (
-              <ArrowRight/>
-            )}
+          <button
+            type="submit"
+            className={`mil-contact-form-button ${
+              allFilled || isSubmiting
+                ? "mil-contact-form-button-border"
+                : "mil-contact-form-button-no-border"
+            }`}
+          >
+            {isSubmiting ? <Spinner /> : <ArrowRight />}
           </button>
         </div>
       </div>

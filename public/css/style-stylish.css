@@ -5657,6 +5657,7 @@ footer
 .mil-contact-form-container-textarea {
   position: relative;
   margin-bottom: 0px;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 150px), calc(100% - 150px) 100%, 0 100%);
 }
 
 .mil-contact-form-textarea {
@@ -5681,6 +5682,28 @@ footer
   padding: 18px;
   border-top-left-radius: 50%;
   background-color: #000000;
+}
+
+
+.mil-contact-form-container-button::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: #262626;
+  bottom: 100%;
+  right: 0;
+  border-bottom-right-radius: 50%;
+}
+.mil-contact-form-container-button::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: #262626;
+  bottom: 5.4px;
+  right: 100%;
+  border-bottom-right-radius: 50%;
 }
 
 .mil-contact-form-button {
