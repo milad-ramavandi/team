@@ -1,49 +1,12 @@
-/* Import Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&display=swap");
 
 /* Import Bootstrap CSS */
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 /* Import Custom CSS */
-@import "../public/css/style-stylish.css";
-@import "../public/css/plugins/bootstrap-grid.css";
-@import "../public/css/plugins/fontawesome.min.css";
-
-/* CSS Variables for Fonts */
-:root {
-  --font-outfit: "Outfit", sans-serif;
-  --font-anton: "Anton", sans-serif;
-}
-
-/* Override body font to use CSS variables */
-body {
-  /* font-family: var(--font-outfit); */
-  color: rgba(210, 210, 208, 0.6);
-  font-weight: 300;
-  font-size: 14px;
-  background-color: #000000;
-}
-
-/* Override headings to use Anton font */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.mil-h1,
-.mil-h2,
-.mil-h3,
-.mil-h4,
-.mil-h5,
-.mil-h6 {
-  font-family: var(--font-anton);
-  color: #d2d2d0;
-  font-weight: 100;
-  line-height: normal;
-  text-transform: uppercase;
-  letter-spacing: -2%;
-}
+@import "./style-stylish.css";
+@import "./plugins/bootstrap-grid.css";
+@import "./plugins/fontawesome.min.css";
+@import "./plugins/swiper.min.css";
 
 /* Header Scroll Effects */
 .mil-top-panel-2 {

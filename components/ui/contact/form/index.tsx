@@ -65,7 +65,7 @@ const ContactForm = () => {
         <div className="mil-contact-form-container-textarea">
           <textarea
             placeholder={texts?.contactPage?.form?.placeholders?.message}
-            rows={32}
+            // rows={32}
             name="message"
             value={formData?.message}
             onChange={handleInputChange}

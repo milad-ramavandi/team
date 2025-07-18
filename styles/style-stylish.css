@@ -60,6 +60,7 @@ transition
 main
 
 ------------------------------------------- */
+
 *,
 *:before,
 *:after {
@@ -85,7 +86,7 @@ main
 }
 
 body {
-  font-family: "Outfit", sans-serif;
+  font-family: var(--font-outfit) !important;
   color: rgba(210, 210, 208, 0.6);
   font-weight: 300;
   font-size: 14px;
@@ -405,7 +406,7 @@ h6,
 .mil-h4,
 .mil-h5,
 .mil-h6 {
-  font-family: "Anton", sans-serif;
+  font-family: var(--font-anton) !important;
   color: #d2d2d0;
   font-weight: 100;
   line-height: normal;
@@ -4348,7 +4349,7 @@ team
   color: #000000;
 }
 .mil-team-card.mil-stl .mil-hover-overlay {
-  background-image: url(../img/team/overlay.jpg);
+  background-image: url("../public/img/team/overlay.jpg");
   background-color: transparent;
 }
 .mil-team-card.mil-stl .mil-hover-overlay .mil-descr {
@@ -5099,7 +5100,7 @@ portfolio
   padding: 0 60px;
 }
 .mil-work-card.mil-stl .mil-hover-overlay {
-  background-image: url(../img/team/overlay.jpg);
+  background-image: url("../public/img/team/overlay.jpg");
   background-color: transparent;
 }
 .mil-work-card.mil-stl .mil-hover-overlay .mil-descr {
