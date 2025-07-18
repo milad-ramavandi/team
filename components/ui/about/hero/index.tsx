@@ -17,11 +17,6 @@ const Hero = () => {
         <span className="mil-a1">{texts?.aboutPage?.hero?.span2}</span>{" "}
         {texts?.aboutPage?.hero?.heading3}{" "}
         <span className="mil-a1">{texts?.aboutPage?.hero?.span3}</span>{" "}
-        {/* {texts?.aboutPage?.hero?.heading4}{" "} */}
-        {/* <span className="mil-a1">{texts?.aboutPage?.hero?.span4}</span>.{" "} */}
-        {/* {texts?.aboutPage?.hero?.heading5}{" "} */}
-        {/* <span className="mil-a1">{texts?.aboutPage?.hero?.span5}</span>{" "} */}
-        {/* {texts?.aboutPage?.hero?.heading6} */}
       </h1>
       <CircleScroll Goto="#counters" isRight />
     </div>

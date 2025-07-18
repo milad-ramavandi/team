@@ -17,7 +17,7 @@
 
 /* Override body font to use CSS variables */
 body {
-  font-family: var(--font-outfit);
+  /* font-family: var(--font-outfit); */
   color: rgba(210, 210, 208, 0.6);
   font-weight: 300;
   font-size: 14px;

@@ -19,7 +19,7 @@ const Hero = () => {
             data-value-1="1.3"
             data-value-2="0.95"
           >
-            <h1 className="mil-display4 mil-mb40">
+            <h1 className={`mil-display4 mil-mb40`}>
               {texts.homePage.hero.heading1}<br />
               {texts.homePage.hero.heading2}
             </h1>

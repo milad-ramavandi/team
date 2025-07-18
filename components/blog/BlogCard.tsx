@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { BlogCardType } from '../../types/blog/BlogCardType';
 
 interface BlogCardProps extends BlogCardType {}
@@ -27,7 +28,7 @@ export default function BlogCard({
           <div className="mil-date">{date}</div>
         </div>
       </div>
-      <a href={link} className="mil-descr mil-c-gone">
+      <Link href={link} className="mil-descr mil-c-gone">
         <div className="mil-text-frame">
           <h4 className="mil-head3 mil-max-2row-text mil-mb30 mil-up-removed">
             {title}
@@ -39,7 +40,7 @@ export default function BlogCard({
             <div className="mil-btn mil-a2 mil-c-gone">Read more</div>
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }

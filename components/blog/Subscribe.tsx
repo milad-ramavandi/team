@@ -1,3 +1,5 @@
+import { texts } from "../../lib/texts";
+
 export default function Subscribe() {
   return (
     <>
@@ -5,14 +7,18 @@ export default function Subscribe() {
         <div className="mil-half-container mil-stl mil-reverse mil-up-removed">
           <div className="mil-text-box mil-g-m4 mil-p-160-160">
             <p className="mil-stylized mil-m2 mil-mb60 mil-up-removed">
-              Newsletter
+              {texts?.blogPage?.subscribe?.p1}
             </p>
             <h2 className="mil-display3 mil-rubber mil-mb60 mil-up-removed">
-              Subscribe <span className="mil-a2">our</span> <br />
-              newsletter
+              {texts?.blogPage?.subscribe?.h2?.heading1}{" "}
+              <span className="mil-a2">
+                {texts?.blogPage?.subscribe?.h2?.span}
+              </span>{" "}
+              <br />
+              {texts?.blogPage?.subscribe?.h2?.heading2}
             </h2>
             <form className="mil-subscribe-form mil-up-removed mil-c-gone">
-              <input type="text" placeholder="Enter your email" />
+              <input type="text" placeholder={texts?.blogPage?.subscribe?.form?.placeholders?.email} />
               <button type="submit">
                 <i className="fal fa-arrow-right"></i>
               </button>
@@ -41,12 +47,12 @@ export default function Subscribe() {
           <div className="col-lg-6 mil-992-gone">
             <div className="mil-text-pad">
               <p className="mil-text-sm mil-up-removed">
-                By clicking the submit button, you agree to the <br />
+                {texts?.blogPage?.subscribe?.p2?.para1} <br />
                 <a
                   href="contact-stl.html"
                   className="mil-text-link mil-a2 mil-c-gone"
                 >
-                  rules for processing personal data
+                  {texts?.blogPage?.subscribe?.p2?.para2}
                 </a>
                 .
               </p>

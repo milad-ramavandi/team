@@ -6,6 +6,7 @@ import { Navigation } from "swiper/modules";
 import SliderCard from "./SliderCard";
 import "swiper/css";
 import "swiper/css/navigation";
+import { blogsPopular } from "../../data/blog/popular";
 
 export default function Slider() {
   const swiperRef = useRef<any>(null);
@@ -21,44 +22,7 @@ export default function Slider() {
     }
   };
 
-  const slidesData = [
-    {
-      imageSrc: "/img/blog/9.jpg",
-      category: "design",
-      date: "29.08.24",
-      title: "How to Become a Graphic Designer in 10 Simple Steps",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
-      link: "publication-stl.html",
-    },
-    {
-      imageSrc: "/img/blog/10.jpg",
-      category: "Branding",
-      date: "29.08.24",
-      title: "10 Essential Tools Every Graphic Designer Should Master",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
-      link: "publication-stl.html",
-    },
-    {
-      imageSrc: "/img/blog/11.jpg",
-      category: "Art",
-      date: "29.08.24",
-      title: "From Concept to Creation: The Design Process Explained",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
-      link: "publication-stl.html",
-    },
-    {
-      imageSrc: "/img/blog/12.jpg",
-      category: "Interior",
-      date: "29.08.24",
-      title: "The Ultimate Guide to UI/UX Design for Beginners",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
-      link: "publication-stl.html",
-    },
-  ];
+  const slidesData = blogsPopular;
 
   return (
     <div className="mil-p-0-160">

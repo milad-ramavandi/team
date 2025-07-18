@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Slide } from "../../types/blog/blogPageSlideCard";
 
 export default function SliderCard({
@@ -25,7 +26,7 @@ export default function SliderCard({
           <div className="mil-date">{date}</div>
         </div>
       </div>
-      <a href={link} className="mil-descr mil-c-gone">
+      <Link href={link} className="mil-descr mil-c-gone">
         <div className="mil-text-frame">
           <h4 className="mil-head4 mil-max-2row-text mil-mb20 mil-up-removed">
             {title}
@@ -40,7 +41,7 @@ export default function SliderCard({
             <span>Read more</span>
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }

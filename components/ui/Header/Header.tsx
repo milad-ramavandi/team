@@ -35,15 +35,15 @@ export default function Header() {
                 </li>
                 <li>
                   <Link
-                    href="#portfolio"
-                    className="mil-scroll-to"
+                    href="/portfolio"
+                    className={`${pathname === "/portfolio" ? "mil-a1" : "mil-m1"}`}
                     data-no-swup
                   >
                     {texts.header.items[1]}
                   </Link>
                 </li>
                 <li>
-                  <Link href="#reviews" className="mil-scroll-to" data-no-swup>
+                  <Link href="/blog" className={`${pathname === "/blog" ? "mil-a1" : "mil-m1"}`} data-no-swup>
                     {texts.header.items[2]}
                   </Link>
                 </li>

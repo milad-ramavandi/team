@@ -1,62 +1,7 @@
-import { BlogCardType } from "../../types/blog/BlogCardType";
+import { latestPulications } from "../../data/blog/latest";
 import BlogCard from "./BlogCard";
 export default function LatestPublications() {
-  const blogsData: BlogCardType[] = [
-    {
-      imageSrc: "/img/blog/11.jpg",
-      category: "design",
-      date: "29.08.24",
-      title: "How to Become a Graphic Designer in 10 Simple Steps",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
-      link: "publication-stl.html",
-    },
-    {
-      imageSrc: "/img/blog/13.jpg",
-      category: "design",
-      date: "29.08.24",
-      title: "The Ultimate Guide to UI/UX Design for Beginners",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
-      link: "publication-stl.html",
-    },
-    {
-      imageSrc: "/img/blog/14.jpg",
-      category: "design",
-      date: "29.08.24",
-      title: "From Concept to Creation: The Design Process Explained",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
-      link: "publication-stl.html",
-    },
-    {
-      imageSrc: "/img/blog/12.jpg",
-      category: "design",
-      date: "29.08.24",
-      title: "How to Become a Graphic Designer in 10 Simple Steps",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
-      link: "publication-stl.html",
-    },
-    {
-      imageSrc: "/img/blog/15.jpg",
-      category: "design",
-      date: "29.08.24",
-      title: "The Ultimate Guide to UI/UX Design for Beginners",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
-      link: "publication-stl.html",
-    },
-    {
-      imageSrc: "/img/blog/16.jpg",
-      category: "design",
-      date: "29.08.24",
-      title: "From Concept to Creation: The Design Process Explained",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
-      link: "publication-stl.html",
-    },
-  ];
+  const blogsData = latestPulications;
 
   return (
     <>

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Spinner from "../spinner";
 import ArrowRight from "../../svg/ArrowRight";
 import { IContactForm } from "../../../../types/contact-form";
+import { texts } from "../../../../lib/texts";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState<IContactForm>({
@@ -42,7 +43,7 @@ const ContactForm = () => {
     <form className="mil-contact-form" onSubmit={handleSubmit}>
       <input
         type="text"
-        placeholder="YOUR NAME"
+        placeholder={texts?.contactPage?.form?.placeholders?.name}
         name="name"
         value={formData?.name}
         onChange={handleInputChange}
@@ -52,7 +53,7 @@ const ContactForm = () => {
       />
       <input
         type="email"
-        placeholder="YOUR EMAIL"
+        placeholder={texts?.contactPage?.form?.placeholders?.email}
         name="email"
         value={formData?.email}
         onChange={handleInputChange}
@@ -63,7 +64,7 @@ const ContactForm = () => {
       <div className="position-relative">
         <div className="mil-contact-form-container-textarea">
           <textarea
-            placeholder="YOUR MESSAGE"
+            placeholder={texts?.contactPage?.form?.placeholders?.message}
             rows={32}
             name="message"
             value={formData?.message}

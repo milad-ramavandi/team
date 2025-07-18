@@ -376,4 +376,138 @@ export const texts = {
       ],
     },
   },
+  contactPage: {
+    p1:"CONTACT US",
+    h1: {
+      heading1: "GET IN TOUCH WITH OUR TEAM FOR",
+      span:"INQUIRIES",
+      heading2: "OR SUPPORT."
+    },
+    p2: "OUR DEDICATED EXPERTS COMBINE PASSION AND DEEP EXPERTISE TO DELIVER TOP-QUALITY SUPPORT, ENSURING YOUR NEEDS ARE MET WITH EXCEPTIONAL CARE AND PROFESSIONALISM.",
+    p3: "OUR COMMITTED TEAM LEVERAGES EXTENSIVE KNOWLEDGE AND ENTHUSIASM TO PROVIDE OUTSTANDING ASSISTANCE, GUARANTEEING YOUR REQUIREMENTS ARE ADDRESSED WITH UTMOST PRECISION AND DEDICATION.",
+    form: {
+      placeholders: {
+        name: "YOUR NAME",
+        email: "YOUR EMAIL",
+        message: "YOUR MESSAGE"
+      }
+    }
+  },
+  blogPage: {
+    banner: {
+      h1: "Newsletter"
+    }, 
+    slider: [
+      {
+        imageSrc: "/img/blog/9.jpg",
+        category: "design",
+        date: "29.08.24",
+        title: "How to Become a Graphic Designer in 10 Simple Steps",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
+        link: "publication-stl.html",
+      },
+      {
+        imageSrc: "/img/blog/10.jpg",
+        category: "Branding",
+        date: "29.08.24",
+        title: "10 Essential Tools Every Graphic Designer Should Master",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
+        link: "publication-stl.html",
+      },
+      {
+        imageSrc: "/img/blog/11.jpg",
+        category: "Art",
+        date: "29.08.24",
+        title: "From Concept to Creation: The Design Process Explained",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
+        link: "publication-stl.html",
+      },
+      {
+        imageSrc: "/img/blog/12.jpg",
+        category: "Interior",
+        date: "29.08.24",
+        title: "The Ultimate Guide to UI/UX Design for Beginners",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
+        link: "publication-stl.html",
+      },
+    ],
+    latestPublication: [
+      {
+        imageSrc: "/img/blog/11.jpg",
+        category: "design",
+        date: "29.08.24",
+        title: "How to Become a Graphic Designer in 10 Simple Steps",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
+        link: "publication-stl.html",
+      },
+      {
+        imageSrc: "/img/blog/13.jpg",
+        category: "design",
+        date: "29.08.24",
+        title: "The Ultimate Guide to UI/UX Design for Beginners",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
+        link: "publication-stl.html",
+      },
+      {
+        imageSrc: "/img/blog/14.jpg",
+        category: "design",
+        date: "29.08.24",
+        title: "From Concept to Creation: The Design Process Explained",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
+        link: "publication-stl.html",
+      },
+      {
+        imageSrc: "/img/blog/12.jpg",
+        category: "design",
+        date: "29.08.24",
+        title: "How to Become a Graphic Designer in 10 Simple Steps",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
+        link: "publication-stl.html",
+      },
+      {
+        imageSrc: "/img/blog/15.jpg",
+        category: "design",
+        date: "29.08.24",
+        title: "The Ultimate Guide to UI/UX Design for Beginners",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
+        link: "publication-stl.html",
+      },
+      {
+        imageSrc: "/img/blog/16.jpg",
+        category: "design",
+        date: "29.08.24",
+        title: "From Concept to Creation: The Design Process Explained",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
+        link: "publication-stl.html",
+      },
+    ],
+    subscribe: {
+      p1: "Newsletter",
+      h2: {
+        heading1: "Subscribe",
+        span: "our",
+        heading2: "newsletter"
+      },
+      form: {
+        placeholders: {
+          email: "Enter your email"
+        }
+      },
+      p2: {
+        para1: "By clicking the submit button, you agree to the",
+        para2: "rules for processing personal data"
+      }
+    },
+    
+  }
 };
