@@ -1,21 +1,28 @@
-import React from "react";
 import { texts } from "../../../../lib/texts";
+import Link from "next/link";
 
 const CallAction = () => {
   return (
     <div className="container" id="contact">
       <div className="mil-half-container mil-stl">
         <div className="mil-text-box mil-g-m4 mil-p-160-160">
-          <p className="mil-stylized mil-m2 mil-mb60">{texts.homePage.callaction.title}</p>
+          <p className="mil-stylized mil-m2 mil-mb60">
+            {texts.homePage.callaction.title}
+          </p>
           <h2 className="mil-display3 mil-mb60 mil-m1">
-            {texts.homePage.callaction.h2.span1}<span className="mil-a1">
-            {texts.homePage.callaction.h2.span2}</span> <br />
-            {texts.homePage.callaction.h2.span3}<span className="mil-a1">
-            {texts.homePage.callaction.h2.span4}</span><br />
+            {texts.homePage.callaction.h2.span1}
+            <span className="mil-a1">
+              {texts.homePage.callaction.h2.span2}
+            </span>{" "}
+            <br />
+            {texts.homePage.callaction.h2.span3}
+            <span className="mil-a1">{texts.homePage.callaction.h2.span4}</span>
+            <br />
             {texts.homePage.callaction.h2.span5}
           </h2>
           <p className="mil-text-md mil-deco-text mil-shortened">
-            {texts.homePage.callaction.p1.span1}<span className="mil-a2">{texts.homePage.callaction.p1.span2}</span> 
+            {texts.homePage.callaction.p1.span1}
+            <span className="mil-a2">{texts.homePage.callaction.p1.span2}</span>
             {texts.homePage.callaction.p1.span3}
           </p>
         </div>
@@ -35,8 +42,8 @@ const CallAction = () => {
               autoPlay
               loop
               muted
-            //   playsInline
-            //   preload="auto"
+              //   playsInline
+              //   preload="auto"
             >
               <source src="img/pages/3.mp4" />
             </video>
@@ -48,35 +55,33 @@ const CallAction = () => {
         <div className="col-lg-4 mil-992-gone">
           <p className="mil-text-sm">
             {texts.homePage.callaction.p2.span1}
-            <a
+            <Link
               // href="contact-stl.html"
               href="#home"
               className="mil-text-link mil-a2 mil-c-gone"
             >
-            {texts.homePage.callaction.p2.span2}
-            </a>
+              {texts.homePage.callaction.p2.span2}
+            </Link>
             {texts.homePage.callaction.p2.span3}
           </p>
         </div>
         <div className="col-lg-6 p-0">
           <div className="mil-button-pad mil-a2">
             <span>
-              <a
+              <Link
                 // href="contact-stl.html"
                 href="#home"
                 className="mil-btn mil-btn-border mil-m1 mil-c-gone"
               >
                 {texts.homePage.callaction.button}
-              </a>
+              </Link>
             </span>
           </div>
         </div>
       </div>
       <div className="row mil-aic mil-jcb mil-no-g mil-992-gone">
         <div className="col-lg-6 p-0">
-          <div
-            className="mil-button-pad mil-a1 mil-jst d-block"
-          ></div>
+          <div className="mil-button-pad mil-a1 mil-jst d-block"></div>
         </div>
         <div className="col-lg-6 mil-992-gone"></div>
       </div>

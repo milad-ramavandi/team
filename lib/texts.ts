@@ -377,7 +377,7 @@ export const texts = {
     },
   },
   contactPage: {
-    p1:"CONTACT US",
+    h6:"CONTACT US",
     h1: {
       heading1: "GET IN TOUCH WITH OUR TEAM FOR",
       span:"INQUIRIES",

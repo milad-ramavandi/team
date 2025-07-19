@@ -5,9 +5,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/parallax";
 // import "../../../public/css/style-stylish.css";
-import "../../../styles/style-stylish.css"
+// import "../../../styles/style-stylish.css"
 import ReviewBlog from "./ReviewBlog";
-import Script from "next/script";
 import { IReviewBlog } from "../../../types/reviews-blog";
 
 
@@ -53,7 +52,6 @@ const ReviewsSlider = ({reviewsBlogList, isTitle}: {reviewsBlogList: IReviewBlog
         <div className="mil-slider-btn mil-sr-prev mil-c-gone"></div>
         <div className="mil-slider-btn mil-sr-next mil-c-gone"></div>
       </div>
-      <Script strategy={'beforeInteractive'} src="../js/plugins/swiper.min.js"></Script>
     </>
   );
 };

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { texts } from "../../../../lib/texts";
 import { IMember } from "../../../../types/team";
 import Member from "./Member";
@@ -40,9 +41,9 @@ const Team = () => {
               </p>
             </div> */}
             <div>
-              <a href="team-frl.html" className="mil-btn mil-a1 mil-c-gone">
+              <Link href="team-frl.html" className="mil-btn mil-a1 mil-c-gone">
                 {texts?.aboutPage?.team?.button}
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-lg-6">

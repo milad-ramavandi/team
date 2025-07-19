@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { texts } from "../../../../lib/texts";
 
 const AboutUs = () => {
@@ -44,13 +45,13 @@ const AboutUs = () => {
               </div>
               <div className="mil-button-box">
                 <div>
-                  <a
+                  <Link
                     // href="services-stl.html"
                     href="#home"
                     className="mil-btn mil-btn-border mil-c-gone"
                   >
                     {texts.homePage.aboutUS.button}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

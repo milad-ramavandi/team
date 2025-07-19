@@ -2,6 +2,7 @@
 import { IMember } from "../../../../types/team";
 import Member from "./TeamMember";
 import { texts } from "../../../../lib/texts";
+import Link from "next/link";
 
 const members: IMember[] = texts.homePage.team.members;
 
@@ -17,9 +18,9 @@ const Team = () => {
           </div>
           <div className="col-lg-6">
             <p className="mil-stylized mil-m1 mil-tar mil-768-tal mil-mb60">
-              <a href="#home" className="mil-arrow-link mil-c-gone">
+              <Link href="#home" className="mil-arrow-link mil-c-gone">
                 {texts.homePage.team.button}
-              </a>
+              </Link>
             </p>
           </div>
         </div>

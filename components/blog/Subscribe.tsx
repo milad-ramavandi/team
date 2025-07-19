@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { texts } from "../../lib/texts";
 
 export default function Subscribe() {
@@ -48,12 +49,12 @@ export default function Subscribe() {
             <div className="mil-text-pad">
               <p className="mil-text-sm mil-up-removed">
                 {texts?.blogPage?.subscribe?.p2?.para1} <br />
-                <a
+                <Link
                   href="contact-stl.html"
                   className="mil-text-link mil-a2 mil-c-gone"
                 >
                   {texts?.blogPage?.subscribe?.p2?.para2}
-                </a>
+                </Link>
                 .
               </p>
             </div>

@@ -1,5 +1,5 @@
 
-import React from "react";
+import Link from "next/link";
 import { IMember } from "../../../../types/team";
 
 const Member = ({ imageUrl, name, career, isLarge }: IMember) => {
@@ -19,29 +19,29 @@ const Member = ({ imageUrl, name, career, isLarge }: IMember) => {
           <h4 className="mil-head4 mil-m4 mil-mb20">{name}</h4>
           <ul className="mil-social mil-m1 mil-mb20 mil-c-gone p-0">
             <li>
-              <a href="#." target="_blank" data-no-swup>
+              <Link href="#." target="_blank" data-no-swup>
                 <i className="fab fa-instagram"></i>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#." target="_blank" data-no-swup>
+              <Link href="#." target="_blank" data-no-swup>
                 <i className="fab fa-behance"></i>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#." target="_blank" data-no-swup>
+              <Link href="#." target="_blank" data-no-swup>
                 <i className="fab fa-dribbble"></i>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#." target="_blank" data-no-swup>
+              <Link href="#." target="_blank" data-no-swup>
                 <i className="fab fa-pinterest-p"></i>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#." target="_blank" data-no-swup>
+              <Link href="#." target="_blank" data-no-swup>
                 <i className="fab fa-github"></i>
-              </a>
+              </Link>
             </li>
           </ul>
           <p className="mil-stylized mil-m2 text-black">{career}</p>

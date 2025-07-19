@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { texts } from "../../../../lib/texts";
 
 const Portfolio = () => {
@@ -12,12 +13,12 @@ const Portfolio = () => {
           </div>
           <div className="col-md-5">
             <p className="mil-stylized mil-m1 mil-tar mil-768-tal mil-mb60">
-              <a
+              <Link
                 href="portfolio-1-stl.html"
                 className="mil-arrow-link mil-c-gone"
               >
                 View all
-              </a>
+              </Link>
             </p>
           </div>
         </div>
@@ -36,7 +37,7 @@ const Portfolio = () => {
                 </div>
               </div>
               <div className="mil-hover-overlay">
-                <a href="project-1-stl.html" className="mil-descr">
+                <Link href="project-1-stl.html" className="mil-descr">
                   <div className="mil-text-frame">
                     <h4 className="mil-head4 mil-max-1row-text mil-m1 mil-c-gone">
                       {texts.homePage.portfolio.item1}
@@ -48,7 +49,7 @@ const Portfolio = () => {
                       <span>{texts.homePage.portfolio.button2}</span>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="mil-work-card mil-stl mil-mb30">
@@ -64,7 +65,7 @@ const Portfolio = () => {
                 </div>
               </div>
               <div className="mil-hover-overlay">
-                <a href="project-2-stl.html" className="mil-descr">
+                <Link href="project-2-stl.html" className="mil-descr">
                   <div className="mil-text-frame">
                     <h4 className="mil-head4 mil-max-1row-text mil-m1 mil-c-gone">
                       {texts.homePage.portfolio.item2}
@@ -76,7 +77,7 @@ const Portfolio = () => {
                       <span>{texts.homePage.portfolio.button2}</span>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="mil-work-card mil-stl mil-mb30">
@@ -92,7 +93,7 @@ const Portfolio = () => {
                 </div>
               </div>
               <div className="mil-hover-overlay">
-                <a href="#home" className="mil-descr">
+                <Link href="#home" className="mil-descr">
                   <div className="mil-text-frame">
                     <h4 className="mil-head4 mil-max-1row-text mil-m1 mil-c-gone">
                       {texts.homePage.portfolio.item3}
@@ -104,7 +105,7 @@ const Portfolio = () => {
                       <span>{texts.homePage.portfolio.button2}</span>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -122,7 +123,7 @@ const Portfolio = () => {
                 </div>
               </div>
               <div className="mil-hover-overlay">
-                <a href="#home" className="mil-descr">
+                <Link href="#home" className="mil-descr">
                   <div className="mil-text-frame">
                     <h4 className="mil-head4 mil-max-1row-text mil-m1 mil-c-gone">
                       {texts.homePage.portfolio.item4}
@@ -134,7 +135,7 @@ const Portfolio = () => {
                       <span>{texts.homePage.portfolio.button2}</span>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="mil-work-card mil-stl mil-mb30">
@@ -150,7 +151,7 @@ const Portfolio = () => {
                 </div>
               </div>
               <div className="mil-hover-overlay">
-                <a href="#home" className="mil-descr">
+                <Link href="#home" className="mil-descr">
                   <div className="mil-text-frame">
                     <h4 className="mil-head4 mil-max-1row-text mil-m1 mil-c-gone">
                       {texts.homePage.portfolio.item5}
@@ -162,7 +163,7 @@ const Portfolio = () => {
                       <span>{texts.homePage.portfolio.button2}</span>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="mil-work-card mil-stl mil-mb30">
@@ -178,7 +179,7 @@ const Portfolio = () => {
                 </div>
               </div>
               <div className="mil-hover-overlay">
-                <a href="#home" className="mil-descr">
+                <Link href="#home" className="mil-descr">
                   <div className="mil-text-frame">
                     <h4 className="mil-head4 mil-max-1row-text mil-m1 mil-c-gone">
                       {texts.homePage.portfolio.item6}
@@ -190,7 +191,7 @@ const Portfolio = () => {
                       <span>{texts.homePage.portfolio.button2}</span>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -204,13 +205,13 @@ const Portfolio = () => {
           </div>
           <div className="col-md-6 mil-jce mil-768-jcs mil-mb30">
             <span>
-              <a
+              <Link
                 // href="portfolio-1-stl.html"
                 href="#home"
                 className="mil-btn mil-a2 mil-c-gone"
               >
                 {texts.homePage.portfolio.button3}
-              </a>
+              </Link>
             </span>
           </div>
         </div>

@@ -7,6 +7,7 @@ import { blogsList } from "../../../../data/blogs-list";
 
 
 
+
 const MenuSlider = () => {
   const swiperRef = useRef<any>(null);
 

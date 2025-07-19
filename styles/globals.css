@@ -3,10 +3,10 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 /* Import Custom CSS */
-@import "./style-stylish.css";
-@import "./plugins/bootstrap-grid.css";
-@import "./plugins/fontawesome.min.css";
-@import "./plugins/swiper.min.css";
+@import "../public/css/style-stylish.css";
+@import "../public/css/plugins/bootstrap-grid.css";
+@import "../public/css/plugins/fontawesome.min.css";
+@import "../public/css/plugins/swiper.min.css";
 
 /* Header Scroll Effects */
 .mil-top-panel-2 {

@@ -4349,7 +4349,7 @@ team
   color: #000000;
 }
 .mil-team-card.mil-stl .mil-hover-overlay {
-  background-image: url("../public/img/team/overlay.jpg");
+  background-image: url("../img/team/overlay.jpg");
   background-color: transparent;
 }
 .mil-team-card.mil-stl .mil-hover-overlay .mil-descr {
@@ -5100,7 +5100,7 @@ portfolio
   padding: 0 60px;
 }
 .mil-work-card.mil-stl .mil-hover-overlay {
-  background-image: url("../public/img/team/overlay.jpg");
+  background-image: url("../img/team/overlay.jpg");
   background-color: transparent;
 }
 .mil-work-card.mil-stl .mil-hover-overlay .mil-descr {

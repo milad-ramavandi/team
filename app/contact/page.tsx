@@ -6,7 +6,7 @@ const ContactPage = () => {
     <main>
       <section className="container py-5 mil-mt180">
         <div className="d-flex justify-content-start">
-          <p className="mil-contact-p">{texts?.contactPage?.p1}</p>
+          <h6 className="mil-contact-p">{texts?.contactPage?.h6}</h6>
         </div>
         <div className="row align-items-start">
           <div className="col-lg-6 mb-5 mb-lg-0">

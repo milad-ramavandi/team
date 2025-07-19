@@ -4,6 +4,7 @@ import Header from "../components/ui/Header/Header";
 import Footer from "../components/ui/Footer/Footer";
 import Providers from "../components/providers";
 import { anton, outfit } from "../components/fonts";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "",
@@ -23,6 +24,10 @@ export default function RootLayout({
           {children}
           <Footer />
         </Providers>
+        <Script
+          strategy={"beforeInteractive"}
+          src="../js/plugins/swiper.min.js"
+        ></Script>
       </body>
     </html>
   );

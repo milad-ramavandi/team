@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { texts } from "../../../lib/texts";
 
 const Footer = () => {
@@ -6,41 +7,41 @@ const Footer = () => {
       <div className="container">
         <div className="row mil-no-g">
           <div className="col-lg-6">
-            <a href="contact-stl.html" className="mil-footer-contact mil-mb90">
+            <Link href="contact-stl.html" className="mil-footer-contact mil-mb90">
               <h6 className="mil-footer-link mil-m1">{texts.footer.h6}</h6>
               <span className="mil-stylized-btn mil-c-gone">
                 <i className="fal fa-arrow-up"></i>
                 <span>{texts.footer.button}</span>
               </span>
-            </a>
+            </Link>
           </div>
           <div className="col-lg-12">
             <div className="mil-footer-menu-frame mil-mb20">
               <ul className="mil-footer-menu">
                 <li>
-                  <a href="#." className="mil-c-gone">
+                  <Link href="#." className="mil-c-gone">
                     {texts.footer.items[0]}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#." className="mil-c-gone">
+                  <Link href="#." className="mil-c-gone">
                     {texts.footer.items[1]}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#." className="mil-c-gone">
+                  <Link href="#." className="mil-c-gone">
                     {texts.footer.items[2]}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#." className="mil-c-gone">
+                  <Link href="#." className="mil-c-gone">
                     {texts.footer.items[3]}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#." className="mil-c-gone">
+                  <Link href="#." className="mil-c-gone">
                     {texts.footer.items[4]}
-                  </a>
+                  </Link>
                 </li>
               </ul>
               {/* <ul className="mil-social mil-c-gone">

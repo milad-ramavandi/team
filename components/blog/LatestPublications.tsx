@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { latestPulications } from "../../data/blog/latest";
 import BlogCard from "./BlogCard";
 export default function LatestPublications() {
@@ -35,23 +36,23 @@ export default function LatestPublications() {
           <div className="mil-blog-pagination">
             <ul>
               <li>
-                <a href="#.">
+                <Link href="#.">
                   <i className="far fa-arrow-left"></i>
-                </a>
+                </Link>
               </li>
               <li className="mil-active">
-                <a href="#.">1</a>
+                <Link href="#.">1</Link>
               </li>
               <li>
-                <a href="#.">2</a>
+                <Link href="#.">2</Link>
               </li>
               <li>
-                <a href="#.">...</a>
+                <Link href="#.">...</Link>
               </li>
               <li>
-                <a href="#.">
+                <Link href="#.">
                   <i className="far fa-arrow-right"></i>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
