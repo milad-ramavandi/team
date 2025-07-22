@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import "../styles/globals.css";
-// import Header from "../components/ui/Header/Header";
-// import Footer from "../components/ui/Footer/Footer";
-import Providers from "../components/providers";
-import { anton, outfit } from "../components/fonts";
+import "../../styles/globals.css";
+
 import Script from "next/script";
-import ClientLayout from "../components/layouts/client-layout";
+import { anton, outfit } from "../../components/fonts";
+import Providers from "../../components/providers";
+import Header from "../../components/ui/Header/Header";
+import Footer from "../../components/ui/Footer/Footer";
 
 export const metadata: Metadata = {
-  title: "",
-  description: "",
+  title: "test",
+  description: "test",
 };
 
 export default function RootLayout({
@@ -21,10 +21,9 @@ export default function RootLayout({
     <html lang="en" className={`${outfit.variable} ${anton.variable}`}>
       <body className={outfit.className}>
         <Providers>
-          <ClientLayout>{children}</ClientLayout>
-          {/* <Header /> */}
-
-          {/* <Footer /> */}
+          <Header isNotFound={false}/>
+          {children}
+          <Footer />
         </Providers>
         <Script
           strategy={"beforeInteractive"}

@@ -21,7 +21,7 @@ export default function BackToHomeCircle() {
         <circle cx="150" cy="100" r="75" fill="none" />
         <g>
           <use xlinkHref="#circlePath" fill="none" />
-          <text style={{ letterSpacing: "1.7px" }}>
+          <text style={{ letterSpacing: "2.2px" }}>
             <textPath xlinkHref="#circlePath">
               back to home - back to home - back to home -
             </textPath>

@@ -26,7 +26,7 @@ export default function Header({ isNotFound }: { isNotFound: boolean }) {
               </Link>
             </div>
 
-            {isNotFound && (
+            {!isNotFound && (
               <div className={`mil-onepage-nav`} id="swup-opm">
                 <ul>
                   <li>

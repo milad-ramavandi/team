@@ -1,5 +1,5 @@
 import Link from "next/link";
-import BackToHomeCircle from "../components/ui/svg/BackToHomeCircle";
+import BackToHomeCircle from "../../../components/ui/svg/BackToHomeCircle";
 export default function NotFoundPage() {
   return (
     <div className="mil-transition-fade" id="swup">

@@ -1,7 +1,8 @@
-import Banner from "../../components/blog/Banner";
-import Slider from "../../components/blog/Slider";
-import LatestPublications from "../../components/blog/LatestPublications";
-import Subscribe from "../../components/blog/Subscribe";
+import Banner from "../../../components/blog/Banner";
+import LatestPublications from "../../../components/blog/LatestPublications";
+import Slider from "../../../components/blog/Slider";
+import Subscribe from "../../../components/blog/Subscribe";
+
 export default function BlogPage() {
   return (
     <div className="mil-transition-fade" id="swup">

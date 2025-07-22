@@ -1,5 +1,6 @@
-import ContactForm from "../../components/ui/contact/form";
-import { texts } from "../../lib/texts";
+import ContactForm from "../../../components/ui/contact/form";
+import { texts } from "../../../lib/texts";
+
 
 const ContactPage = () => {
   return (
