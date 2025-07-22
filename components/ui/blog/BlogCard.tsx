@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import type { BlogCardType } from '../../types/blog/BlogCardType';
+import { BlogCardType } from '../../../types/blog/BlogCardType';
+
 
 interface BlogCardProps extends BlogCardType {}
 

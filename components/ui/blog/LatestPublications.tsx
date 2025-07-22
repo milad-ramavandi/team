@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { latestPulications } from "../../data/blog/latest";
+
 import BlogCard from "./BlogCard";
+import { latestPulications } from "../../../data/blog/latest";
 export default function LatestPublications() {
   const blogsData = latestPulications;
 

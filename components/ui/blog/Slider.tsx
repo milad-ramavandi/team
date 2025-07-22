@@ -6,7 +6,8 @@ import { Navigation } from "swiper/modules";
 import SliderCard from "./SliderCard";
 import "swiper/css";
 import "swiper/css/navigation";
-import { blogsPopular } from "../../data/blog/popular";
+import { blogsPopular } from "../../../data/blog/popular";
+
 
 export default function Slider() {
   const swiperRef = useRef<any>(null);

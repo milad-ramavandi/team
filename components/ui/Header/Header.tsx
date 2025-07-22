@@ -6,7 +6,7 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { texts } from "../../../lib/texts";
 
-export default function Header({ isNotFound }: { isNotFound: boolean }) {
+export default function Header() {
   const { isScrolled } = useScroll();
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const pathname = usePathname();
@@ -21,59 +21,50 @@ export default function Header({ isNotFound }: { isNotFound: boolean }) {
           <div className="container">
             <div className="mil-left-side mil-tp-transition" id="swupTpLeft">
               <Link href="/" className="mil-logo mil-scroll-to" data-no-swup>
-                <i className="far fa-cube"></i>
-                <span>{texts.header.name}</span>
+                {/* <i className="far fa-cube"></i>
+                <span>{texts.header.name}</span> */}
+                <img src={"img/logo.png"} alt="logo" width={68} height={81} />
               </Link>
             </div>
 
-            {!isNotFound && (
-              <div className={`mil-onepage-nav`} id="swup-opm">
-                <ul>
-                  <li>
-                    <Link
-                      href="/about"
-                      data-no-swup
-                      className={`${
-                        pathname === "/about" ? "mil-a1" : "mil-m1"
-                      }`}
-                    >
-                      {texts.header.items[0]}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/portfolio"
-                      className={`${
-                        pathname === "/portfolio" ? "mil-a1" : "mil-m1"
-                      }`}
-                      data-no-swup
-                    >
-                      {texts.header.items[1]}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/blog"
-                      className={`${
-                        pathname === "/blog" ? "mil-a1" : "mil-m1"
-                      }`}
-                      data-no-swup
-                    >
-                      {texts.header.items[2]}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#contact"
-                      className="mil-scroll-to"
-                      data-no-swup
-                    >
-                      {texts.header.items[3]}
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            )}
+            <div className={`mil-onepage-nav`} id="swup-opm">
+              <ul>
+                <li>
+                  <Link
+                    href="/about"
+                    data-no-swup
+                    className={`${pathname === "/about" ? "mil-a1" : "mil-m1"}`}
+                  >
+                    {texts.header.items[0]}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/portfolio"
+                    className={`${
+                      pathname === "/portfolio" ? "mil-a1" : "mil-m1"
+                    }`}
+                    data-no-swup
+                  >
+                    {texts.header.items[1]}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/blog"
+                    className={`${pathname === "/blog" ? "mil-a1" : "mil-m1"}`}
+                    data-no-swup
+                  >
+                    {texts.header.items[2]}
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#contact" className="mil-scroll-to" data-no-swup>
+                    {texts.header.items[3]}
+                  </Link>
+                </li>
+              </ul>
+            </div>
 
             <div
               className={`mil-buttons-tp-frame mil-c-gone ${
@@ -81,7 +72,7 @@ export default function Header({ isNotFound }: { isNotFound: boolean }) {
               }`}
             >
               <div className="mil-buttons">
-                <Link href="/contact" className="mil-tp-btn">
+                <Link href="/contact-us" className="mil-tp-btn">
                   <i className="fal fa-envelope"></i>
                 </Link>
                 <div className="mil-tp-btn">

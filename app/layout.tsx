@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import "../../styles/globals.css";
+import "../styles/globals.css";
 
 import Script from "next/script";
-import { anton, outfit } from "../../components/fonts";
-import Providers from "../../components/providers";
-import Header from "../../components/ui/Header/Header";
-import Footer from "../../components/ui/Footer/Footer";
+import { anton, outfit } from "../components/fonts";
+import Providers from "../components/providers";
+import Header from "../components/ui/Header/Header";
+import Footer from "../components/ui/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "test",
@@ -19,9 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${outfit.variable} ${anton.variable}`}>
-      <body className={outfit.className}>
+      <body className={`${outfit.className} main-container`}>
         <Providers>
-          <Header isNotFound={false}/>
+          <Header />
           {children}
           <Footer />
         </Providers>

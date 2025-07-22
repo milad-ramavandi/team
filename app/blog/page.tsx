@@ -1,7 +1,9 @@
-import Banner from "../../../components/blog/Banner";
-import LatestPublications from "../../../components/blog/LatestPublications";
-import Slider from "../../../components/blog/Slider";
-import Subscribe from "../../../components/blog/Subscribe";
+import Banner from "../../components/ui/blog/Banner";
+import LatestPublications from "../../components/ui/blog/LatestPublications";
+import Slider from "../../components/ui/blog/Slider";
+import Subscribe from "../../components/ui/blog/Subscribe";
+
+
 
 export default function BlogPage() {
   return (

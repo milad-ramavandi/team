@@ -1,5 +1,6 @@
-import { texts } from "../../lib/texts";
-import Breadcrumb from "../ui/breadcrumb";
+import { texts } from "../../../lib/texts";
+import Breadcrumb from "../breadcrumb";
+
 
 export default function Banner() {
   return (

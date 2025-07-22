@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { texts } from "../../lib/texts";
+import { texts } from "../../../lib/texts";
 
 export default function Subscribe() {
   return (

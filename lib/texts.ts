@@ -54,7 +54,7 @@ export const texts = {
 
   footer: {
     h6: "Let’s TALK",
-    button: "Read more",
+    button: "here",
     items: ["Home", "About", "Portfolio", "Blog", "US"],
     p: "©2024. All rights reserved.",
   },
@@ -192,6 +192,31 @@ export const texts = {
           career: "Web Developer",
         },
         { imageUrl: "img/team/12 2.jpg", name: "Paul", career: "Art Director" },
+      ],
+    },
+
+    blog: {
+      h2: {
+        span1: "blog",
+      },
+      button: "View all",
+      blogs: [
+        {
+          imageUrl: "img/works/2/1-s (4).jpg",
+          title: "Built a Minimal Portfolio Website in Just 7 Days",
+        },
+        {
+          imageUrl: "img/works/2/1-s (4).jpg",
+          title: "Built a Minimal Portfolio Website in Just 7 Days",
+        },
+        {
+          imageUrl: "img/works/2/1-s (4).jpg",
+          title: "Built a Minimal Portfolio Website in Just 7 Days",
+        },
+        {
+          imageUrl: "img/works/2/1-s (4).jpg",
+          title: "Built a Minimal Portfolio Website in Just 7 Days",
+        },
       ],
     },
 
@@ -377,8 +402,13 @@ export const texts = {
     },
   },
   contactPage: {
-    h6:"CONTACT US",
     h1: {
+     heading1: "we are a ",
+     span: "team",
+     heading2: "that blends knowledge, skill, and up-to-date expertise to design, develop"
+    },
+    h6:"CONTACT US",
+    h2: {
       heading1: "GET IN TOUCH WITH OUR TEAM FOR",
       span:"INQUIRIES",
       heading2: "OR SUPPORT."
