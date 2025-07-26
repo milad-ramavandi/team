@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
+import { VIDEO_URL } from "../../../../data/constants";
 import Modal from "../modal";
-import { VIDEO_URL } from "../../constants/env";
+
 
 interface Props {
   youtubeId: string;
@@ -24,20 +25,19 @@ const BlogModalWrapper = ({ youtubeId }: Props) => {
     <>
       <div
         onClick={handleOpenModal}
-        className="absolute inset-0 cursor-pointer"
+       className="position-absolute top-0 bottom-0 start-0 end-0 cursor-pointer"
       ></div>
 
       {isModalOpen && youtubeId && (
         <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
-          <div className="flex w-full aspect-video">
+          <div className="embed-responsive embed-responsive-16by9 w-100">
             <iframe
-              width="100%"
-              height="100%"
+              className="embed-responsive-item rounded"
               src={VIDEO_URL.replace("youtubeId", youtubeId)}
               title="YouTube Video Player"
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-              className="rounded-lg"
+              // className="rounded-lg"
               loading="lazy"
             ></iframe>
           </div>

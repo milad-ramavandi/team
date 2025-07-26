@@ -1,4 +1,3 @@
-
 import { IBlog, IBlogsListResponse } from "../../../../types/blog";
 import BlogCard from "../blog-card";
 import EmptyBox from "../empty-box";

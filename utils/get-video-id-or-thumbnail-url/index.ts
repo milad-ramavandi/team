@@ -1,4 +1,5 @@
-const VIDEO_THUMBNAIL_URL = "https://img.youtube.com/vi/videoId/maxresdefault.jpg";
+import { VIDEO_THUMBNAIL_URL } from "../../data/constants";
+
 
 const getVideoIdOrThumbnailUrl = (link: string, isId:boolean) => {
   const urlObj = new URL(link && link);

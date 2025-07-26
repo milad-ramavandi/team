@@ -17,7 +17,7 @@ export const getBlogsList = async (params?: IBlogsParams) => {
     const url = `${endpoints.blogs.blogsList}${queryString ? `?${queryString}` : ""}`;
     const res = await api(url);
     console.log(res);
-    if (!res.ok) {
+    if (!res?.ok) {
       throw new Error("Failed to fetch blogs!");
     }
     return await res.json();
@@ -32,7 +32,7 @@ export const getBlog = async (params?: IBlogParams) => {
     const res = await api(
       `${endpoints.blogs.singleBlog}${params?.slug ? `?slug=${params?.slug}` : ""}`
     );
-    if (!res.ok) {
+    if (!res?.ok) {
       throw new Error("Failed to fetch blog!");
     }
     return await res.json();
@@ -45,7 +45,7 @@ export const getBlog = async (params?: IBlogParams) => {
 export const getCategoriesList = async () => {
   try {
     const res = await api(`${endpoints.blogs.catogoriesList}`);
-    if (!res.ok) {
+    if (!res?.ok) {
       throw new Error("Failed to fetch categories!");
     }
     return await res.json();

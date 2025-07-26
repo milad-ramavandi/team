@@ -7,6 +7,7 @@ import CalenderIcon from "../../svg/calender";
 import DateFormatRelative from "../../../../utils/date-format-relative";
 import getVideoIdOrThumbnailUrl from "../../../../utils/get-video-id-or-thumbnail-url";
 import PlayCircle from "../../svg/play-circle";
+import BlogModalWrapper from "../blog-modal-wrapper";
 // import BlogModalWrapper from "../blog-modal-wrapper";
 
 type Props = {
@@ -25,7 +26,7 @@ const BlogCard = ({ blog }: Props) => {
     : "";
 
   return (
-    <div className="position-relative w-100 h-100 p-3 rounded bg-opacity-25 blog-card overflow-hidden">
+    <div className="position-relative w-100 h-100 p-3 rounded blog-card overflow-hidden">
       {/* <GlowingEffect
         spread={50}
         borderWidth={2}
@@ -70,9 +71,9 @@ const BlogCard = ({ blog }: Props) => {
                 alt={blog.title}
                 className="w-100 h-100 object-fit-cover transition-transform img"
               />
-              {/* {blog?.acf?.videourl && (
+              {blog?.acf?.videourl && (
                 <BlogModalWrapper youtubeId={youtubeId as string} />
-              )} */}
+              )}
             </div>
           )
         )}
