@@ -14,7 +14,7 @@ const Reviews = ({
   isTitle?:boolean;
 }) => {
   return (
-    <div className="pb-4 mil-mb130 overflow-hidden">
+    <div className="pb-4 mil-mb130 overflow-hidden fade-edge">
       <div className="container">
         <div className="row mil-jcc">
           <div className="col-lg-12 mil-tac">
