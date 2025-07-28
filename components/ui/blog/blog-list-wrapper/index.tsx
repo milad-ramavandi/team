@@ -26,8 +26,8 @@ const BlogsListWrapper = async ({
     cache: "no-store",
     next: { revalidate: 0 }
   });
-  await new Promise((resolve) => setTimeout(resolve, 500)); // test to show skeleton
   const blogsListResponse = await res.json();
+  await new Promise((resolve) => setTimeout(resolve, 100)); // test to show skeleton
   return <BlogsList blogsList={blogsListResponse} />;
 };
 

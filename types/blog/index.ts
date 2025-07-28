@@ -37,6 +37,14 @@ interface IBlogPagination {
 }
 
 export interface IBlogsListResponse {
-  posts:IBlog[];
+  posts:IBlogPage[];
   pagination:IBlogPagination
+}
+
+export interface ICategory {
+  id?:number;
+  count?:number;
+  name?:string;
+  link?:string;
+  slug?:string
 }

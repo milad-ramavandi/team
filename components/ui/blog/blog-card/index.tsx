@@ -26,7 +26,7 @@ const BlogCard = ({ blog }: Props) => {
     : "";
 
   return (
-    <div className="position-relative w-100 h-100 p-3 rounded blog-card overflow-hidden">
+    <div className="position-relative p-3 rounded blog-card overflow-hidden">
       {/* <GlowingEffect
         spread={50}
         borderWidth={2}
@@ -46,7 +46,6 @@ const BlogCard = ({ blog }: Props) => {
           <Link
             href={`/blog/${blog.slug}`}
             className="d-block overflow-hidden rounded position-relative link"
-            
           >
             <Image
               fill
@@ -59,10 +58,7 @@ const BlogCard = ({ blog }: Props) => {
           </Link>
         ) : (
           videoThumbnailUrl && (
-            <div
-              className="overflow-hidden rounded position-relative link"
-              
-            >
+            <div className="overflow-hidden rounded position-relative link">
               <div className="position-absolute top-0 start-0 m-2 z-2">
                 <PlayCircle />
               </div>
@@ -89,33 +85,37 @@ const BlogCard = ({ blog }: Props) => {
           {blog?.first_image && !blog?.acf?.videourl ? (
             <Link
               href={`/blogs/${blog.slug}`}
-              className="text-white fw-medium d-block"
+              className="text-white fw-medium multi-line-truncate"
               style={{
                 fontSize: "16px",
-                lineClamp: 2,
-                height: "45px",
-                overflow: "hidden",
+                height:"45px"
               }}
             >
               {blog?.title}
             </Link>
           ) : (
             <p
-              className="text-white fw-medium mb-2"
+              className="text-white fw-medium mb-2 multi-line-truncate"
               style={{
                 fontSize: "16px",
-                lineClamp: 2,
                 height: "45px",
-                overflow: "hidden",
               }}
             >
               {blog?.title}
             </p>
           )}
 
-          <div className="d-flex align-items-center text-warning mt-2" style={{ gap: "4px" }}>
+          <div
+            className="d-flex align-items-center text-warning mt-2"
+            style={{ gap: "4px" }}
+          >
             <CalenderIcon />
-            <p className="mb-0 mil-a1" style={{ fontSize: "10px", paddingTop: "3px" }}>{blog?.date}</p>
+            <p
+              className="mb-0 mil-a1"
+              style={{ fontSize: "10px", paddingTop: "3px" }}
+            >
+              {blog?.date}
+            </p>
           </div>
         </div>
       </div>

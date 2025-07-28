@@ -45,7 +45,7 @@ const CallAction = () => {
               //   playsInline
               //   preload="auto"
             >
-              <source src="img/pages/3.mp4" />
+              <source src="/img/pages/3.mp4" />
             </video>
             <div className="mil-overlay"></div>
           </div>

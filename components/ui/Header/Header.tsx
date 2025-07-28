@@ -23,7 +23,7 @@ export default function Header() {
               <Link href="/" className="mil-logo mil-scroll-to" data-no-swup>
                 {/* <i className="far fa-cube"></i>
                 <span>{texts.header.name}</span> */}
-                <img src={"img/logo.png"} alt="logo" width={68} height={81} />
+                <img src={"/img/logo.png"} alt="logo" width={68} height={81} />
               </Link>
             </div>
 
@@ -52,14 +52,14 @@ export default function Header() {
                 <li>
                   <Link
                     href="/blog"
-                    className={`${pathname === "/blog" ? "mil-a1" : "mil-m1"}`}
+                    className={`${pathname.startsWith("/blog") ? "mil-a1" : "mil-m1"}`}
                     data-no-swup
                   >
                     {texts.header.items[2]}
                   </Link>
                 </li>
                 <li>
-                  <Link href="#contact" className="mil-scroll-to" data-no-swup>
+                  <Link href="/us" className="mil-scroll-to" data-no-swup>
                     {texts.header.items[3]}
                   </Link>
                 </li>

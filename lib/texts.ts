@@ -129,19 +129,19 @@ export const texts = {
 
     iconBox: [
       {
-        imageUrl: "img/home-1/iconbox/2.svg",
+        imageUrl: "/img/home-1/iconbox/2.svg",
         title: "Expert Team",
         description:
           "Our team consists of experienced professionals who work with passion, delivering high-quality projects.",
       },
       {
-        imageUrl: "img/home-1/iconbox/1.svg",
+        imageUrl: "/img/home-1/iconbox/1.svg",
         title: "Innovative Solutions",
         description:
           "We offer unique and creative approaches that help your business stand out in the market and achieve success.",
       },
       {
-        imageUrl: "img/home-1/iconbox/3.svg",
+        imageUrl: "/img/home-1/iconbox/3.svg",
         title: "Client Focus",
         description:
           " We prioritize client needs, deeply understanding them to create tailored solutions for maximum results.",
@@ -177,21 +177,21 @@ export const texts = {
       button: "View all members",
       members: [
         {
-          imageUrl: "img/team/9 2.jpg",
+          imageUrl: "/img/team/9 2.jpg",
           name: "James",
           career: "UI/UX Designer",
         },
         {
-          imageUrl: "img/team/10 2.jpg",
+          imageUrl: "/img/team/10 2.jpg",
           name: "Edward",
           career: "QA engineer",
         },
         {
-          imageUrl: "img/team/11 2.jpg",
+          imageUrl: "/img/team/11 2.jpg",
           name: "Monica",
           career: "Web Developer",
         },
-        { imageUrl: "img/team/12 2.jpg", name: "Paul", career: "Art Director" },
+        { imageUrl: "/img/team/12 2.jpg", name: "Paul", career: "Art Director" },
       ],
     },
 
@@ -202,19 +202,19 @@ export const texts = {
       button: "View all",
       blogs: [
         {
-          imageUrl: "img/works/2/1-s (4).jpg",
+          imageUrl: "/img/works/2/1-s (4).jpg",
           title: "Built a Minimal Portfolio Website in Just 7 Days",
         },
         {
-          imageUrl: "img/works/2/1-s (4).jpg",
+          imageUrl: "/img/works/2/1-s (4).jpg",
           title: "Built a Minimal Portfolio Website in Just 7 Days",
         },
         {
-          imageUrl: "img/works/2/1-s (4).jpg",
+          imageUrl: "/img/works/2/1-s (4).jpg",
           title: "Built a Minimal Portfolio Website in Just 7 Days",
         },
         {
-          imageUrl: "img/works/2/1-s (4).jpg",
+          imageUrl: "/img/works/2/1-s (4).jpg",
           title: "Built a Minimal Portfolio Website in Just 7 Days",
         },
       ],
@@ -231,28 +231,28 @@ export const texts = {
 
       reviewBlog: [
         {
-          imageUrl: "img/reviews/2.jpg",
+          imageUrl: "/img/reviews/2.jpg",
           author: "Paul Trueman",
           title: "Envato market",
           description:
             "I had the pleasure of working with this creative agency, and I must say, they truly impressed me. They consistently think outside the box, resulting in impressive and impactful work. I highly recommend this agency for their consistent delivery of exceptional creative solutions.",
         },
         {
-          imageUrl: "img/reviews/1.jpg",
+          imageUrl: "/img/reviews/1.jpg",
           author: "Emma Newman",
           title: "Envato market",
           description:
             "This creative agency stands out with their exceptional talent and expertise. Their ability to think outside the box and bring unique ideas to life is truly impressive. With meticulous attention to detail, they consistently deliver visually stunning and impactful work.",
         },
         {
-          imageUrl: "img/reviews/3.jpg",
+          imageUrl: "/img/reviews/3.jpg",
           author: "Viktoria Freeman",
           title: "Envato market",
           description:
             " This creative agency stands out with their exceptional talent and expertise. Their ability to think outside the box and bring unique ideas to life is truly impressive. With meticulous attention to detail, they consistently deliver visually stunning and impactful work.",
         },
         {
-          imageUrl: "img/reviews/4.jpg",
+          imageUrl: "/img/reviews/4.jpg",
           author: "Oscar Oldman",
           title: "Envato market",
           description:
@@ -326,22 +326,22 @@ export const texts = {
       button: "View all members",
       members: [
         {
-          imageUrl: "img/team/9 2.jpg",
+          imageUrl: "/img/team/9 2.jpg",
           name: "James",
           career: "UI/UX Designer",
         },
         {
-          imageUrl: "img/team/10 2.jpg",
+          imageUrl: "/img/team/10 2.jpg",
           name: "Edward",
           career: "QA engineer",
         },
         {
-          imageUrl: "img/team/11 2.jpg",
+          imageUrl: "/img/team/11 2.jpg",
           name: "Monica",
           career: "Web Developer",
         },
         {
-          imageUrl: "img/team/12 2.jpg",
+          imageUrl: "/img/team/12 2.jpg",
           name: "Paul",
           career: "Art Director",
         },
@@ -358,42 +358,42 @@ export const texts = {
 
       reviewBlog: [
         {
-          imageUrl: "img/reviews/2.jpg",
+          imageUrl: "/img/reviews/2.jpg",
           author: "Paul Trueman",
           title: "Envato market",
           description:
             "I had the pleasure of working with this creative agency, and I must say, they truly impressed me. They consistently think outside the box, resulting in impressive and impactful work. I highly recommend this agency for their consistent delivery of exceptional creative solutions.",
         },
         {
-          imageUrl: "img/reviews/2.jpg",
+          imageUrl: "/img/reviews/2.jpg",
           author: "Seamless Integration",
           title: "Envato market",
           description:
             "We build software that fits. From APIs to cloud systems, we ensure smooth, secure, and scalable integration with your tools.",
         },
         {
-          imageUrl: "img/reviews/1.jpg",
+          imageUrl: "/img/reviews/1.jpg",
           author: "Emma Newman",
           title: "Envato market",
           description:
             "This creative agency stands out with their exceptional talent and expertise. Their ability to think outside the box and bring unique ideas to life is truly impressive. With meticulous attention to detail, they consistently deliver visually stunning and impactful work.",
         },
         {
-          imageUrl: "img/reviews/1.jpg",
+          imageUrl: "/img/reviews/1.jpg",
           author: "Custom-Built for Impact",
           title: "Envato market",
           description:
             "No templates, no shortcuts. We design and develop custom software that fits your exact needs — from concept to launch. Every line of code is written to solve real problems and deliver measurable results.",
         },
         {
-          imageUrl: "img/reviews/3.jpg",
+          imageUrl: "/img/reviews/3.jpg",
           author: "Viktoria Freeman",
           title: "Envato market",
           description:
             " This creative agency stands out with their exceptional talent and expertise. Their ability to think outside the box and bring unique ideas to life is truly impressive. With meticulous attention to detail, they consistently deliver visually stunning and impactful work.",
         },
         {
-          imageUrl: "img/reviews/4.jpg",
+          imageUrl: "/img/reviews/4.jpg",
           author: "Oscar Oldman",
           title: "Envato market",
           description:

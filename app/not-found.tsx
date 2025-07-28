@@ -9,7 +9,7 @@ export default function NotFoundPage() {
             <div id="scene" className="mil-hero-scene">
               <div className="mil-anim-frame" data-depth="0.25">
                 <img
-                  src="img/shapes/6.png"
+                  src="/img/shapes/6.png"
                   alt="shapes"
                   className="mil-hero-animation"
                   data-depth="0.25"

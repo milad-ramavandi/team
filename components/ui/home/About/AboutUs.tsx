@@ -22,7 +22,7 @@ const AboutUs = () => {
             </p>
             <div className="mil-team-quote">
               <div className="mil-portrait">
-                <img src="img/team/ceo.jpg" alt="SEO portrait" />
+                <img src="/img/team/ceo.jpg" alt="SEO portrait" />
               </div>
               <p className="mil-text-md mil-m1">
                 <span className="mil-bold">{texts.homePage.aboutUS.p3.span1}</span>
@@ -36,7 +36,7 @@ const AboutUs = () => {
             <div className="mil-about-img-frame">
               <div className="mil-about-img">
                 <img
-                  src="img/home-5/2.jpg"
+                  src="/img/home-5/2.jpg"
                   alt="About"
                   // className="mil-scale-img"
                   data-value-1="1.25"

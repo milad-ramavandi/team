@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="mil-hero-5">
       <img
-        src="img/home-5/1.jpg"
+        src="/img/home-5/1.jpg"
         alt="hero image"
         className="mil-hero-image"
         data-value-1=".6"

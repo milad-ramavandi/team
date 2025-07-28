@@ -28,7 +28,7 @@ const Portfolio = () => {
               <div className="mil-cover mil-port">
                 <div className="mil-hover-frame">
                   <img
-                    src="img/works/1/1-s 2.jpg"
+                    src="/img/works/1/1-s 2.jpg"
                     alt="cover"
                     // className="mil-scale-img"
                     data-value-1="1.15"
@@ -56,7 +56,7 @@ const Portfolio = () => {
               <div className="mil-cover mil-square">
                 <div className="mil-hover-frame">
                   <img
-                    src="img/works/2/1-s (4).jpg"
+                    src="/img/works/2/1-s (4).jpg"
                     alt="cover"
                     // className="mil-scale-img"
                     data-value-1="1.15"
@@ -84,7 +84,7 @@ const Portfolio = () => {
               <div className="mil-cover mil-land">
                 <div className="mil-hover-frame">
                   <img
-                    src="img/works/3/1-s (5).jpg"
+                    src="/img/works/3/1-s (5).jpg"
                     alt="cover"
                     // className="mil-scale-img"
                     data-value-1="1.15"
@@ -114,7 +114,7 @@ const Portfolio = () => {
               <div className="mil-cover mil-land">
                 <div className="mil-hover-frame">
                   <img
-                    src="img/works/4/1-s (1).jpg"
+                    src="/img/works/4/1-s (1).jpg"
                     alt="cover"
                     // className="mil-scale-img"
                     data-value-1="1.15"
@@ -142,7 +142,7 @@ const Portfolio = () => {
               <div className="mil-cover mil-port">
                 <div className="mil-hover-frame">
                   <img
-                    src="img/works/5/1-s (2).jpg"
+                    src="/img/works/5/1-s (2).jpg"
                     alt="cover"
                     // className="mil-scale-img"
                     data-value-1="1.15"
@@ -170,7 +170,7 @@ const Portfolio = () => {
               <div className="mil-cover mil-square">
                 <div className="mil-hover-frame">
                   <img
-                    src="img/works/6/1-s (3).jpg"
+                    src="/img/works/6/1-s (3).jpg"
                     alt="cover"
                     // className="mil-scale-img"
                     data-value-1="1.15"

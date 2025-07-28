@@ -4,9 +4,13 @@ import React from "react";
 const ChevronRightIcon = ({
   isChevronRight,
   className,
+  color,
+  isCategory
 }: {
   isChevronRight: boolean;
   className?: string;
+  color?:string;
+  isCategory?:boolean
 }) => {
   return (
     <svg
@@ -19,11 +23,12 @@ const ChevronRightIcon = ({
       style={{
         width: "1.25rem",
         height: "1.25rem",
-        transform: isChevronRight ? "rotate(0deg) translateY(-50%)" : "rotate(180deg) translateY(50%)",
+        transform: isChevronRight ? `${!isCategory && "rotate(0deg) translateY(-50%)"}` : "rotate(180deg) translateY(50%)",
         transition: "transform 0.2s ease-in-out",
         left: `${!isChevronRight && "0"}`,
         right: `${isChevronRight && "0"}`,
-        top:"50%"
+        top:"50%",
+        color: color && `${color}`
       }}
       // style={{ left: "0", top: "50%", transform: "translateY(-50%)" }}
     >
