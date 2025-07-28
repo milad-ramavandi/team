@@ -1,7 +1,7 @@
 "use client";
 
 import React, { ReactNode, useEffect } from "react";
-import XMarkIcon from "../x-mark";
+import XMarkIcon from "../../svg/x-mark";
 
 interface ModalProps {
   isOpen: boolean;

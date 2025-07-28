@@ -16,9 +16,9 @@ const CallAction = () => {
             </span>{" "}
             <br />
             {texts.homePage.callaction.h2.span3}
-            <span className="mil-a1">{texts.homePage.callaction.h2.span4}</span>
+            {/* <span className="mil-a1">{texts.homePage.callaction.h2.span4}</span> */}
             <br />
-            {texts.homePage.callaction.h2.span5}
+            {texts.homePage.callaction.h2.span4}
           </h2>
           <p className="mil-text-md mil-deco-text mil-shortened">
             {texts.homePage.callaction.p1.span1}
@@ -28,13 +28,13 @@ const CallAction = () => {
         </div>
         <div className="mil-image-box">
           <div className="mil-image-frame">
-            {/* <img
-              src="img/pages/1.jpg"
+            <img
+              src="/img/home-5/2.jpg"
               alt="img"
               className="mil-scale-img"
               data-value-1="1.20"
               data-value-2="1"
-            /> */}
+            />
             <video
               // className="mil-scale-img"
               data-value-1="1"
@@ -47,13 +47,13 @@ const CallAction = () => {
             >
               <source src="/img/pages/3.mp4" />
             </video>
-            <div className="mil-overlay"></div>
+            {/* <div className="mil-overlay"></div> */}
           </div>
         </div>
       </div>
       <div className="row mil-aic mil-jcb mil-no-g">
         <div className="col-lg-4 mil-992-gone">
-          <p className="mil-text-sm">
+          {/* <p className="mil-text-sm">
             {texts.homePage.callaction.p2.span1}
             <Link
               // href="contact-stl.html"
@@ -63,7 +63,7 @@ const CallAction = () => {
               {texts.homePage.callaction.p2.span2}
             </Link>
             {texts.homePage.callaction.p2.span3}
-          </p>
+          </p> */}
         </div>
         <div className="col-lg-6 p-0">
           <div className="mil-button-pad mil-a2">

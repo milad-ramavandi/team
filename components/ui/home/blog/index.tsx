@@ -20,7 +20,7 @@ const Blog = () => {
           </div>
           <div className="col-lg-6">
             <p className="mil-stylized mil-m1 mil-tar mil-768-tal mil-mb60">
-              <Link href="#home" className="mil-arrow-link mil-c-gone">
+              <Link href="/blog" className="mil-arrow-link mil-c-gone">
                 {texts?.homePage?.blog?.button}
               </Link>
             </p>

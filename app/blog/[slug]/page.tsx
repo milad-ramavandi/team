@@ -1,8 +1,5 @@
 import BlogItemContent from "../../../components/ui/blog/blog-item-content";
-
-interface IBlogPageProps {
-  params: Promise<{ slug: string }>;
-}
+import { IBlogPageProps } from "../../../types/blog";
 
 const categoriesListPromise = async () => {
   const res = await fetch(
@@ -35,7 +32,7 @@ const BlogItemPage = async ({ params }: IBlogPageProps) => {
     categoriesListPromise(),
   ]);
   return (
-    <>
+    <main>
       <BlogItemContent
         date={blog?.[0]?.date}
         htmlContent={blog?.[0]?.content?.rendered}
@@ -44,7 +41,7 @@ const BlogItemPage = async ({ params }: IBlogPageProps) => {
         tags={blog?.[0]?.tags}
         popularBlogs={popularBlogs}
       />
-    </>
+    </main>
   );
 };
 

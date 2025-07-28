@@ -11,7 +11,7 @@ const Breadcrumb = () => {
         <Link href="/">Home</Link>
       </li>
       <li>
-        <Link href="#.">{pathname.slice(1)?.replace("-", " ")}</Link>
+        <Link href="#.">{pathname.split("/")[1]?.replace("-", " ")}</Link>
       </li>
     </ul>
   );

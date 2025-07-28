@@ -1,7 +1,7 @@
 import Link from "next/link";
 import BlogCard from "../blog-card";
 import { tagsList } from "../../../../data/blog/tags";
-import TagIcon from "../tag";
+import TagIcon from "../../svg/tag";
 import DateFormatRelative from "../../../../utils/date-format-relative";
 import { IBlogsListResponse, ICategory } from "../../../../types/blog";
 import CategoriesList from "../categories-list";

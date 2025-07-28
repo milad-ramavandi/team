@@ -55,7 +55,7 @@ export const texts = {
   footer: {
     h6: "Let’s TALK",
     button: "here",
-    items: ["Home", "About", "Portfolio", "Blog", "US"],
+    items: ["Home", "Services", "About", "Portfolio", "Blog", "US"],
     p: "©2024. All rights reserved.",
   },
 
@@ -191,7 +191,11 @@ export const texts = {
           name: "Monica",
           career: "Web Developer",
         },
-        { imageUrl: "/img/team/12 2.jpg", name: "Paul", career: "Art Director" },
+        {
+          imageUrl: "/img/team/12 2.jpg",
+          name: "Paul",
+          career: "Art Director",
+        },
       ],
     },
 
@@ -265,19 +269,20 @@ export const texts = {
       title: "Contact",
 
       h2: {
-        span1: "Let’s ",
-        span2: "make ",
-        span3: "an ",
-        span4: "impact ",
-        span5: "together.",
+        span1: "SEE OUR ",
+        span2: "JOURNEY ",
+        span3: "FROM IDEA ",
+        span4: "TO PRODUCT ",
       },
 
       p1: {
-        span1: `Welcome to `,
-        span2: "PIXY",
-        span3: ` where your ideas
-              come to life. We specialize in crafting unique brands, captivating
-              advertising campaigns, and effective digital strategies.`,
+        span1: `From the spark of an `,
+        span2: "idea",
+        span3: ` to a fully realized product, our process is 
+        built on creativity, strategy, and precision. We collaborate closely
+         with clients, combining insight-driven thinking and innovative
+          design to bring concepts to life. Every step is guided by purpose
+           and crafted to deliver exceptional results that inspire and engage.`,
       },
 
       p2: {
@@ -286,7 +291,7 @@ export const texts = {
         span3: "whenever it is convenient for you",
       },
 
-      button: "Get in touch",
+      button: "SEE MORE",
     },
   },
 
@@ -434,5 +439,73 @@ export const texts = {
       span5: "to",
       span6: "web3 & crypto",
     },
+  },
+  servicesPage: {
+    h1: {
+      span1: "Our",
+      span2: "Services",
+    },
+    services: [
+      {
+        title: "UI/UX Design",
+        slug: "ui-ux-design",
+        description:
+          "We create intuitive and aesthetically pleasing interfaces to ensure an exceptional user experience.",
+        list: [
+          "User Research",
+          "Wireframing and Prototyping",
+          "Visual Design",
+          "Interaction Design",
+        ],
+      },
+      {
+        title: "Brand Strategy",
+        slug: "brand-strategy",
+        description:
+          "We build powerful brand strategies that distinguish your brand and foster strong connections with your audience.",
+        list: [
+          "Brand Positioning",
+          "Brand Identity Development",
+          "Brand Experience",
+          "Brand Communication",
+        ],
+      },
+      {
+        title: "Marketing and SMM",
+        slug: "marketing-and-smm",
+        description:
+          " We drive engagement and growth through strategic marketing and social media management.",
+        list: [
+          "Social Media Strategy",
+          "Content Creation",
+          "Community Management",
+          "Paid Advertising",
+        ],
+      },
+      {
+        title: "Creative Direction",
+        slug: "creative-direction",
+        description:
+          "We bring your vision to life with innovative concepts and outstanding creative execution.",
+        list: [
+          "Concept Development",
+          "Art Direction",
+          "Campaign Development",
+          "Creative Consultation",
+        ],
+      },
+      {
+        title: "Web Development",
+        slug: "web-development",
+        description:
+          "We develop robust and user-friendly websites meticulously tailored precisely to your needs.",
+        list: [
+          "Front-End Development",
+          "Back-End Development",
+          "E-Commerce Development",
+          "Maintenance and Support",
+        ],
+      },
+    ],
   },
 };

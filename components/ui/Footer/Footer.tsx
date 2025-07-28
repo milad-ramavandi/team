@@ -19,28 +19,33 @@ const Footer = () => {
             <div className="mil-footer-menu-frame mil-mb20">
               <ul className="mil-footer-menu">
                 <li>
-                  <Link href="#." className="mil-c-gone">
+                  <Link href="/" className="mil-c-gone">
                     {texts.footer.items[0]}
                   </Link>
                 </li>
                 <li>
-                  <Link href="#." className="mil-c-gone">
+                  <Link href="/services" className="mil-c-gone">
                     {texts.footer.items[1]}
                   </Link>
                 </li>
                 <li>
-                  <Link href="#." className="mil-c-gone">
+                  <Link href="/about" className="mil-c-gone">
                     {texts.footer.items[2]}
                   </Link>
                 </li>
                 <li>
-                  <Link href="#." className="mil-c-gone">
+                  <Link href="/portfolio" className="mil-c-gone">
                     {texts.footer.items[3]}
                   </Link>
                 </li>
                 <li>
-                  <Link href="#." className="mil-c-gone">
+                  <Link href="/blog" className="mil-c-gone">
                     {texts.footer.items[4]}
+                  </Link>
+                </li>
+                 <li>
+                  <Link href="/us" className="mil-c-gone">
+                    {texts.footer.items[5]}
                   </Link>
                 </li>
               </ul>

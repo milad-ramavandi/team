@@ -1,4 +1,5 @@
-import { IIconBox } from "../../../../types/icon-boxes";
+import { IIconBox } from "../../../types/icon-boxes";
+
 
 
 const IconBox = ({ imageUrl, title, description }: IIconBox) => {

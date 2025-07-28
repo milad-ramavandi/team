@@ -1,6 +1,8 @@
-import { IIconBox } from "../../../../types/icon-boxes";
+
+import { texts } from "../../../lib/texts";
+import { IIconBox } from "../../../types/icon-boxes";
 import IconBox from "./IconBox";
-import { texts } from "../../../../lib/texts";
+
 
 const IconBoxesList: IIconBox[] = texts.homePage.iconBox;
 

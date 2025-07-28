@@ -48,3 +48,7 @@ export interface ICategory {
   link?:string;
   slug?:string
 }
+
+export interface IBlogPageProps {
+  params: Promise<{ slug: string }>;
+}
