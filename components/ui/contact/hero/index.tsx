@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="mil-obj-1"></div>
         <div className="mil-obj-2"></div>
       </div>
-      <h1 className="mil-heading mil-mb40 w-100 text-center">
+      <h1 className="mil-display3 w-100 text-center">
         {texts?.contactPage?.h1?.heading1}{" "}
         <span className="mil-a1">{texts?.contactPage?.h1?.span}</span>{" "}
         {texts?.contactPage?.h1?.heading2}{" "}

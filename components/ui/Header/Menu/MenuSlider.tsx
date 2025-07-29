@@ -1,36 +1,31 @@
 "use client";
+
 import { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import type { Swiper as SwiperType } from "swiper";
 import MenuSliderCard from "./MenuSliderCard";
 import { blogsList } from "../../../../data/blogs-list";
 
-
-
-
 const MenuSlider = () => {
-  const swiperRef = useRef<any>(null);
+  const swiperRef = useRef<{ swiper: SwiperType } | null>(null);
 
   useEffect(() => {
     const nextBtn = document.querySelector(".mil-sb-next") as HTMLElement;
     const prevBtn = document.querySelector(".mil-sb-prev") as HTMLElement;
+    const swiperInstance = swiperRef.current?.swiper;
 
-    if (nextBtn && prevBtn && swiperRef.current) {
-      nextBtn.addEventListener("click", () =>
-        swiperRef.current.swiper.slideNext()
-      );
-      prevBtn.addEventListener("click", () =>
-        swiperRef.current.swiper.slidePrev()
-      );
+    const handleNext = () => swiperInstance?.slideNext();
+    const handlePrev = () => swiperInstance?.slidePrev();
+
+    if (nextBtn && prevBtn && swiperInstance) {
+      nextBtn.addEventListener("click", handleNext);
+      prevBtn.addEventListener("click", handlePrev);
     }
 
     return () => {
-      nextBtn?.removeEventListener("click", () =>
-        swiperRef.current?.swiper.slideNext()
-      );
-      prevBtn?.removeEventListener("click", () =>
-        swiperRef.current?.swiper.slidePrev()
-      );
+      nextBtn?.removeEventListener("click", handleNext);
+      prevBtn?.removeEventListener("click", handlePrev);
     };
   }, []);
 
@@ -46,13 +41,11 @@ const MenuSlider = () => {
           1024: { slidesPerView: 3 },
         }}
       >
-        {blogsList.map((item, index) => {
-          return (
-            <SwiperSlide key={index}>
-              <MenuSliderCard {...item} />
-            </SwiperSlide>
-          );
-        })}
+        {blogsList.map((item, index) => (
+          <SwiperSlide key={index}>
+            <MenuSliderCard {...item} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

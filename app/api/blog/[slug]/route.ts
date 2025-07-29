@@ -1,7 +1,11 @@
+import { NextRequest } from "next/server";
+
 import api from "../..";
 import endpoints from "../../config/endpoints";
 
-export async function GET(_: Request, context: { params: { slug: string } }) {
+type Params = { params: { slug: string } };
+
+export async function GET(_: NextRequest, context: Params) {
   const slug = context.params.slug;
   const url = `${endpoints.blogs.singleBlog}${slug ? `?slug=${slug}` : ""}`;
 
@@ -14,6 +18,7 @@ export async function GET(_: Request, context: { params: { slug: string } }) {
     const data = await res.json();
     return Response.json(data);
   } catch (error) {
+    console.error("Blog fetch error:", error);
     return new Response("Something went wrong", { status: 500 });
   }
 }

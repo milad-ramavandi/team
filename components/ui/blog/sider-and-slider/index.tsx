@@ -3,7 +3,7 @@ import BlogCard from "../blog-card";
 import Slider from "../slider";
 const popularBlogsPromise = async () => {
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}apis/blog?category_id=5&paged=1`
+    `${process.env.NEXT_PUBLIC_API_URL}api/blog?category_id=5&paged=1`
   );
   const data = await res.json();
   return data;
@@ -11,7 +11,7 @@ const popularBlogsPromise = async () => {
 
 const mainBlogsPromise = async () => {
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}apis/blog?category_id=2&paged=1`
+    `${process.env.NEXT_PUBLIC_API_URL}api/blog?category_id=2&paged=1`
   );
   const data = await res.json();
   return data;

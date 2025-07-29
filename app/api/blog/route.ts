@@ -26,6 +26,7 @@ export async function GET(request: NextRequest) {
     const data = await res.json();
     return Response.json(data);
   } catch (error) {
+    console.error("Blogs fetch error:", error);
     return new Response("Something went wrong", { status: 500 });
   }
 }

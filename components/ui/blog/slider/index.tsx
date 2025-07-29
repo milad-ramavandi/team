@@ -66,9 +66,10 @@ const Slider = ({ slides }: { slides: IBlogPage[] }) => {
         }}
         speed={1000}
         onInit={(swiper) => {
-          // @ts-ignore
+          // @ts-expect-error: Swiper types don't recognize dynamic ref assignment
           swiper.params.navigation.prevEl = prevRef.current;
-          // @ts-ignore
+
+          // @ts-expect-error: Swiper types don't recognize dynamic ref assignment
           swiper.params.navigation.nextEl = nextRef.current;
           swiper.navigation.init();
           swiper.navigation.update();
@@ -106,9 +107,7 @@ const Slider = ({ slides }: { slides: IBlogPage[] }) => {
                   {slide.title}
                 </Link>
                 <div className="d-flex align-items-center gap-1">
-                  <div
-                    className="d-flex align-items-center gap-1"
-                  >
+                  <div className="d-flex align-items-center gap-1">
                     <CalenderIcon />
                     <span
                       className="fw-medium mil-a1"

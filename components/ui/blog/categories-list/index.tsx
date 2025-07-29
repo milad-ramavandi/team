@@ -7,7 +7,7 @@ const CategoriesList = async ({
 }: {
   categoriesList: ICategory[];
 }) => {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}apis/blog?paged=1`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}api/blog?paged=1`);
   const blogListResponse = await res.json();
 
   return (

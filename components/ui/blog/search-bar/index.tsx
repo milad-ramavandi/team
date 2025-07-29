@@ -35,7 +35,7 @@ const SearchBar = ({ searchValue }: Props) => {
       params.delete("search");
     }
     router.push(`${pathname}?${params.toString()}`, { scroll: false });
-  }, [debouncedValue]);
+  }, [debouncedValue, pathname, router]);
 
   return (
     <div

@@ -19,7 +19,7 @@ const BlogsListWrapper = async ({
   if (categoryId) queryParams.append("category_id", categoryId);
   if (page) queryParams.append("paged", page.toString());
   if (search) queryParams.append("search", search);
-  const url = `${process.env.NEXT_PUBLIC_API_URL}apis/blog${
+  const url = `${process.env.NEXT_PUBLIC_API_URL}api/blog${
     queryParams.toString() ? `?${queryParams}` : ""
   }`;
   const res = await fetch(url, {

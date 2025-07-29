@@ -3,14 +3,14 @@ import { IBlogPageProps } from "../../../types/blog";
 
 const categoriesListPromise = async () => {
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}apis/blog/categories`
+    `${process.env.NEXT_PUBLIC_API_URL}api/blog/categories`
   );
   const data = await res.json();
   return data;
 };
 const popularBlogsPromise = async () => {
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}apis/blog?category_id=5&paged=1`
+    `${process.env.NEXT_PUBLIC_API_URL}api/blog?category_id=5&paged=1`
   );
   const data = await res.json();
   return data;
@@ -20,7 +20,7 @@ const BlogItemPage = async ({ params }: IBlogPageProps) => {
   const { slug } = await params;
   const blogPromise = async () => {
     const res = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}apis/blog/${slug}`
+      `${process.env.NEXT_PUBLIC_API_URL}api/blog/${slug}`
     );
     const data = await res.json();
     return data;

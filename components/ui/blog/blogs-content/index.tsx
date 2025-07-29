@@ -5,6 +5,7 @@ import TabBar from "../tab-bar";
 import SearchBar from "../search-bar";
 import Skeleton from "../skeleton";
 import BlogsListWrapper from "../blog-list-wrapper";
+import Breadcrumb from "../../breadcrumb";
 
 const BlogsContent = ({
   page,
@@ -18,9 +19,10 @@ const BlogsContent = ({
   category_id: string;
 }) => {
   return (
-    <div className="d-flex flex-column align-items-center px-3 py-4 text-white blogs-content mil-mt180">
+    <div className="d-flex flex-column align-items-center px-3 text-white blogs-content mil-mt180">
+      <Breadcrumb/>
       <div className="heading-container">
-        <h1 className="mil-mb40 w-100 text-center">
+        <h1 className="mil-display3 mil-mb40 w-100 text-center">
           {texts?.blogPage?.h1?.span1}{" "}
           <span className="mil-a1">{texts?.blogPage?.h1?.span2}</span>
           {texts?.blogPage?.h1?.span3}

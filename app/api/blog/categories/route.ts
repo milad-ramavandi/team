@@ -13,6 +13,7 @@ export async function GET() {
     const data = await res.json();
     return Response.json(data);
   } catch (error) {
+    console.error("Categories blog fetch error:", error);
     return new Response("Something went wrong", { status: 500 });
   }
 }

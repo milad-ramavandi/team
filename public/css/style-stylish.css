@@ -971,6 +971,7 @@ breadcrumbs
 .mil-breadcrumbs li:after {
   content: "/";
   margin: 0 15px;
+  color: rgba(210, 210, 208, 0.6);
 }
 .mil-breadcrumbs li a {
   width: 100%;
@@ -5929,14 +5930,6 @@ footer
   margin-top: 1.75rem;
 }
 
-.blogs-content .heading-container h1 {
-  font-size: 1.5rem;
-  line-height: 1.5;
-  max-width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .blogs-content .top {
   gap: 1.25rem;
   justify-content: center !important;
@@ -6111,11 +6104,6 @@ footer
     width: 35px;
     height: 35px;
   }
-  .blogs-content .heading-container h1 {
-    font-size: 3.75rem !important;
-    line-height: 1 !important;
-    max-width: 717px !important;
-  }
   .blogs-content .skeleton-container {
     grid-template-columns: repeat(3, 1fr) !important;
   }
@@ -6176,11 +6164,6 @@ footer
   }
   .blogs-content .heading-container {
     margin-top: 0;
-  }
-  .blogs-content .heading-container h1 {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-    max-width: 580px;
   }
   .blogs-content .tab-bar {
     justify-content: center;

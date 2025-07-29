@@ -1,8 +1,5 @@
-
-import { IMember } from "../../../../types/team";
 import { texts } from "../../../../lib/texts";
 import Link from "next/link";
-import TeamMember from "../Team/TeamMember";
 import BlogItem from "./blog-item";
 import { IBlog } from "../../../../types/blog";
 

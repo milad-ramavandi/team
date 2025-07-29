@@ -1,4 +1,4 @@
-const api = async (url: string, option?: any) => {
+const api = async (url: string, option?: RequestInit) => {
   try {
     const res = await fetch(`${process.env.NEXT_BLOG_API_URL}${url}`, option);
     if (!res.ok) {
