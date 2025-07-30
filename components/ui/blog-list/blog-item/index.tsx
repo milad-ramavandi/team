@@ -1,4 +1,5 @@
-import { IBlog } from "../../../../../types/blog";
+import { IBlog } from "../../../../types/blog";
+
 
 
 const BlogItem = ({imageUrl, title}: IBlog) => {

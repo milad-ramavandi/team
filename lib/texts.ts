@@ -508,4 +508,113 @@ export const texts = {
       },
     ],
   },
+  usPage: {
+    hero: {
+      heading1: "we are a",
+      heading2:
+        "that turns ideas into smart solutions. we build powerful platforms, transform how businesses",
+      // heading3: "",
+      heading3: ", and bring the future to life today. choose techway because",
+      // heading5: "",
+      // heading6: "because we are worth it!",
+      span1: "tech company",
+      span2: "grow",
+      span3: "we make it happen!",
+      // span4: "possible",
+      // span5: "Pixy",
+    },
+    services: {
+      p: "Our Services",
+      h2: {
+        span1: "We generate",
+        span2: "unique",
+        span3: "ideas",
+      },
+      services_list: [
+        {
+          title: "UI/IX design",
+          slug: "ui-ux-design",
+          description:
+            " Design of intuitive and visually appealing user interfaces for web and mobile applications, focusing on enhancing the user experience and usability.",
+        },
+        {
+          title: "Brand strategy",
+          slug: "brand-strategy",
+          description:
+            "Comprehensive brand development, including logo creation, color scheme selection, and visual style design to ensure a cohesive and memorable brand identity.",
+        },
+        {
+          title: "Marketing and SMM",
+          slug: "marketing-and-smm",
+          description:
+            "Creation of impactful advertising campaigns and marketing materials designed to increase brand visibility, engage target audiences, and drive customer acquisition.",
+        },
+      ],
+      counters_list: [
+        { number: "14", title: "Years Experince" },
+        { number: "45", title: "Unique customers" },
+        { number: "57", title: "Completed projects" },
+      ],
+    },
+    contact_us: {
+      p1: "Contact Us",
+      h2: {
+        span1: "Get in Touch with Our ",
+        span2:"Team"
+      },
+      button: "Contact Us",
+      p2: {
+        span1: "By clicking the contact us button, you agree to our",
+        span2: "personal data processing policy",
+      },
+    },
+  },
+  teamPage: {
+    h1: {
+      span1: "meet our ",
+      span2: "team",
+    },
+    members: [
+      {
+        imageUrl: "/img/team/9 2.jpg",
+        name: "James",
+        career: "UI/UX Designer",
+      },
+      {
+        imageUrl: "/img/team/10 2.jpg",
+        name: "Edward",
+        career: "QA engineer",
+      },
+      {
+        imageUrl: "/img/team/11 2.jpg",
+        name: "Monica",
+        career: "Web Developer",
+      },
+      {
+        imageUrl: "/img/team/12 2.jpg",
+        name: "Paul",
+        career: "Art Director",
+      },
+      {
+        imageUrl: "/img/team/13 2.jpg",
+        name: "Colin",
+        career: "Motion Designer",
+      },
+      {
+        imageUrl: "/img/team/14 2.jpg",
+        name: "James",
+        career: "Ceo Founder",
+      },
+      {
+        imageUrl: "/img/team/15 2.jpg",
+        name: "Erica",
+        career: "Web Developer",
+      },
+      {
+        imageUrl: "/img/team/16 2.jpg",
+        name: "Spunky",
+        career: "Paw Giver",
+      },
+    ],
+  },
 };

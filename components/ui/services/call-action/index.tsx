@@ -1,4 +1,4 @@
-import React from "react";
+import Link from "next/link";
 
 const CallAction = () => {
   return (
@@ -11,12 +11,12 @@ const CallAction = () => {
             inspired
           </h2>
           <div>
-            <a
+            <Link
               href="portfolio-3-stl.html"
               className="mil-btn mil-btn-border mil-m1 mil-c-gone"
             >
               View portfolio
-            </a>
+            </Link>
           </div>
         </div>
         <div className="mil-image-box">

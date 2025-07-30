@@ -1,10 +1,13 @@
 import Link from "next/link";
 import { IMember } from "../../../../types/team";
 
+interface ITeamMember extends IMember {
+  amount_col_lg: number;
+}
 
-const TeamMember = ({imageUrl, name, career}: IMember) => {
+const TeamMember = ({ imageUrl, name, career, amount_col_lg }: ITeamMember) => {
   return (
-    <div className="col-md-6 col-lg-3">
+    <div className={`col-md-6 col-lg-${amount_col_lg}`}>
       <div className="mil-team-card mil-stl mil-mb30 mil-768-mb-15">
         <div className="mil-hover-frame">
           <img

@@ -3903,6 +3903,7 @@ half container
   z-index: 2;
   width: 50%;
   padding-right: 10%;
+  background: linear-gradient(-300deg, #1a1a1a 0%, #0a0a0a 100%);
 }
 /* .mil-half-container .mil-text-box:before {
   content: "";
