@@ -1,4 +1,4 @@
-import { IBlog, IBlogsListResponse } from "../../../../types/blog";
+import { IBlogCard, IBlogsListResponse } from "../../../../types/blog";
 import BlogCard from "../blog-card";
 import EmptyBox from "../empty-box";
 import Pagination from "../pagination";
@@ -8,7 +8,7 @@ const BlogsList = ({ blogsList }: { blogsList: IBlogsListResponse }) => {
   return (
     <>
       <div className="blogs-list post-item">
-        {blogsList?.posts?.map((blog: IBlog) => (
+        {blogsList?.posts?.map((blog: IBlogCard) => (
           <BlogCard key={blog.title} blog={blog} />
         ))}
       </div>

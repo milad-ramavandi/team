@@ -1235,6 +1235,9 @@ spaces
 .mil-mt60 {
   margin-top: 60px;
 }
+.mil-mt130 {
+  margin-top: 130px;
+}
 .mil-mb10 {
   margin-bottom: 10px;
 }
@@ -4478,13 +4481,13 @@ tapes
 }
 
 .mil-tapes-frame {
-  padding-bottom: 27%;
+  padding-bottom: 35%;
   position: relative;
 }
 .mil-tapes-frame .mil-tape-1 {
   position: absolute;
   top: 40%;
-  left: -50%;
+  left: -40%;
   width: 150%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4504,7 +4507,7 @@ tapes
 .mil-tapes-frame .mil-tape-2 {
   position: absolute;
   top: 40%;
-  right: -50%;
+  right: -40%;
   width: 150%;
   background-color: #7c3980;
   height: 70px;

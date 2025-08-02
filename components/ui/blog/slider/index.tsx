@@ -1,21 +1,19 @@
 "use client";
 
 import React, { useRef } from "react";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import Image from "next/image";
-
 import Link from "next/link";
-import { IBlogPage } from "../../../../types/blog";
 import CalenderIcon from "../../svg/calender";
 import DateFormatRelative from "../../../../utils/date-format-relative";
 import ArrowRight from "../../svg/arrow-right";
+import { IBlogCard } from "../../../../types/blog";
 
-const Slider = ({ slides }: { slides: IBlogPage[] }) => {
+const Slider = ({ slides }: { slides: IBlogCard[] }) => {
   const prevRef = useRef<HTMLButtonElement | null>(null);
   const nextRef = useRef<HTMLButtonElement | null>(null);
   return (

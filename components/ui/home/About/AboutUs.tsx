@@ -47,7 +47,7 @@ const AboutUs = () => {
                 <div>
                   <Link
                     // href="services-stl.html"
-                    href="#home"
+                    href="/us"
                     className="mil-btn mil-btn-border mil-c-gone"
                   >
                     {texts.homePage.aboutUS.button}

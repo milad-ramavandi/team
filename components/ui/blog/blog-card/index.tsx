@@ -1,20 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
-
-// import { GlowingEffect } from "../glowing-effect";
-import { IBlogPage } from "../../../../types/blog";
 import CalenderIcon from "../../svg/calender";
 import DateFormatRelative from "../../../../utils/date-format-relative";
 import getVideoIdOrThumbnailUrl from "../../../../utils/get-video-id-or-thumbnail-url";
 import PlayCircle from "../../svg/play-circle";
 import BlogModalWrapper from "../blog-modal-wrapper";
-// import BlogModalWrapper from "../blog-modal-wrapper";
+import { IBlogCard } from "../../../../types/blog";
 
-type Props = {
-  blog: IBlogPage;
+type BlogProps = {
+  blog: IBlogCard;
 };
 
-const BlogCard = ({ blog }: Props) => {
+const BlogCard = ({ blog }: BlogProps) => {
   const videoThumbnailUrl =
     (!blog?.first_image && blog?.acf?.videourl) ||
     (blog?.first_image && blog?.acf?.videourl)

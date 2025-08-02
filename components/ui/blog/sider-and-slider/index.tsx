@@ -1,4 +1,4 @@
-import { IBlogPage } from "../../../../types/blog";
+import { IBlogCard } from "../../../../types/blog";
 import BlogCard from "../blog-card";
 import Slider from "../slider";
 const popularBlogsPromise = async () => {
@@ -25,7 +25,7 @@ const SiderAndSlider = async () => {
   return (
     <div className="d-flex flex-column-reverse align-items-center px-2 sider-and-slider">
       <div className="d-flex flex-column flex-sm-row align-items-center blogs-card">
-        {popularBlogs?.posts?.slice(0, 2)?.map((item: IBlogPage) => {
+        {popularBlogs?.posts?.slice(0, 2)?.map((item: IBlogCard) => {
           return (
             <div key={item?.id} className="w-100">
               <BlogCard blog={item} />

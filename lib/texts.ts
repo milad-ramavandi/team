@@ -154,16 +154,42 @@ export const texts = {
         span2: "Better",
         span3: " World Today",
       },
+      portfolio_list: [
+        {
+          title: "Cyberfeature",
+          imageUrl: "/img/works/1/1-s 2.jpg",
+          template: "mil-port",
+        },
+        {
+          title: "Projection",
+          imageUrl: "/img/works/2/1-s (4).jpg",
+          template: "mil-square",
+        },
+        {
+          title: "Ultrahole",
+          imageUrl: "/img/works/3/1-s (5).jpg",
+          template: "mil-land",
+        },
+        {
+          title: "The alien car",
+          imageUrl: "/img/works/4/1-s (1).jpg",
+          template: "mil-land",
+        },
+        {
+          title: "Exit into the sunset",
+          imageUrl: "/img/works/5/1-s (2).jpg",
+          template: "mil-port",
+        },
+
+        {
+          title: "Neutral point of gravity",
+          imageUrl: "/img/works/6/1-s (3).jpg",
+          template: "mil-square",
+        },
+      ],
       button1: "View all",
       button2: "Read more",
       button3: "View all projects",
-
-      item1: "Cyberfeature",
-      item2: "Projection",
-      item3: "Ultrahole",
-      item4: "The alien car",
-      item5: "Exit into the sunset",
-      item6: "Neutral point of gravity",
 
       p1: "We've been working for several years to build a portfolio ",
       p2: "that truly reflects our diversity.",
@@ -560,7 +586,7 @@ export const texts = {
       p1: "Contact Us",
       h2: {
         span1: "Get in Touch with Our ",
-        span2:"Team"
+        span2: "Team",
       },
       button: "Contact Us",
       p2: {
@@ -616,5 +642,116 @@ export const texts = {
         career: "Paw Giver",
       },
     ],
+  },
+  portfolioPage: {
+    h1: {
+      span1: "our best ",
+      span2: "works",
+    },
+    portfolio_list: [
+      {
+        title: "Exit into the sunset",
+        imageUrl: "/img/works/5/1-s (2).jpg",
+        template: "mil-port",
+      },
+      {
+        title: "Projection",
+        imageUrl: "/img/works/2/1-s (4).jpg",
+        template: "mil-square",
+      },
+      {
+        title: "Ultrahole",
+        imageUrl: "/img/works/12/1-s (9).jpg",
+        template: "mil-land",
+      },
+      {
+        title: "Neutral point of gravity",
+        imageUrl: "/img/works/8/1-s (10).jpg",
+        template: "mil-square",
+      },
+      {
+        title: "The alien car",
+        imageUrl: "/img/works/4/1-s (1).jpg",
+        template: "mil-land",
+      },
+      {
+        title: "Exit into the sunset",
+        imageUrl: "/img/works/11/1-s (7).jpg",
+        template: "mil-square",
+      },
+      {
+        title: "Ultrahole",
+        imageUrl: "/img/works/3/1-s (5).jpg",
+        template: "mil-square",
+      },
+      {
+        title: "Cyberfeature",
+        imageUrl: "/img/works/7/1-s (11).jpg",
+        template: "mil-port",
+      },
+      {
+        title: "Ultrahole",
+        imageUrl: "/img/works/9/1-s (6).jpg",
+        template: "mil-square",
+      },
+      {
+        title: "Cyberfeature",
+        imageUrl: "/img/works/1/1-s 2.jpg",
+        template: "mil-port",
+      },
+      {
+        title: "The alien car",
+        imageUrl: "/img/works/10/1-s (8).jpg",
+        template: "mil-land",
+      },
+      {
+        title: "Neutral point of gravity",
+        imageUrl: "/img/works/6/1-s (3).jpg",
+        template: "mil-square",
+      },
+    ],
+    call_action: {
+      p1: "Explore our agency",
+      h2: {
+        heading1: "we are a",
+        heading2:
+          "that turns ideas into smart solutions. we build powerful platforms, transform how businesses",
+        heading3:
+          ", and bring the future to life today. choose techway because",
+        span1: "tech company",
+        span2: "grow",
+        span3: "we make it happen!",
+      },
+      p2: {
+        span1: "We can talk about ourselves endlessly.",
+        span2: "You'd better write to us and come visit us. We are always glad to see you!"
+      },
+      button: "Write message",
+      tape1: {
+        span1: "Reliable Service",
+        span2: "Custom Solutions",
+        span3: "24/7 Availability",
+        span4: "Expert Guidance",
+        span5: "Innovative Approach",
+        span6: "Satisfaction Guaranteed",
+        span7: "Industry Experience",
+        span8: "Expert Guidance",
+      },
+      tape2: {
+        span1: "Comprehensive Support",
+        span2: "Cutting-Edge Technology",
+        span3: "Tailored Strategies",
+        span4: "Proven Track Record",
+        span5: "Sustainable Practices",
+        span6: "Global Reach",
+        span7: "Cost Efficiency",
+        span8: "Proven Track Record",
+      },
+      p3: {
+        span1: "We accept your requests 24/7. Feel free to",
+        button: "write to us",
+        span2: " whenever it is convenient for you"
+      }
+    },
   },
 };

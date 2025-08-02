@@ -7,7 +7,7 @@ interface IBlogAcf {
   videourl: string;
 }
 
-export interface IBlogPage {
+export interface IBlogCard {
   id?: number;
   title: string;
   excerpt?: string;
@@ -37,7 +37,7 @@ interface IBlogPagination {
 }
 
 export interface IBlogsListResponse {
-  posts:IBlogPage[];
+  posts:IBlogCard[];
   pagination:IBlogPagination
 }
 

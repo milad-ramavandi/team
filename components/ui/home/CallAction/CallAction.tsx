@@ -70,7 +70,7 @@ const CallAction = () => {
             <span>
               <Link
                 // href="contact-stl.html"
-                href="#home"
+                href="/contact-us"
                 className="mil-btn mil-btn-border mil-m1 mil-c-gone"
               >
                 {texts.homePage.callaction.button}
