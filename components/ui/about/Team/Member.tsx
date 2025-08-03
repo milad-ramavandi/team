@@ -1,10 +1,14 @@
-
 import Link from "next/link";
 import { IMember } from "../../../../types/team";
 
-const Member = ({ imageUrl, name, career, isLarge }: IMember) => {
+const Member = ({ imageUrl, name, slug, career, isLarge }: IMember) => {
   return (
-    <div className={`mil-team-card mil-mb30 ${isLarge ? "mil-team-card-large" : "mil-team-card-small"}`}>
+    <Link
+      href={`/team/${slug}`}
+      className={`mil-team-card mil-stl mil-mb30 d-block ${
+        isLarge ? "mil-team-card-large" : "mil-team-card-small"
+      }`}
+    >
       <div className="mil-hover-frame">
         <img
           src={imageUrl}
@@ -16,8 +20,8 @@ const Member = ({ imageUrl, name, career, isLarge }: IMember) => {
       </div>
       <div className="mil-hover-overlay">
         <div className="mil-descr">
-          <h4 className="mil-head4 mil-m4 mil-mb20">{name}</h4>
-          <ul className="mil-social mil-m1 mil-mb20 mil-c-gone p-0">
+          <h4 className="mil-head4 mil-m1 mil-mb20">{name}</h4>
+          {/* <ul className="mil-social mil-m1 mil-mb20 mil-c-gone p-0">
             <li>
               <Link href="#." target="_blank" data-no-swup>
                 <i className="fab fa-instagram"></i>
@@ -43,11 +47,11 @@ const Member = ({ imageUrl, name, career, isLarge }: IMember) => {
                 <i className="fab fa-github"></i>
               </Link>
             </li>
-          </ul>
-          <p className="mil-stylized mil-m2 text-black">{career}</p>
+          </ul> */}
+          <p className="mil-stylized mil-a1">{career}</p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

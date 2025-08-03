@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 import BlogItemContent from "../../../components/ui/blog/blog-item-content";
 import { IBlogPageProps } from "../../../types/blog";
 
@@ -31,6 +32,10 @@ const BlogItemPage = async ({ params }: IBlogPageProps) => {
     popularBlogsPromise(),
     categoriesListPromise(),
   ]);
+  
+  if (!blog) {
+    notFound()
+  }
   return (
     <main>
       <BlogItemContent

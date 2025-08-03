@@ -3,9 +3,9 @@ import Link from "next/link";
 
 const CallAction = () => {
   return (
-    <div className="container" id="contact">
+    <>
       <div className="mil-half-container mil-stl">
-        <div className="mil-text-box mil-g-m4 mil-p-160-160">
+        <div className="mil-text-box mil-g-m4 mil-p-160-160 ps-5">
           <p className="mil-stylized mil-m2 mil-mb60">
             {texts.homePage.callaction.title}
           </p>
@@ -85,7 +85,7 @@ const CallAction = () => {
         </div>
         <div className="col-lg-6 mil-992-gone"></div>
       </div>
-    </div>
+    </>
   );
 };
 

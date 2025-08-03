@@ -60,6 +60,56 @@ export const texts = {
   },
 
   circleScroll: "We are what we think - We are what we think - ",
+  members: [
+    {
+      imageUrl: "/img/team/9 2.jpg",
+      name: "James",
+      slug: "james",
+      career: "UI/UX Designer",
+    },
+    {
+      imageUrl: "/img/team/10 2.jpg",
+      name: "Edward",
+      slug: "edward",
+      career: "QA engineer",
+    },
+    {
+      imageUrl: "/img/team/11 2.jpg",
+      name: "Monica",
+      slug: "monica",
+      career: "Web Developer",
+    },
+    {
+      imageUrl: "/img/team/12 2.jpg",
+      name: "Paul",
+      slug: "paul",
+      career: "Art Director",
+    },
+    {
+      imageUrl: "/img/team/13 2.jpg",
+      name: "Colin",
+      slug: "colin",
+      career: "Motion Designer",
+    },
+    {
+      imageUrl: "/img/team/14 2.jpg",
+      name: "James",
+      slug: "james",
+      career: "Ceo Founder",
+    },
+    {
+      imageUrl: "/img/team/15 2.jpg",
+      name: "Erica",
+      slug: "erica",
+      career: "Web Developer",
+    },
+    {
+      imageUrl: "/img/team/16 2.jpg",
+      name: "Spunky",
+      slug: "spunky",
+      career: "Paw Giver",
+    },
+  ],
   homePage: {
     hero: {
       heading1: "Develop Ideas into",
@@ -201,28 +251,6 @@ export const texts = {
         span2: "Team",
       },
       button: "View all members",
-      members: [
-        {
-          imageUrl: "/img/team/9 2.jpg",
-          name: "James",
-          career: "UI/UX Designer",
-        },
-        {
-          imageUrl: "/img/team/10 2.jpg",
-          name: "Edward",
-          career: "QA engineer",
-        },
-        {
-          imageUrl: "/img/team/11 2.jpg",
-          name: "Monica",
-          career: "Web Developer",
-        },
-        {
-          imageUrl: "/img/team/12 2.jpg",
-          name: "Paul",
-          career: "Art Director",
-        },
-      ],
     },
 
     blog: {
@@ -355,28 +383,6 @@ export const texts = {
         para2: "Boundless Creativity",
       },
       button: "View all members",
-      members: [
-        {
-          imageUrl: "/img/team/9 2.jpg",
-          name: "James",
-          career: "UI/UX Designer",
-        },
-        {
-          imageUrl: "/img/team/10 2.jpg",
-          name: "Edward",
-          career: "QA engineer",
-        },
-        {
-          imageUrl: "/img/team/11 2.jpg",
-          name: "Monica",
-          career: "Web Developer",
-        },
-        {
-          imageUrl: "/img/team/12 2.jpg",
-          name: "Paul",
-          career: "Art Director",
-        },
-      ],
     },
     reviews: {
       title: "about team",
@@ -600,48 +606,6 @@ export const texts = {
       span1: "meet our ",
       span2: "team",
     },
-    members: [
-      {
-        imageUrl: "/img/team/9 2.jpg",
-        name: "James",
-        career: "UI/UX Designer",
-      },
-      {
-        imageUrl: "/img/team/10 2.jpg",
-        name: "Edward",
-        career: "QA engineer",
-      },
-      {
-        imageUrl: "/img/team/11 2.jpg",
-        name: "Monica",
-        career: "Web Developer",
-      },
-      {
-        imageUrl: "/img/team/12 2.jpg",
-        name: "Paul",
-        career: "Art Director",
-      },
-      {
-        imageUrl: "/img/team/13 2.jpg",
-        name: "Colin",
-        career: "Motion Designer",
-      },
-      {
-        imageUrl: "/img/team/14 2.jpg",
-        name: "James",
-        career: "Ceo Founder",
-      },
-      {
-        imageUrl: "/img/team/15 2.jpg",
-        name: "Erica",
-        career: "Web Developer",
-      },
-      {
-        imageUrl: "/img/team/16 2.jpg",
-        name: "Spunky",
-        career: "Paw Giver",
-      },
-    ],
   },
   portfolioPage: {
     h1: {
@@ -724,7 +688,8 @@ export const texts = {
       },
       p2: {
         span1: "We can talk about ourselves endlessly.",
-        span2: "You'd better write to us and come visit us. We are always glad to see you!"
+        span2:
+          "You'd better write to us and come visit us. We are always glad to see you!",
       },
       button: "Write message",
       tape1: {
@@ -750,8 +715,8 @@ export const texts = {
       p3: {
         span1: "We accept your requests 24/7. Feel free to",
         button: "write to us",
-        span2: " whenever it is convenient for you"
-      }
+        span2: " whenever it is convenient for you",
+      },
     },
   },
 };

@@ -2978,7 +2978,10 @@ top panel
   z-index: 9999999;
   top: 0;
   left: 0;
-  width: 100%;
+  /* width: 100%; */
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   height: 160px;
   display: -webkit-box;
   display: -ms-flexbox;

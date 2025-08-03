@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container">
         <div className="row mil-no-g">
           <div className="col-lg-6">
-            <Link href="contact-stl.html" className="mil-footer-contact mil-mb90">
+            <Link href="/contact-us" className="mil-footer-contact mil-mb90">
               <h6 className="mil-footer-link mil-m1">{texts.footer.h6}</h6>
               <span className="mil-stylized-btn mil-c-gone">
                 <i className="fal fa-arrow-up"></i>

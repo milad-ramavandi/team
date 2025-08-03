@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 import { IconBoxes } from "../../../components/ui/IconBoxes/IconBoxes";
 import { services_list } from "../../../data/services";
 import { IServicePageProps } from "../../../types/services";
@@ -5,6 +6,9 @@ import { IServicePageProps } from "../../../types/services";
 const ServicePage = async ({ params }: IServicePageProps) => {
   const { slug } = await params;
   const mainService = services_list?.filter((item) => item?.slug === slug)[0];
+  if (!mainService) {
+    notFound()
+  }
   return (
     <main>
       <h1 className="mil-display2 text-center mil-mb130">

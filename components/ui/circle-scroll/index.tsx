@@ -17,7 +17,7 @@ const CircleScroll = ({
       <div className={`${isRight ? "mil-circle-text-frame-bg-transparent" : "mil-circle-text-frame"}`}>
         <Link
           href={`${Goto}`}
-          className="mil-circle-text mil-scroll-to mil-c-gone"
+          className="mil-circle-text mil-c-gone"
           data-no-swup
         >
           <svg

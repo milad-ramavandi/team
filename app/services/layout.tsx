@@ -4,7 +4,7 @@ import CallAction from "../../components/ui/services/call-action";
 
 const ServicesLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="mil-mt180">
+    <div className="mil-mt180 overflow-hidden">
       <Breadcrumb />
       {children}
       <CallAction />

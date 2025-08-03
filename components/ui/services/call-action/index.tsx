@@ -2,17 +2,17 @@ import Link from "next/link";
 
 const CallAction = () => {
   return (
-    <div className="container">
+    <>
       <div className="mil-half-container mil-stl">
-        <div className="mil-text-box mil-g-m4 mil-p-160-160">
+        <div className="mil-text-box mil-g-m4 mil-p-160-160 ps-5">
           <p className="mil-stylized mil-m2 mil-mb60">Portfolio</p>
-          <h2 className="mil-display3 mil-rubber mil-mb60 mil-m1">
+          <h2 className="mil-display3 mil-mb60 mil-m1">
             Explore our <span className="mil-a1">portfolio</span> and get
             inspired
           </h2>
           <div>
             <Link
-              href="portfolio-3-stl.html"
+              href="/portfolio"
               className="mil-btn mil-btn-border mil-m1 mil-c-gone"
             >
               View portfolio
@@ -45,7 +45,7 @@ const CallAction = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

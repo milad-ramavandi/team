@@ -5,9 +5,15 @@ interface ITeamMember extends IMember {
   amount_col_lg: number;
 }
 
-const TeamMember = ({ imageUrl, name, career, amount_col_lg }: ITeamMember) => {
+const TeamMember = ({
+  imageUrl,
+  name,
+  slug,
+  career,
+  amount_col_lg,
+}: ITeamMember) => {
   return (
-    <div className={`col-md-6 col-lg-${amount_col_lg}`}>
+    <Link href={`/team/${slug}`} className={`col-md-6 col-lg-${amount_col_lg}`}>
       <div className="mil-team-card mil-stl mil-mb30 mil-768-mb-15">
         <div className="mil-hover-frame">
           <img
@@ -21,38 +27,38 @@ const TeamMember = ({ imageUrl, name, career, amount_col_lg }: ITeamMember) => {
         <div className="mil-hover-overlay">
           <div className="mil-descr">
             <h4 className="mil-head4 mil-m1 mil-mb20">{name}</h4>
-            <ul className="mil-social mil-m1 mil-mb20 mil-c-gone p-0">
-              <li>
-                <Link href="#." target="_blank" data-no-swup>
-                  <i className="fab fa-instagram"></i>
-                </Link>
-              </li>
-              <li>
-                <Link href="#." target="_blank" data-no-swup>
-                  <i className="fab fa-behance"></i>
-                </Link>
-              </li>
-              <li>
-                <Link href="#." target="_blank" data-no-swup>
-                  <i className="fab fa-dribbble"></i>
-                </Link>
-              </li>
-              <li>
-                <Link href="#." target="_blank" data-no-swup>
-                  <i className="fab fa-pinterest-p"></i>
-                </Link>
-              </li>
-              <li>
-                <Link href="#." target="_blank" data-no-swup>
-                  <i className="fab fa-github"></i>
-                </Link>
-              </li>
-            </ul>
+            {/* <ul className="mil-social mil-m1 mil-mb20 mil-c-gone p-0">
+                <li>
+                  <Link href="#." target="_blank" data-no-swup>
+                    <i className="fab fa-instagram"></i>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#." target="_blank" data-no-swup>
+                    <i className="fab fa-behance"></i>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#." target="_blank" data-no-swup>
+                    <i className="fab fa-dribbble"></i>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#." target="_blank" data-no-swup>
+                    <i className="fab fa-pinterest-p"></i>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#." target="_blank" data-no-swup>
+                    <i className="fab fa-github"></i>
+                  </Link>
+                </li>
+              </ul> */}
             <p className="mil-stylized mil-a1">{career}</p>
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

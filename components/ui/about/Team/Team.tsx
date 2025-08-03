@@ -3,7 +3,7 @@ import { texts } from "../../../../lib/texts";
 import { IMember } from "../../../../types/team";
 import Member from "./Member";
 
-const members: IMember[] = texts?.aboutPage?.team?.members;
+const members: IMember[] = texts?.members?.slice(0, 4);
 
 const Team = () => {
   return (

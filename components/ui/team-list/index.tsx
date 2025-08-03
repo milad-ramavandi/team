@@ -3,8 +3,7 @@ import { texts } from "../../../lib/texts";
 import Link from "next/link";
 import TeamMember from "./team-member";
 
-
-const members: IMember[] = texts.homePage.team.members;
+const members: IMember[] = texts?.members?.slice(0, 4);
 
 const TeamList = () => {
   return (
