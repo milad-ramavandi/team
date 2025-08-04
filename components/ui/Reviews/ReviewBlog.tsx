@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { IReviewBlog } from "../../../types/reviews-blog";
 
 interface IReviewBlogProps extends IReviewBlog {
@@ -15,7 +16,7 @@ const ReviewBlog = ({
     <div className="swiper-slide">
       <div className="mil-review" data-swiper-parallax-scale="0.8">
         <div className="mil-portrait mil-mb30">
-          <img src={imageUrl} alt="Client" />
+          <Image fill priority src={imageUrl} alt="Client" />
         </div>
         <h4 className="mil-head4 mil-max-1row-text mil-mb15 mil-c-gone">
           {author}

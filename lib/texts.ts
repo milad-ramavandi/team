@@ -110,6 +110,92 @@ export const texts = {
       career: "Paw Giver",
     },
   ],
+  portfolio_list: [
+    {
+      id: "1",
+      title: "Exit into the sunset",
+      slug: "exit-into-the-sunset",
+      imageUrl: "/img/works/5/1-s (2).jpg",
+      template: "mil-port",
+    },
+    {
+      id: "2",
+      title: "Projection",
+      slug: "projection",
+      imageUrl: "/img/works/2/1-s (4).jpg",
+      template: "mil-square",
+    },
+    {
+      id: "3",
+      title: "Ultrahole",
+      slug: "ultrahole",
+      imageUrl: "/img/works/12/1-s (9).jpg",
+      template: "mil-land",
+    },
+    {
+      id: "4",
+      title: "Neutral point of gravity",
+      slug: "neutral-point-of-gravity",
+      imageUrl: "/img/works/8/1-s (10).jpg",
+      template: "mil-square",
+    },
+    {
+      id: "5",
+      title: "The alien car",
+      slug: "the-alien-car",
+      imageUrl: "/img/works/4/1-s (1).jpg",
+      template: "mil-land",
+    },
+    {
+      id: "6",
+      title: "Exit into the sunset",
+      slug: "exit-into-the-sunset",
+      imageUrl: "/img/works/11/1-s (7).jpg",
+      template: "mil-square",
+    },
+    {
+      id: "7",
+      title: "Ultrahole",
+      slug: "ultrahole",
+      imageUrl: "/img/works/3/1-s (5).jpg",
+      template: "mil-square",
+    },
+    {
+      id: "8",
+      title: "Cyberfeature",
+      slug: "cyberfeature",
+      imageUrl: "/img/works/7/1-s (11).jpg",
+      template: "mil-port",
+    },
+    {
+      id: "9",
+      title: "Ultrahole",
+      slug: "ultrahole",
+      imageUrl: "/img/works/9/1-s (6).jpg",
+      template: "mil-square",
+    },
+    {
+      id: "10",
+      title: "Cyberfeature",
+      slug: "cyberfeature",
+      imageUrl: "/img/works/1/1-s 2.jpg",
+      template: "mil-port",
+    },
+    {
+      id: "11",
+      title: "The alien car",
+      slug: "the-alien-car",
+      imageUrl: "/img/works/10/1-s (8).jpg",
+      template: "mil-land",
+    },
+    {
+      id: "12",
+      title: "Neutral point of gravity",
+      slug: "neutral-point-of-gravity",
+      imageUrl: "/img/works/6/1-s (3).jpg",
+      template: "mil-square",
+    },
+  ],
   homePage: {
     hero: {
       heading1: "Develop Ideas into",
@@ -206,33 +292,44 @@ export const texts = {
       },
       portfolio_list: [
         {
+          id: "1",
           title: "Cyberfeature",
+          slug: "cyberfeature",
           imageUrl: "/img/works/1/1-s 2.jpg",
           template: "mil-port",
         },
         {
+          id: "2",
           title: "Projection",
+          slug: "projection",
           imageUrl: "/img/works/2/1-s (4).jpg",
           template: "mil-square",
         },
         {
+          id: "3",
           title: "Ultrahole",
+          slug: "ultrahole",
           imageUrl: "/img/works/3/1-s (5).jpg",
           template: "mil-land",
         },
         {
+          id: "4",
           title: "The alien car",
+          slug: "the-alien-car",
           imageUrl: "/img/works/4/1-s (1).jpg",
           template: "mil-land",
         },
         {
+          id: "5",
           title: "Exit into the sunset",
+          slug: "exit-into-the-sunset",
           imageUrl: "/img/works/5/1-s (2).jpg",
           template: "mil-port",
         },
-
         {
+          id: "6",
           title: "Neutral point of gravity",
+          slug: "neutral-point-of-gravity",
           imageUrl: "/img/works/6/1-s (3).jpg",
           template: "mil-square",
         },
@@ -612,68 +709,6 @@ export const texts = {
       span1: "our best ",
       span2: "works",
     },
-    portfolio_list: [
-      {
-        title: "Exit into the sunset",
-        imageUrl: "/img/works/5/1-s (2).jpg",
-        template: "mil-port",
-      },
-      {
-        title: "Projection",
-        imageUrl: "/img/works/2/1-s (4).jpg",
-        template: "mil-square",
-      },
-      {
-        title: "Ultrahole",
-        imageUrl: "/img/works/12/1-s (9).jpg",
-        template: "mil-land",
-      },
-      {
-        title: "Neutral point of gravity",
-        imageUrl: "/img/works/8/1-s (10).jpg",
-        template: "mil-square",
-      },
-      {
-        title: "The alien car",
-        imageUrl: "/img/works/4/1-s (1).jpg",
-        template: "mil-land",
-      },
-      {
-        title: "Exit into the sunset",
-        imageUrl: "/img/works/11/1-s (7).jpg",
-        template: "mil-square",
-      },
-      {
-        title: "Ultrahole",
-        imageUrl: "/img/works/3/1-s (5).jpg",
-        template: "mil-square",
-      },
-      {
-        title: "Cyberfeature",
-        imageUrl: "/img/works/7/1-s (11).jpg",
-        template: "mil-port",
-      },
-      {
-        title: "Ultrahole",
-        imageUrl: "/img/works/9/1-s (6).jpg",
-        template: "mil-square",
-      },
-      {
-        title: "Cyberfeature",
-        imageUrl: "/img/works/1/1-s 2.jpg",
-        template: "mil-port",
-      },
-      {
-        title: "The alien car",
-        imageUrl: "/img/works/10/1-s (8).jpg",
-        template: "mil-land",
-      },
-      {
-        title: "Neutral point of gravity",
-        imageUrl: "/img/works/6/1-s (3).jpg",
-        template: "mil-square",
-      },
-    ],
     call_action: {
       p1: "Explore our agency",
       h2: {

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { IMember } from "../../../../types/team";
+import Image from "next/image";
 
 interface ITeamMember extends IMember {
   amount_col_lg: number;
@@ -16,7 +17,9 @@ const TeamMember = ({
     <Link href={`/team/${slug}`} className={`col-md-6 col-lg-${amount_col_lg}`}>
       <div className="mil-team-card mil-stl mil-mb30 mil-768-mb-15">
         <div className="mil-hover-frame">
-          <img
+          <Image
+            fill
+            priority
             src={imageUrl}
             alt="team member"
             // className="mil-scale-img"

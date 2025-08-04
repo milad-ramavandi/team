@@ -1,10 +1,14 @@
 import CircleScroll from "../../circle-scroll";
 import { texts } from "../../../../lib/texts";
+import Image from "next/image";
 
 const Hero = () => {
   return (
     <div className="mil-hero-5">
-      <img
+      <Image
+        width={1920}
+        height={1205}
+        priority
         src="/img/home-5/1.jpg"
         alt="hero image"
         className="mil-hero-image"
@@ -20,8 +24,8 @@ const Hero = () => {
             data-value-2="0.95"
           >
             <h1 className={`mil-display4 mil-mb40`}>
-              {texts.homePage.hero.heading1}<br />{" "}
-              {texts.homePage.hero.heading2}
+              {texts.homePage.hero.heading1}
+              <br /> {texts.homePage.hero.heading2}
             </h1>
           </div>
           <CircleScroll Goto="#aboutme" />

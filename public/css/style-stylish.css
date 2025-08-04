@@ -3745,6 +3745,7 @@ iconbox
 @media (max-width: 768px) {
   .mil-iconbox img {
     width: 90px;
+    height: 90px;
   }
 }
 

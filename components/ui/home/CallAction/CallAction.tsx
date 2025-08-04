@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { texts } from "../../../../lib/texts";
 import Link from "next/link";
 
@@ -28,7 +29,10 @@ const CallAction = () => {
         </div>
         <div className="mil-image-box">
           <div className="mil-image-frame">
-            <img
+            <Image
+              width={992}
+              height={1347}
+              priority
               src="/img/home-5/2.jpg"
               alt="img"
               className="mil-scale-img"
@@ -69,7 +73,6 @@ const CallAction = () => {
           <div className="mil-button-pad mil-a2">
             <span>
               <Link
-                // href="contact-stl.html"
                 href="/contact-us"
                 className="mil-btn mil-btn-border mil-m1 mil-c-gone"
               >

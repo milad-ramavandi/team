@@ -2,13 +2,16 @@ import Link from "next/link";
 import React from "react";
 import { texts } from "../../../../lib/texts";
 import { IPortfolio } from "../../../../types/portfolio";
+import Image from "next/image";
 
-const PortfolioCard = ({imageUrl, title, template}:IPortfolio) => {
+const PortfolioCard = ({ imageUrl, title, id, template }: IPortfolio) => {
   return (
     <div className="mil-work-card mil-stl mil-mb30">
       <div className={`mil-cover ${template}`}>
         <div className="mil-hover-frame">
-          <img
+          <Image
+            fill
+            priority
             src={imageUrl}
             alt="cover"
             // className="mil-scale-img"
@@ -18,7 +21,7 @@ const PortfolioCard = ({imageUrl, title, template}:IPortfolio) => {
         </div>
       </div>
       <div className="mil-hover-overlay">
-        <Link href="project-1-stl.html" className="mil-descr">
+        <Link href={`/portfolio/${id}`} className="mil-descr">
           <div className="mil-text-frame">
             <h4 className="mil-head4 mil-max-1row-text mil-m1 mil-c-gone">
               {title}

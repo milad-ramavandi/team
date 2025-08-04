@@ -37,7 +37,6 @@ const Portfolio = () => {
         <div className="col-md-6 mil-jce mil-768-jcs mil-mb30">
           <span>
             <Link
-              // href="portfolio-1-stl.html"
               href="/portfolio"
               className="mil-btn mil-a2 mil-c-gone"
             >
