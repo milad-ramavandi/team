@@ -59,10 +59,13 @@ const BlogCard = ({ blog }: BlogProps) => {
               <div className="position-absolute top-0 start-0 m-2 z-2">
                 <PlayCircle />
               </div>
-              <img
+              <Image
+                fill
+                priority
                 src={videoThumbnailUrl}
                 alt={blog.title}
                 className="w-100 h-100 object-fit-cover transition-transform img"
+                unoptimized
               />
               {blog?.acf?.videourl && (
                 <BlogModalWrapper youtubeId={youtubeId as string} />
@@ -82,37 +85,19 @@ const BlogCard = ({ blog }: BlogProps) => {
           {blog?.first_image && !blog?.acf?.videourl ? (
             <Link
               href={`/blogs/${blog.slug}`}
-              className="text-white fw-medium multi-line-truncate"
-              style={{
-                fontSize: "16px",
-                height:"45px"
-              }}
+              className="text-white fw-medium multi-line-truncate title"
             >
               {blog?.title}
             </Link>
           ) : (
-            <p
-              className="text-white fw-medium mb-2 multi-line-truncate"
-              style={{
-                fontSize: "16px",
-                height: "45px",
-              }}
-            >
+            <p className="text-white fw-medium mb-2 multi-line-truncate title">
               {blog?.title}
             </p>
           )}
 
-          <div
-            className="d-flex align-items-center text-warning mt-2"
-            style={{ gap: "4px" }}
-          >
+          <div className="d-flex align-items-center gap-1 text-warning mt-2">
             <CalenderIcon />
-            <p
-              className="mb-0 mil-a1"
-              style={{ fontSize: "10px", paddingTop: "3px" }}
-            >
-              {blog?.date}
-            </p>
+            <p className="mb-0 mil-a1 date">{blog?.date}</p>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import BackToHomeCircle from "../components/ui/svg/BackToHomeCircle";
+import Image from "next/image";
 export default function NotFoundPage() {
   return (
     <div className="mil-transition-fade" id="swup">
@@ -8,7 +9,10 @@ export default function NotFoundPage() {
           <div className="mil-hero-4" id="top">
             <div id="scene" className="mil-hero-scene">
               <div className="mil-anim-frame" data-depth="0.25">
-                <img
+                <Image
+                  width={1920}
+                  height={1740}
+                  priority
                   src="/img/shapes/6.png"
                   alt="shapes"
                   className="mil-hero-animation"
@@ -25,14 +29,13 @@ export default function NotFoundPage() {
                 <i className="far fa-poop mil-mb15"></i>
                 <p className="mil-stylized mil-m2 mil-mb30">oops!</p>
                 <h1 className="mil-display1 mil-mb30">404</h1>
-                <h1 className="mil-head2 mil-a1">Looks like you got lost</h1>
+                <h2 className="mil-head2 mil-a1">Looks like you got lost</h2>
                 <div className="mil-circle-text-frame">
                   <Link href="/" className="mil-circle-text mil-c-gone">
                     <BackToHomeCircle />
                     <span className="mil-arrow">
                       <i
-                        className="fal fa-arrow-down"
-                        style={{ transform: "rotate(90deg)" }}
+                        className="fal fa-arrow-down mil-rotate90"
                       ></i>
                     </span>
                   </Link>

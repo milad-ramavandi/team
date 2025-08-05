@@ -30,7 +30,7 @@ const BlogItemContent = ({
           {/* Sidebar */}
           <div className="col-12 order-2 col-xl-3 order-xl-1">
             <div className="d-flex align-items-center gap-2 mb-3">
-              <hr style={{ width: "1rem", borderTop: "1px solid #7c3980" }} />
+              <hr className="hr"/>
               <p className="mb-0 text-white">Popular</p>
               <hr className="flex-grow-1 border-white opacity-25" />
             </div>
@@ -42,7 +42,7 @@ const BlogItemContent = ({
             <CategoriesList categoriesList={categoriesList} />
 
             <div className="d-flex align-items-center gap-2 my-4">
-              <hr style={{ width: "1rem", borderTop: "1px solid #7c3980" }} />
+              <hr className="hr" />
               <p className="mb-0 text-white">Popular</p>
               <hr className="flex-grow-1 border-white opacity-25" />
             </div>
@@ -71,7 +71,7 @@ const BlogItemContent = ({
               <div className="d-flex flex-wrap align-items-center gap-3">
                 <div className="d-flex align-items-center gap-2">
                   <TagIcon />
-                  <span style={{color:'white'}}>Tags:</span>
+                  <span className="text-white">Tags:</span>
                 </div>
                 <div className="d-flex flex-wrap gap-2">
                   {tags?.map((tag) => {
@@ -80,10 +80,7 @@ const BlogItemContent = ({
                       <Link
                         key={mainTag?.id}
                         href={`/blog?tag_id=${mainTag?.id}#tab_search_bar`}
-                        className="text-white text-nowrap"
-                        style={{
-                          fontSize:"16px"
-                        }}
+                        className="text-white text-nowrap fs-6"
                       >
                         {mainTag?.label}
                       </Link>

@@ -1,8 +1,11 @@
-import { services_list } from "../../../../data/us/services";
+
 import Service from "../service";
-import { counters_list } from "../../../../data/us/counters";
 import Counter from "../counter";
 import { texts } from "../../../../lib/texts";
+import { ICounter, IService } from "../../../../types/us";
+
+const counters_list: ICounter[] = texts?.usPage?.services?.counters_list;
+const services_list: IService[] = texts?.usPage?.services?.services_list
 
 const Services = () => {
   return (

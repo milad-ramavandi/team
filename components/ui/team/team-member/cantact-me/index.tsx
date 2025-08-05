@@ -1,13 +1,16 @@
+import Image from "next/image";
 import Link from "next/link";
 
-const ContactMe = ({imageUrl}:{imageUrl:string}) => {
+const ContactMe = ({ imageUrl }: { imageUrl: string }) => {
   return (
     <div className="overflow-hidden">
       <div className="mil-half-container mil-stl">
         <div className="mil-text-box mil-g-m4 mil-p-160-160 ps-5">
           <p className="mil-stylized mil-m2 mil-mb60">contact me</p>
           <h2 className="mil-display3 mil-mb60 mil-m1">
-            lets <span className="mil-a1">make</span><br/> an <span className="mil-a1">impact</span><br/> together
+            lets <span className="mil-a1">make</span>
+            <br /> an <span className="mil-a1">impact</span>
+            <br /> together
           </h2>
           <ul className="mil-social mil-m1 mil-mb20 mil-c-gone p-0">
             <li>
@@ -39,7 +42,9 @@ const ContactMe = ({imageUrl}:{imageUrl:string}) => {
         </div>
         <div className="mil-image-box">
           <div className="mil-image-frame">
-            <img
+            <Image
+              fill
+              priority
               src={imageUrl}
               alt="img"
               className="mil-scale-img"

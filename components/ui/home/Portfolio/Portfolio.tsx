@@ -1,7 +1,16 @@
 import Link from "next/link";
 import { texts } from "../../../../lib/texts";
 import PortfolioList from "../../portfolio-list";
-import { portfolio_list } from "../../../../data/home/portfolio_list";
+import { IPortfolio } from "../../../../types/portfolio";
+
+const portfolio_list: IPortfolio[] = texts?.portfolio_list
+  ?.filter((item) => ["10", "2", "3", "5", "1", "12"].includes(item?.id))
+  .sort((a, b) => {
+    return (
+      ["10", "2", "3", "5", "1", "12"].indexOf(a.id) -
+      ["10", "2", "3", "5", "1", "12"].indexOf(b.id)
+    );
+  });
 
 const Portfolio = () => {
   return (
@@ -16,16 +25,18 @@ const Portfolio = () => {
         </div>
         <div className="col-md-5">
           <p className="mil-stylized mil-m1 mil-tar mil-768-tal mil-mb60">
-            <Link
-              href="/portfolio"
-              className="mil-arrow-link mil-c-gone"
-            >
+            <Link href="/portfolio" className="mil-arrow-link mil-c-gone">
               View all
             </Link>
           </p>
         </div>
       </div>
-      <PortfolioList className="mil-mb60" amountMdColumn="6" amountPortfoliosInPerColumn={3} portfolio_list={portfolio_list}/>
+      <PortfolioList
+        className="mil-mb60"
+        amountMdColumn="6"
+        amountPortfoliosInPerColumn={3}
+        portfolio_list={portfolio_list}
+      />
       <div className="row mil-aic mil-p-0-130">
         <div className="col-md-6 mil-mb30">
           <p className="mil-text-md mil-deco-text">
@@ -36,10 +47,7 @@ const Portfolio = () => {
         </div>
         <div className="col-md-6 mil-jce mil-768-jcs mil-mb30">
           <span>
-            <Link
-              href="/portfolio"
-              className="mil-btn mil-a2 mil-c-gone"
-            >
+            <Link href="/portfolio" className="mil-btn mil-a2 mil-c-gone">
               {texts.homePage.portfolio.button3}
             </Link>
           </span>

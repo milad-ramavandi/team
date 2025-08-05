@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const CallAction = () => {
@@ -21,7 +22,9 @@ const CallAction = () => {
         </div>
         <div className="mil-image-box">
           <div className="mil-image-frame">
-            <img
+            <Image
+              fill
+              priority
               src="/img/pages/5 2.jpg"
               alt="img"
               className="mil-scale-img"
@@ -33,15 +36,11 @@ const CallAction = () => {
       </div>
       <div className="row mil-aic mil-jcb mil-no-g">
         <div className="col-lg-6 p-0">
-          <div
-            className="mil-button-pad mil-a1 mil-jst d-block"
-          ></div>
+          <div className="mil-button-pad mil-a1 mil-jst d-block"></div>
         </div>
         <div className="col-lg-6 mil-992-gone">
           <div className="mil-text-pad">
-            <p className="mil-stylized">
-              Designing a Better World Today
-            </p>
+            <p className="mil-stylized">Designing a Better World Today</p>
           </div>
         </div>
       </div>

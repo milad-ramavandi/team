@@ -18,7 +18,7 @@ const BlogItem = ({ imageUrl, title }: IBlog) => {
         </div>
         <div className="mil-hover-overlay">
           <div className="mil-descr">
-            <p className="mil-para-blog mil-a1">{title}</p>
+            <p className="mil-para-blog mil-a1 multi-line-truncate-blog">{title}</p>
           </div>
         </div>
       </div>

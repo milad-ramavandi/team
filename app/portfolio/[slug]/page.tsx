@@ -1,7 +1,12 @@
+import { notFound } from "next/navigation";
 import Details from "../../../components/ui/portfolio/portfolio-item/details";
 import Hero from "../../../components/ui/portfolio/portfolio-item/hero";
 import NextProject from "../../../components/ui/portfolio/portfolio-item/next-project";
-import { portfolios_list } from "../../../data/portfolio/portfolio-list";
+import { texts } from "../../../lib/texts";
+import { IPortfolio } from "../../../types/portfolio";
+
+
+const portfolios_list:IPortfolio[] = texts?.portfolio_list
 
 const PortfolioSinglePage = async ({
   params,
@@ -13,6 +18,9 @@ const PortfolioSinglePage = async ({
   const nextProject = portfolios_list?.filter(
     (item) => Number(item?.id) === Number(mainPortfolio?.id) + 1
   )[0];
+  if (!mainPortfolio) {
+    notFound()
+  }
   return (
     <main>
       <Hero portfolioTitle={mainPortfolio?.title} />

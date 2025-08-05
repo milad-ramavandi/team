@@ -17,7 +17,7 @@ const BlogShare = () => {
   };
   return (
     <div className="d-flex align-items-center gap-5 position-relative">
-      <span style={{color:"white"}}>Share:</span>
+      <span className="text-white">Share:</span>
       <div className="d-flex align-items-center gap-3">
         <Link
           href={`https://t.me/share/url?url=https://chatoshi.ai${pathname}`}
@@ -27,18 +27,13 @@ const BlogShare = () => {
         </Link>
         <button
           onClick={handleCopy}
-          style={{
-            backgroundColor: "inherit",
-            border: "none",
-          }}
+          className="container-document-icon"
         >
           <DocumentDuplicateIcon />
         </button>
       </div>
       {copied && (
-        <div className="position-absolute bottom-100 end-0 mb-3 opacity-75 text-black text-sm rounded px-3 py-1 text-white" style={{
-          backgroundColor:"#7c3980"
-        }}>
+        <div className="position-absolute bottom-100 end-0 mb-3 opacity-75 text-black text-sm rounded px-3 py-1 text-white copied">
           Copied!
         </div>
       )}

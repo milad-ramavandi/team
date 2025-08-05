@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const NextProject = ({
@@ -29,7 +30,9 @@ const NextProject = ({
         </div>
         <div className="mil-image-box">
           <div className="mil-image-frame">
-            <img
+            <Image
+              fill
+              priority
               src={portfolioImage}
               alt="img"
               className="mil-scale-img"

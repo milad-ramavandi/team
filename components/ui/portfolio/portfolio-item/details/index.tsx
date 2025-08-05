@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Details = ({ portfolioImage }: { portfolioImage: string }) => {
   return (
     <>
@@ -6,7 +8,9 @@ const Details = ({ portfolioImage }: { portfolioImage: string }) => {
           <div className="row mil-jcb mil-aic">
             <div className="col-lg-12 mil-mb160">
               <div className="mil-project-img mil-land">
-                <img
+                <Image
+                  fill
+                  priority
                   src={portfolioImage}
                   alt="project"
                   className="mil-scale-img"

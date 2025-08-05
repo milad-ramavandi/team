@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Cover = () => {
@@ -7,7 +8,9 @@ const Cover = () => {
         <div className="row mil-jcc mil-aic">
           <div className="col-lg-12">
             <div className="mil-project-img mil-land">
-              <img
+              <Image
+                fill
+                priority
                 src="/img/pages/cover.jpg"
                 alt="project"
                 className="mil-scale-img"

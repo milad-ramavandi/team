@@ -4,8 +4,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/parallax";
-// import "../../../public/css/style-stylish.css";
-// import "../../../styles/style-stylish.css"
 import ReviewBlog from "./ReviewBlog";
 import { IReviewBlog } from "../../../types/reviews-blog";
 

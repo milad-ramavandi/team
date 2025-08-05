@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { IMember } from "../../../../types/team";
+import Image from "next/image";
 
 const Member = ({ imageUrl, name, slug, career, isLarge }: IMember) => {
   return (
@@ -10,7 +11,9 @@ const Member = ({ imageUrl, name, slug, career, isLarge }: IMember) => {
       }`}
     >
       <div className="mil-hover-frame">
-        <img
+        <Image
+          fill
+          priority
           src={imageUrl}
           alt="team member"
           // className="mil-scale-img"

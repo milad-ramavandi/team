@@ -61,20 +61,11 @@ const SearchBar = ({ searchValue }: Props) => {
             value={search}
             onChange={(e) => handleSearchChange(e.target.value)}
             className="w-100 bg-transparent border-0 text-white p-0"
-            style={{
-              fontSize: "0.9rem",
-              boxShadow: "none",
-            }}
             autoComplete="off"
           />
         </div>
         <div
-          className="d-flex align-items-center justify-content-center rounded-circle"
-          style={{
-            width: "36px",
-            height: "36px",
-            backgroundColor: "#7C3980",
-          }}
+          className="d-flex align-items-center justify-content-center rounded-circle icon-container"
         >
           <SearchIcon />
         </div>

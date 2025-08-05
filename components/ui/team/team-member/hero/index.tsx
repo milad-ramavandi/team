@@ -1,7 +1,9 @@
+import Link from "next/link";
 import { IMember } from "../../../../../types/team";
 import CircleScroll from "../../../circle-scroll";
+import Image from "next/image";
 
-const Hero = ({userData}:{userData:IMember}) => {
+const Hero = ({ userData }: { userData: IMember }) => {
   return (
     <div className="mil-hero-6" id="top">
       <div className="mil-overlay"></div>
@@ -15,21 +17,27 @@ const Hero = ({userData}:{userData:IMember}) => {
                 <p className="mil-stylized mil-m2 mil-mb60">
                   Welcome my friend!
                 </p>
-                <h1 className="mil-mb60 mil-display3">my name is <br/> <span className="mil-a1">{userData?.name}</span>, <br/> a {`${userData?.career}`}</h1>
-                <a
+                <h1 className="mil-mb60 mil-display3">
+                  my name is <br />{" "}
+                  <span className="mil-a1">{userData?.name}</span>, <br /> a{" "}
+                  {`${userData?.career}`}
+                </h1>
+                <Link
                   href="files/cv.txt"
                   download="cv"
                   className="mil-btn mil-btn-border mil-c-gone"
                 >
                   Download cv
-                </a>
+                </Link>
               </div>
             </div>
           </div>
           <div className="col-lg-6">
             <div className="mil-hero-portrait-frame">
               <div className="mil-hero-portrait">
-                <img
+                <Image
+                  fill
+                  priority
                   src={userData?.imageUrl}
                   alt="portrait"
                   className="mil-scale-img"
@@ -37,7 +45,7 @@ const Hero = ({userData}:{userData:IMember}) => {
                   data-value-2="1.2"
                 />
               </div>
-              <CircleScroll Goto="#aboutme"/>
+              <CircleScroll Goto="#aboutme" />
             </div>
           </div>
         </div>

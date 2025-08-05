@@ -1,5 +1,9 @@
-import { services_list } from "../../../data/services";
+
+import { texts } from "../../../lib/texts";
+import { IService } from "../../../types/services";
 import Service from "./service";
+
+const services_list: IService[] = texts?.servicesPage?.services;
 
 const Services = () => {
   return (

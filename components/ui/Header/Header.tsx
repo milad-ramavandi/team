@@ -5,6 +5,7 @@ import Menu from "./Menu/Menu";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { texts } from "../../../lib/texts";
+import Image from "next/image";
 
 export default function Header() {
   const { isScrolled } = useScroll();
@@ -23,7 +24,7 @@ export default function Header() {
               <Link href="/" className="mil-logo mil-scroll-to" data-no-swup>
                 {/* <i className="far fa-cube"></i>
                 <span>{texts.header.name}</span> */}
-                <img src={"/img/logo.png"} alt="logo" width={68} height={81} />
+                <Image src={"/img/logo.png"} alt="logo" width={68} height={81} />
               </Link>
             </div>
 

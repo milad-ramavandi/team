@@ -3941,7 +3941,7 @@ half container
   overflow: hidden;
   top: 0;
   left: 0;
-  width: 50vw;
+  width: 100%;
   height: 100%;
 }
 .mil-half-container .mil-image-box .mil-image-frame img,
@@ -5914,6 +5914,15 @@ footer
   transform: translateY(-0.5rem);
 }
 
+.blog-content-container .container-document-icon {
+  background-color: inherit;
+  border: none;
+}
+
+.blog-content-container .copied {
+  background-color: #7c3980;
+}
+
 .blog-content-container .document-icon {
   width: 2rem;
   height: 2rem;
@@ -5930,6 +5939,11 @@ footer
 .blog-content-container .main-content {
   background-color: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.blog-content-container .hr {
+  width: 1rem;
+  border-top: 1px solid #7c3980;
 }
 
 .blogs-content .heading-container {
@@ -5952,32 +5966,51 @@ footer
   justify-content: center;
 }
 
+.blogs-content .scroll {
+  width: 30px;
+  border: none;
+  background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 70%, transparent 100%);
+  z-index: 50;
+  backdrop-filter: blur(2px);
+}
+.blogs-content .current-tag {
+  font-size: 16px;
+  box-shadow: 0 0 5px 5px #3b173d;
+}
+
+.blogs-content .tab {
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
 .blogs-content .tab-bar {
   justify-content: start;
   align-items: center;
+  scroll-behavior: smooth;
+  white-space: nowrap;
 }
 .blogs-content .skeleton-container {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 1.5rem; /* gap-6 */
-  padding: 0.625rem; /* p-2.5 */
+  gap: 1.5rem; 
+  padding: 0.625rem; 
 }
 .blogs-content .skeleton-container .skeleton-item {
   animation: pulse 1.5s infinite ease-in-out;
 }
 
 .blogs-content .skeleton-container .skeleton-box {
-  background-color: #4b5563; /* bg-gray-600 */
+  background-color: #4b5563; 
   border-radius: 0.5rem;
 }
 
 .blogs-content .skeleton-container .skeleton-image {
-  height: 12rem; /* h-48 = 192px */
+  height: 12rem;
 }
 
 .blogs-content .skeleton-container .skeleton-line1 {
-  height: 1rem; /* h-4 = 16px */
+  height: 1rem; 
   width: 75%;
 }
 
@@ -6000,19 +6033,29 @@ footer
   display: flex;
   align-items: center;
   width: 100% !important;
-  background-color: #1e293b; /* bg-slate-800 */
-  padding-top: 0.875rem; /* py-3.5 → 14px */
+  background-color: #1e293b; 
+  padding-top: 0.875rem; 
   padding-bottom: 0.875rem;
-  padding-left: 19px; /* pl-[19px] */
-  padding-right: 0.375rem; /* pr-1.5 → 6px */
-  border-radius: 9999px; /* rounded-full */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
-  gap: 0.5rem; /* gap-2 */
+  padding-left: 19px; 
+  padding-right: 0.375rem; 
+  border-radius: 9999px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  gap: 0.5rem; 
   transition: all 300ms ease-in-out;
 }
 .blogs-content .search-bar .custom-search-box .img-box {
   width: 30px;
   height: 30px;
+}
+.blogs-content .search-bar .custom-search-box input {
+  font-size: 0.9rem;
+  box-shadow: none;
+}
+
+.blogs-content .search-bar .custom-search-box .icon-container {
+  width: 36px;
+  height: 36px;
+  background-color: #7c3980;
 }
 
 .blogs-content .sider-and-slider {
@@ -6143,6 +6186,17 @@ footer
 .blogs-content .blog-card .link:hover .img {
   transform: scale(1.1);
 }
+
+.blogs-content .blog-card .title {
+  font-size: 16px;
+  height: 45px;
+}
+
+.blogs-content .blog-card .date {
+  font-size: 10px;
+  padding-top: 3px;
+}
+
 .blog-content-container .blog-card .link {
   height: 240px;
   overflow: hidden;
@@ -6155,6 +6209,16 @@ footer
 }
 .blog-content-container .blog-card .link:hover .img {
   transform: scale(1.1);
+}
+
+.blog-content-container .blog-card .title {
+  font-size: 16px;
+  height: 45px;
+}
+
+.blog-content-container .blog-card .date {
+  font-size: 10px;
+  padding-top: 3px;
 }
 
 @media screen and (min-width: 640px) {
@@ -6426,6 +6490,14 @@ footer
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.multi-line-truncate-blog {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .blog-content figure {
   width: 100%;
@@ -6442,4 +6514,12 @@ footer
 
 .blog-content a {
   color: #3b82f6;
+}
+
+/*...................................................................
+.....................................................................
+......................................*/
+
+.mil-rotate90 {
+  transform: rotate(90deg);
 }

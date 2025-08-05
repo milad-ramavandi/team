@@ -60,6 +60,25 @@ export const texts = {
   },
 
   circleScroll: "We are what we think - We are what we think - ",
+  blogs: [
+    {
+      imageUrl: "/img/blog/blog_1.jpeg",
+      title: "5 best crypto AI tips you can combine with Hero AI",
+    },
+    {
+      imageUrl: "/img/blog/blog_2.png",
+      title:
+        "Bitcoin falls under $91K - Bitfinex says it's at a `critical juncture`",
+    },
+    {
+      imageUrl: "/img/blog/blog_3.jpeg",
+      title: "Built a Minimal Portfolio Website in Just 7 Days",
+    },
+    {
+      imageUrl: "/img/blog/blog_4.avif",
+      title: "Built a Minimal Portfolio Website in Just 7 Days",
+    },
+  ],
   members: [
     {
       imageUrl: "/img/team/9 2.jpg",
@@ -237,6 +256,7 @@ export const texts = {
     ],
 
     aboutUS: {
+      p: "About us",
       h2: {
         span1: "Discover ",
         span2: "Our ",
@@ -290,50 +310,6 @@ export const texts = {
         span2: "Better",
         span3: " World Today",
       },
-      portfolio_list: [
-        {
-          id: "1",
-          title: "Cyberfeature",
-          slug: "cyberfeature",
-          imageUrl: "/img/works/1/1-s 2.jpg",
-          template: "mil-port",
-        },
-        {
-          id: "2",
-          title: "Projection",
-          slug: "projection",
-          imageUrl: "/img/works/2/1-s (4).jpg",
-          template: "mil-square",
-        },
-        {
-          id: "3",
-          title: "Ultrahole",
-          slug: "ultrahole",
-          imageUrl: "/img/works/3/1-s (5).jpg",
-          template: "mil-land",
-        },
-        {
-          id: "4",
-          title: "The alien car",
-          slug: "the-alien-car",
-          imageUrl: "/img/works/4/1-s (1).jpg",
-          template: "mil-land",
-        },
-        {
-          id: "5",
-          title: "Exit into the sunset",
-          slug: "exit-into-the-sunset",
-          imageUrl: "/img/works/5/1-s (2).jpg",
-          template: "mil-port",
-        },
-        {
-          id: "6",
-          title: "Neutral point of gravity",
-          slug: "neutral-point-of-gravity",
-          imageUrl: "/img/works/6/1-s (3).jpg",
-          template: "mil-square",
-        },
-      ],
       button1: "View all",
       button2: "Read more",
       button3: "View all projects",
@@ -355,24 +331,6 @@ export const texts = {
         span1: "blog",
       },
       button: "View all",
-      blogs: [
-        {
-          imageUrl: "/img/works/2/1-s (4).jpg",
-          title: "Built a Minimal Portfolio Website in Just 7 Days",
-        },
-        {
-          imageUrl: "/img/works/2/1-s (4).jpg",
-          title: "Built a Minimal Portfolio Website in Just 7 Days",
-        },
-        {
-          imageUrl: "/img/works/2/1-s (4).jpg",
-          title: "Built a Minimal Portfolio Website in Just 7 Days",
-        },
-        {
-          imageUrl: "/img/works/2/1-s (4).jpg",
-          title: "Built a Minimal Portfolio Website in Just 7 Days",
-        },
-      ],
     },
 
     reviews: {

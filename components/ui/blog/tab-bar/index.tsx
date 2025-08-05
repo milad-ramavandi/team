@@ -45,14 +45,7 @@ export default function TabBar() {
         {canScrollLeft && (
           <button
             onClick={() => scroll(-150)}
-            className="position-absolute start-0 top-0 h-100"
-            style={{
-              width: "30px",
-              border:"none",
-             background: "linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 70%, transparent 100%)",
-              zIndex: 50,
-              backdropFilter: "blur(2px)",
-            }}
+            className="position-absolute start-0 top-0 h-100 scroll"
           >
             <ChevronRightIcon
               isChevronRight={false}
@@ -64,7 +57,6 @@ export default function TabBar() {
           ref={scrollRef}
           onScroll={checkForScrollPosition}
           className="d-flex gap-2 overflow-auto py-3 px-2 tab-bar"
-          style={{ scrollBehavior: "smooth", whiteSpace: "nowrap" }}
         >
           {tabs.map((tab) => {
             const isActive =
@@ -77,20 +69,11 @@ export default function TabBar() {
                   query: tab?.value === "all" ? {} : { category_id: tab?.id },
                 }}
                 scroll={false}
-                // className={`px-1.5 py-1 text-[16px] font-bold rounded-full transition-colors duration-300 whitespace-nowrap text-[#ffffffcc] ${
-                //   !currentTag &&
-                //   (activeTab === tab?.id || activeTab === tab.value) &&
-                //   "bg-[rgb(207,255,17)] shadow-[0_0_5px_5px_rgba(207,255,17,0.5)] text-black"
-                // }`}
                 className={`fw-bold rounded-pill px-3 py-1 me-2 ${
                   isActive
-                    ? "mil-a1-bg text-white shadow active-tab"
+                    ? "mil-a1-bg text-white shadow active-tab tab"
                     : "text-white-60"
                 }`}
-                style={{
-                  fontSize: "16px",
-                  transition: "background-color 0.3s ease-in-out",
-                }}
               >
                 {tab.label}
               </Link>
@@ -99,11 +82,7 @@ export default function TabBar() {
           {currentTag && (
             <Link
               href={`/blog?tag_id=${currentTag.id}`}
-              className="fw-bold rounded-pill px-3 py-1 mil-a1-bg text-white-60 shadow"
-              style={{
-                fontSize: "16px",
-                boxShadow: "0 0 5px 5px rgba(207,255,17,0.5)",
-              }}
+              className="fw-bold rounded-pill px-3 py-1 mil-a1-bg text-white-60 shadow current-tag"
             >
               {currentTag.label}
             </Link>
@@ -112,14 +91,7 @@ export default function TabBar() {
         {canScrollRight && (
           <button
             onClick={() => scroll(150)}
-            className="position-absolute end-0 top-0 h-100"
-            style={{
-              width: "30px",
-              border:"none",
-              background: "linear-gradient(270deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 70%, transparent 100%)",
-              zIndex: 50,
-              backdropFilter: "blur(2px)",
-            }}
+            className="position-absolute end-0 top-0 h-100 scroll"
           >
             <ChevronRightIcon
               isChevronRight

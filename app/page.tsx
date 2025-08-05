@@ -8,7 +8,6 @@ import Portfolio from "../components/ui/home/Portfolio/Portfolio";
 import TeamList from "../components/ui/team-list";
 import { IconBoxes } from "../components/ui/IconBoxes/IconBoxes";
 import Reviews from "../components/ui/Reviews/Reviews";
-import counters_list from "../data/home/counters-list";
 import { texts } from "../lib/texts";
 import BlogList from "../components/ui/blog-list";
 
@@ -22,7 +21,7 @@ export default function Home() {
         <AboutMe />
         <IconBoxes />
         <AboutUs />
-        <Counters counters={counters_list} />
+        <Counters counters={texts?.homePage?.counters} />
         <Portfolio />
         <BlogList/>
         <TeamList />

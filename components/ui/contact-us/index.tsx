@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { texts } from "../../../lib/texts";
+import Image from "next/image";
 
 const ContactUs = () => {
   return (
@@ -26,7 +27,9 @@ const ContactUs = () => {
         </div>
         <div className="mil-image-box">
           <div className="mil-image-frame">
-            <img
+            <Image
+              fill
+              priority
               src="/img/home-4/2 (2).jpg"
               alt="img"
               className="mil-scale-img"

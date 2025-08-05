@@ -1,8 +1,11 @@
 import { notFound } from "next/navigation";
 import AboutMe from "../../../components/ui/team/team-member/about-me";
 import Hero from "../../../components/ui/team/team-member/hero";
-import { team_members } from "../../../data/team";
 import ContactMe from "../../../components/ui/team/team-member/cantact-me";
+import { IMember } from "../../../types/team";
+import { texts } from "../../../lib/texts";
+
+const team_members:IMember[] = texts?.members
 
 const TeamMemberPage = async ({
   params,

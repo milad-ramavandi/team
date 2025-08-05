@@ -1,6 +1,8 @@
-import React from "react";
-import { team_members } from "../../../data/team";
+import { texts } from "../../../lib/texts";
+import { IMember } from "../../../types/team";
 import TeamMember from "../team-list/team-member";
+
+const team_members: IMember[] = texts?.members;
 
 
 const Team = () => {

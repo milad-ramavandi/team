@@ -8,7 +8,7 @@ const IconBoxesList: IIconBox[] = texts.homePage.iconBox;
 
 export const IconBoxes = () => {
   return (
-    <div className="mil-p-0-100" id="scroll">
+    <div className="mil-p-0-100">
       <div className="container">
         <div className="row mil-jcc">
           {IconBoxesList.map((item, index) => {

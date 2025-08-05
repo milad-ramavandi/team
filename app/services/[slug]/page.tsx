@@ -1,7 +1,10 @@
 import { notFound } from "next/navigation";
 import { IconBoxes } from "../../../components/ui/IconBoxes/IconBoxes";
-import { services_list } from "../../../data/services";
-import { IServicePageProps } from "../../../types/services";
+import { IService, IServicePageProps } from "../../../types/services";
+import Image from "next/image";
+import { texts } from "../../../lib/texts";
+
+const services_list: IService[] = texts?.servicesPage?.services;
 
 const ServicePage = async ({ params }: IServicePageProps) => {
   const { slug } = await params;
@@ -44,7 +47,7 @@ const ServicePage = async ({ params }: IServicePageProps) => {
               </p>
               <div className="mil-team-quote mil-mb60">
                 <div className="mil-portrait">
-                  <img src="/img/team/ceo.jpg" alt="SEO portrait" />
+                  <Image width={240} height={240} src="/img/team/ceo.jpg" alt="SEO portrait" />
                 </div>
                 <p className="mil-text-md mil-m1">
                   <span className="mil-bold">Passionately Creating</span> Design
