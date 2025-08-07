@@ -23,21 +23,8 @@ const BlogCard = ({ blog }: BlogProps) => {
     : "";
 
   return (
-    <div className="position-relative p-3 rounded blog-card overflow-hidden">
-      {/* <GlowingEffect
-        spread={50}
-        borderWidth={2}
-        glow={true}
-        disabled={false}
-        proximity={64}
-        inactiveZone={0.01}
-      /> */}
-      <div className="position-relative">
-        {/* <div
-          className={
-            "absolute bottom-0 left-0 w-1/2 h-1 rounded-t-full bg-[rgb(207,255,17)] shadow-[0_0_60px_25px_rgba(207,255,17,0.5)]"
-          }
-        ></div> */}
+    <div className="position-relative blog-card overflow-hidden">
+      <div className="w-100 h-100 position-relative p-2 pb-0 container">
 
         {blog?.first_image && !blog?.acf?.videourl ? (
           <Link

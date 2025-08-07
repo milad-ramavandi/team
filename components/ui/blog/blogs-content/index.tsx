@@ -20,15 +20,13 @@ const BlogsContent = ({
 }) => {
   return (
     <div className="d-flex flex-column align-items-center px-3 text-white blogs-content mil-mt180">
-      <Breadcrumb/>
+      <Breadcrumb />
       <div className="heading-container">
-        <h1 className="mil-display3 mil-mb40 w-100 text-center">
-          {texts?.blogPage?.h1?.span1}{" "}
-          <span className="mil-a1">{texts?.blogPage?.h1?.span2}</span>
-          {texts?.blogPage?.h1?.span3}
-          <span className="mil-a1">{texts?.blogPage?.h1?.span4}</span>{" "}
-          {texts?.blogPage?.h1?.span5}{" "}
-          <span className="mil-a1">{texts?.blogPage?.h1?.span6}</span>
+        <h1 className="mil-display3 mil-mb40 text-center">
+          <span className="mil-a1">{texts?.blogPage?.h1?.span1}</span>
+          {texts?.blogPage?.h1?.span2} {texts?.blogPage?.h1?.span3} {" "}
+          {texts?.blogPage?.h1?.span4}{" "} <br/>
+          <span className="mil-a1">{texts?.blogPage?.h1?.span5}</span>{" "}
         </h1>
       </div>
       <SiderAndSlider />

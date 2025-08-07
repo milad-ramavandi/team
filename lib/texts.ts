@@ -519,12 +519,11 @@ export const texts = {
   },
   blogPage: {
     h1: {
-      span1: "Hero",
-      span2: "Blog",
-      span3: ": Your ",
-      span4: "gateway",
-      span5: "to",
-      span6: "web3 & crypto",
+      span1: "Blog",
+      span2: ": Your ",
+      span3: "gateway",
+      span4: "to",
+      span5: "web3 & crypto",
     },
   },
   servicesPage: {
