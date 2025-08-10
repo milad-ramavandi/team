@@ -15,7 +15,7 @@ export async function GET(request: NextRequest) {
   if (page) query.append("paged", page);
   if (search) query.append("search", search);
 
-  const url = `${endpoints.blogs.blogsList}${query.toString() ? `?${query.toString()}` : ""}`;
+  const url = `${process.env.NEXT_BLOG_API_URL}${endpoints.blogs.blogsList}${query.toString() ? `?${query.toString()}` : ""}`;
 
   try {
     const res = await api(url);

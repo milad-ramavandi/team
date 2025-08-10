@@ -9,14 +9,15 @@ import Image from "next/image";
 
 export default function Header() {
   const { isScrolled } = useScroll();
-  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const pathname = usePathname();
+  const onCloseMenu = () => setIsMenuOpen((prev) => !prev)
   return (
     <>
       <div className="mil-fixed">
         <div
-          className={`mil-top-panel-2 ${menuOpen && "mil-menu-open"} ${
-            isScrolled && !menuOpen && "mil-scroll"
+          className={`mil-top-panel-2 ${isMenuOpen && "mil-menu-open"} ${
+            isScrolled && !isMenuOpen && "mil-scroll"
           }`}
         >
           <div className="container">
@@ -75,7 +76,7 @@ export default function Header() {
 
             <div
               className={`mil-buttons-tp-frame mil-c-gone ${
-                menuOpen && "mil-active"
+                isMenuOpen && "mil-active"
               }`}
             >
               <div className="mil-buttons">
@@ -84,8 +85,8 @@ export default function Header() {
                 </Link>
                 <div className="mil-tp-btn">
                   <div
-                    className={`mil-menu-btn ${menuOpen && "mil-active"}`}
-                    onClick={() => setMenuOpen((prev) => !prev)}
+                    className={`mil-menu-btn ${isMenuOpen && "mil-active"}`}
+                    onClick={onCloseMenu}
                   >
                     <span></span>
                   </div>
@@ -94,7 +95,7 @@ export default function Header() {
             </div>
           </div>
         </div>
-        <Menu open={menuOpen} />
+        <Menu isOpen={isMenuOpen} onClose={onCloseMenu}/>
       </div>
     </>
   );

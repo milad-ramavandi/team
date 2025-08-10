@@ -8,7 +8,7 @@ export async function GET(
   { params }: { params: Promise<{ slug: string }> }
 ) {
   const slug = (await params).slug;
-  const url = `${endpoints.blogs.singleBlog}${slug ? `?slug=${slug}` : ""}`;
+  const url = `${process.env.NEXT_BLOG_API_URL}${endpoints.blogs.singleBlog}${slug ? `?slug=${slug}` : ""}`;
 
   try {
     const res = await api(url);

@@ -3,8 +3,12 @@ import Link from "next/link";
 import MenuSlider from "./MenuSlider";
 import { texts } from "../../../../lib/texts";
 import { useEffect } from "react";
+import { IMenu } from "../../../../types/menu";
 
-export default function Menu({ open }: { open: boolean }) {
+export default function Menu({
+  isOpen,
+  onClose,
+}: IMenu) {
   useEffect(() => {
     document.querySelectorAll(".mil-has-children > a").forEach((link) => {
       link.addEventListener("click", function (event) {
@@ -30,7 +34,9 @@ export default function Menu({ open }: { open: boolean }) {
   }, []);
 
   return (
-    <div className={`mil-menu-frame mil-menu-frame-2 ${open && "mil-active"}`}>
+    <div
+      className={`mil-menu-frame mil-menu-frame-2 ${isOpen && "mil-active"}`}
+    >
       <div className="mil-menu-window">
         <div className="container">
           <div className="row mil-no-g">
@@ -97,7 +103,7 @@ export default function Menu({ open }: { open: boolean }) {
                       <Link href="#.">{texts.menu.items[3].label}</Link>
                       <ul>
                         <li>
-                          <Link href="team-stl.html">
+                          <Link href="/team">
                             {texts.menu.items[3].children[0].label}
                           </Link>
                         </li>
@@ -145,16 +151,24 @@ export default function Menu({ open }: { open: boolean }) {
                 <div className="mil-links-part">
                   <ul className="mil-links">
                     <li>
-                      <Link href="#.">{texts.menu.items2[0].label}</Link>
+                      <Link href="/privacy-policy" onClick={onClose}>
+                        {texts.menu.items2[0].label}
+                      </Link>
                     </li>
                     <li>
-                      <Link href="#.">{texts.menu.items2[1].label}</Link>
+                      <Link href="/terms-and-conditions" onClick={onClose}>
+                        {texts.menu.items2[1].label}
+                      </Link>
                     </li>
                     <li>
-                      <Link href="#.">{texts.menu.items2[2].label}</Link>
+                      <Link href="/site-map" onClick={onClose}>
+                        {texts.menu.items2[2].label}
+                      </Link>
                     </li>
                     <li>
-                      <Link href="#.">{texts.menu.items2[3].label}</Link>
+                      <Link href="/careers" onClick={onClose}>
+                        {texts.menu.items2[3].label}
+                      </Link>
                     </li>
                   </ul>
                 </div>

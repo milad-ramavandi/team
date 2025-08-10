@@ -2,7 +2,7 @@ import api from "../..";
 import endpoints from "../../config/endpoints";
 
 export async function GET() {
-  const url = `${endpoints.blogs.catogoriesList}`;
+  const url = `${process.env.NEXT_BLOG_API_URL}${endpoints.blogs.catogoriesList}`;
 
   try {
     const res = await api(url);
