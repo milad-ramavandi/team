@@ -35,7 +35,7 @@ const BlogCard = ({ blog }: BlogProps) => {
               fill
               src={blog?.first_image}
               alt={blog?.title}
-              className="w-100 h-100 object-fit-cover transition-transform img"
+              className="object-fit-cover transition-transform img"
               priority
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
             />
@@ -51,7 +51,7 @@ const BlogCard = ({ blog }: BlogProps) => {
                 priority
                 src={videoThumbnailUrl}
                 alt={blog.title}
-                className="w-100 h-100 object-fit-cover transition-transform img"
+                className="object-fit-cover transition-transform img"
                 unoptimized
               />
               {blog?.acf?.videourl && (
@@ -61,7 +61,7 @@ const BlogCard = ({ blog }: BlogProps) => {
           )
         )}
 
-        <div className="mt-3">
+        <div className="mt-1">
           <div className="d-flex justify-content-between align-items-center small text-white-50">
             <p className="mb-1" title={blog?.categories?.[0]}>
               {blog?.categories?.[0] ? blog?.categories?.[0] : blog?.category}

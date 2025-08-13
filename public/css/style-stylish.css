@@ -6204,7 +6204,7 @@ footer
 }
 
 .blogs-content .blog-card .link {
-  height: 240px;
+  height: 210px;
   overflow: hidden;
   cursor: pointer;
 }
@@ -6228,7 +6228,7 @@ footer
 }
 
 .blog-content-container .blog-card .link {
-  height: 240px;
+  height: 210px;
   overflow: hidden;
   cursor: pointer;
 }
@@ -6588,10 +6588,39 @@ footer
   margin-right: 0.25rem;
 }
 
-.custom-item p {
+.custom-item p, div {
   line-height: 1.5rem;
   margin-bottom: 0;
-  display: contents;
+}
+
+.custom-section2 {
+  letter-spacing: 0.05em;
+  margin-top: 1.25rem;
+}
+
+.custom-section2 .title {
+  font-weight: 700;
+  font-size: 17px;
+  color: white;
+}
+
+.custom-section2 .des {
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+.custom-section2 .item {
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+
+.custom-section2 .item .fill-span {
+   width: 12px;
+   height: 12px;
+}
+.custom-section2 .item .empty-span {
+  width: 8px;
+  height: 8px;
 }
 
 /*...................................................................
