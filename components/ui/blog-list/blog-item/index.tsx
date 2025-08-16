@@ -1,7 +1,8 @@
 import Image from "next/image";
-import { IBlog } from "../../../../types/blog";
+import { IBlogCard } from "../../../../types/blog";
 
-const BlogItem = ({ imageUrl, title }: IBlog) => {
+
+const BlogItem = ({ imageUrl, title }: IBlogCard) => {
   return (
     <div className="col-md-6 col-lg-3">
       <div className="mil-team-card mil-stl mil-mb30 mil-768-mb-15">

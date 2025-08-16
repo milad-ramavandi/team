@@ -3,14 +3,14 @@
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-
+import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import { texts } from "../../../../lib/texts";
 import SliderCard from "./slider-card";
 
 export default function Slider() {
-  const swiperRef = useRef<any>(null);
+  const swiperRef = useRef<{ swiper: SwiperType } | null>(null);
   const handlePrev = () => {
     if (swiperRef.current) {
       swiperRef.current.swiper.slidePrev();

@@ -1,9 +1,9 @@
 import Link from "next/link";
 import BlogItem from "./blog-item";
-import { IBlog } from "../../../types/blog";
 import { texts } from "../../../lib/texts";
+import { IBlogCard } from "../../../types/blog";
 
-const blogs: IBlog[] = texts?.blogs;
+const blogs: IBlogCard[] = texts?.blogs;
 
 const BlogList = () => {
   return (

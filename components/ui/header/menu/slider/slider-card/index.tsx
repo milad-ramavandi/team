@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { IBlog } from "../../../../../../types/blog";
-const SliderCard = ({imageUrl, title}:IBlog) => {
+import { IBlogCard } from "../../../../../../types/blog";
+const SliderCard = ({imageUrl, title}:IBlogCard) => {
   return (
     <a className="mil-blog-card-sm mil-c-gone">
       <div className="mil-cover">

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { IBlogCard } from "../../../../../types/blog";
-
+import Image from "next/image";
 
 export default function SliderCard({
   imageUrl,
@@ -14,7 +14,8 @@ export default function SliderCard({
     <div className="mil-blog-card">
       <div className="mil-cover mil-up-removed">
         <div className="mil-hover-frame">
-          <img
+          <Image
+            fill
             src={imageUrl}
             alt="cover"
             className="mil-scale-img"

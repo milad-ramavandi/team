@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import MenuSlider from "./slider/slider";
+import MenuSlider from "./slider";
 import { texts } from "../../../../lib/texts";
 import { useEffect } from "react";
 import { IMenu } from "../../../../types/menu";
