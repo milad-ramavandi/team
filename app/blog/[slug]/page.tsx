@@ -79,26 +79,39 @@ export async function generateMetadata({
   };
 }
 
+const blogCategoriesPromise = async () => {
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}api/blog/categories`
+  );
+  return res.json();
+};
+
+const popularBlogsPromise = async () => {
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}api/blog?category_id=5&paged=1`
+  );
+  return res.json();
+};
+
 const BlogItemPage = async ({ params }: IBlogPageProps) => {
   const { slug } = await params;
-  const blogResponse = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}api/blog/${slug}`
-  );
-  const blogData = await blogResponse.json();
+
+  const blogPromise = async () => {
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_API_URL}api/blog/${slug}`
+    );
+    return res.json();
+  };
+
+  const [blogData, popularBlogsData, blogCategoriesData] = await Promise.all([
+    blogPromise(),
+    popularBlogsPromise(),
+    blogCategoriesPromise(),
+  ]);
 
   if (!blogData) {
     notFound();
   }
-
-  const blogCategoriesResponse = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}api/blog/categories`
-  );
-  const blogCategoriesData = await blogCategoriesResponse.json();
-
-  const popularBlogsResponse = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}api/blog?category_id=5&paged=1`
-  );
-  const popularBlogsData = await popularBlogsResponse.json();
   return (
     <main>
       <Script type="application/ld+json">

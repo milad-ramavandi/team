@@ -9,7 +9,7 @@ const Hero = () => {
         width={1920}
         height={1205}
         priority
-        src="/img/home-5/1.jpg"
+        src="/img/1.jpg"
         alt="hero image"
         className="mil-hero-image"
         data-value-1=".6"
@@ -28,7 +28,7 @@ const Hero = () => {
               <br /> {texts.homePage.hero.heading2}
             </h1>
           </div>
-          <CircleScroll Goto="#aboutme" />
+          <CircleScroll Goto="#aboutus" />
         </div>
       </div>
     </div>

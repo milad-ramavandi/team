@@ -6,38 +6,13 @@ export const texts = {
 
   menu: {
     items: [
-      {
-        label: "Template Style",
-        children: [{ label: "Friendly" }, { label: "Stylish" }],
-      },
-      {
-        label: "Home type",
-        children: [
-          { label: "Corporate" },
-          { label: "Agency" },
-          { label: "Personal" },
-        ],
-      },
-      {
-        label: "Portfolio",
-        children: [
-          { label: "Grid type 1" },
-          { label: "Grid type 2" },
-          { label: "Grid type 3" },
-        ],
-      },
-      {
-        label: "Pages",
-        children: [
-          { label: "Team" },
-          { label: "Contact" },
-          { label: "Services" },
-          { label: "Service single" },
-          { label: "Blog" },
-          { label: "Publication" },
-          { label: "404" },
-        ],
-      },
+      "Team",
+      "Contact Us",
+      "Services",
+      "Portfolio",
+      "Blog",
+      "About",
+      "Us"
     ],
 
     rights: "©2024. All rights reserved.",
@@ -62,21 +37,20 @@ export const texts = {
   circleScroll: "We are what we think - We are what we think - ",
   blogs: [
     {
-      imageUrl: "/img/blog/blog_1.jpeg",
-      title: "5 best crypto AI tips you can combine with Hero AI",
+      imageUrl: "/img/blog/1.jpg",
+      title: "How to Become a Graphic Designer in 10 Simple Steps",
     },
     {
-      imageUrl: "/img/blog/blog_2.png",
-      title:
-        "Bitcoin falls under $91K - Bitfinex says it's at a `critical juncture`",
+      imageUrl: "/img/blog/2.jpg",
+      title: "10 Essential Tools Every Graphic Designer Should Master",
     },
     {
-      imageUrl: "/img/blog/blog_3.jpeg",
-      title: "Built a Minimal Portfolio Website in Just 7 Days",
+      imageUrl: "/img/blog/3.jpg",
+      title: "The Ultimate Guide to UI/UX Design for Beginners",
     },
     {
-      imageUrl: "/img/blog/blog_4.avif",
-      title: "Built a Minimal Portfolio Website in Just 7 Days",
+      imageUrl: "/img/blog/4.jpg",
+      title: "How to Create Stunning Visuals with Minimal Effort",
     },
   ],
   members: [
@@ -283,21 +257,21 @@ export const texts = {
       button: "Read more about us",
     },
 
-    iconBox: [
+    iconBoxes: [
       {
-        imageUrl: "/img/home-1/iconbox/2.svg",
+        imageUrl: "/img/icon boxes/2.svg",
         title: "Expert Team",
         description:
           "Our team consists of experienced professionals who work with passion, delivering high-quality projects.",
       },
       {
-        imageUrl: "/img/home-1/iconbox/1.svg",
+        imageUrl: "/img/icon boxes/1.svg",
         title: "Innovative Solutions",
         description:
           "We offer unique and creative approaches that help your business stand out in the market and achieve success.",
       },
       {
-        imageUrl: "/img/home-1/iconbox/3.svg",
+        imageUrl: "/img/icon boxes/3.svg",
         title: "Client Focus",
         description:
           " We prioritize client needs, deeply understanding them to create tailored solutions for maximum results.",

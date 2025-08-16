@@ -30,7 +30,7 @@ const ContactUs = () => {
             <Image
               fill
               priority
-              src="/img/home-4/2 (2).jpg"
+              src="/img/4.jpg"
               alt="img"
               className="mil-scale-img"
               data-value-1="1.20"

@@ -1327,6 +1327,9 @@ spaces
 .mil-p-100-0 {
   padding-top: 100px;
 }
+.mil-p-130-0 {
+  padding-top: 130px;
+}
 
 @media screen and (max-width: 768px) {
   .mil-mb130 {
@@ -3629,6 +3632,9 @@ menu window
 }
 .mil-main-menu li ul li:hover a {
   padding-left: 5px;
+}
+.mil-main-menu li:hover a {
+  color: #7c3980 !important;
 }
 .mil-main-menu li.mil-has-children:after {
   font-family: "Font Awesome 5 Pro";
@@ -6548,79 +6554,6 @@ footer
 
 .blog-content a {
   color: #3b82f6;
-}
-
-/*................................privacy policy...........................
-...........................................................................
-....................*/
-
-.custom-text {
-  font-size: 15px;
-  line-height: 33px;
-  letter-spacing: 0.05em;
-}
-.custom-text .fs-5 {
-  font-size: 17px !important;
-}
-
-.custom-section {
-  font-size: 15px;
-  line-height: 33px;
-  letter-spacing: 0.05em;
-  margin-top: 1.5rem;
-}
-
-.custom-heading {
-  font-size: 17px;
-  font-weight: bold;
-  margin-bottom: 1.25rem;
-}
-
-.custom-subheading {
-  font-size: 17px;
-  margin: 1.25rem 0;
-}
-
-.custom-number {
-  font-weight: bold;
-  min-width: 20px;
-  text-align: right;
-  margin-right: 0.25rem;
-}
-
-.custom-item p, div {
-  line-height: 1.5rem;
-  margin-bottom: 0;
-}
-
-.custom-section2 {
-  letter-spacing: 0.05em;
-  margin-top: 1.25rem;
-}
-
-.custom-section2 .title {
-  font-weight: 700;
-  font-size: 17px;
-  color: white;
-}
-
-.custom-section2 .des {
-  font-size: 1rem;
-  line-height: 24px;
-}
-
-.custom-section2 .item {
-  font-size: 1rem;
-  line-height: 1.75rem;
-}
-
-.custom-section2 .item .fill-span {
-   width: 12px;
-   height: 12px;
-}
-.custom-section2 .item .empty-span {
-  width: 8px;
-  height: 8px;
 }
 
 /*...................................................................

@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { IconBoxes } from "../../../components/ui/IconBoxes/IconBoxes";
+import { IconBoxes } from "../../../components/ui/icon-boxes";
 import { IService, IServicePageProps } from "../../../types/services";
 import Image from "next/image";
 import { texts } from "../../../lib/texts";

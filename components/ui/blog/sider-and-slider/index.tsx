@@ -2,16 +2,27 @@ import { IBlogCard } from "../../../../types/blog";
 import BlogCard from "../blog-card";
 import Slider from "../slider";
 
-const SiderAndSlider = async () => {
-  const popularBlogsResponse = await fetch(
+const popularBlogsPromise = async () => {
+  const res = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}api/blog?category_id=5&paged=1`
   );
-  const popularBlogsData = await popularBlogsResponse.json();
+  return res.json();
+};
 
-  const mainBlogsResponse = await fetch(
+const mainBlogsPromise = async () => {
+  const res = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}api/blog?category_id=2&paged=1`
   );
-  const mainBlogsData = await mainBlogsResponse.json();
+  return res.json();
+};
+
+const SiderAndSlider = async () => {
+  
+const [popularBlogsData, mainBlogsData] = await Promise.all([
+  popularBlogsPromise(),
+  mainBlogsPromise(),
+]);
+
   return (
     <div className="d-flex flex-column-reverse align-items-center px-2 sider-and-slider">
       <div className="d-flex flex-column flex-sm-row align-items-center blogs-card">

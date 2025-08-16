@@ -11,7 +11,7 @@ const Cover = () => {
               <Image
                 fill
                 priority
-                src="/img/pages/cover.jpg"
+                src="/img/3.jpg"
                 alt="project"
                 className="mil-scale-img"
                 data-value-1="1.15"

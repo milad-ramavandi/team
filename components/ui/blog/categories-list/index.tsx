@@ -8,7 +8,7 @@ const CategoriesList = async ({
   categoriesList: ICategory[];
 }) => {
   const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}api/blog?paged=1`);
-  const blogListResponse = await res.json();
+  const blogListData = await res.json();
 
   return (
     <div className="categories-box">
@@ -23,7 +23,7 @@ const CategoriesList = async ({
             </Link>
           </div>
           <span className="category-count">
-            ({blogListResponse?.pagination?.total_posts})
+            ({blogListData?.pagination?.total_posts})
           </span>
         </div>
 

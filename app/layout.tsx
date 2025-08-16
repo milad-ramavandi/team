@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
 import "../styles/globals.css";
-
 import Script from "next/script";
-import { anton, outfit } from "../components/fonts";
 import Providers from "../components/providers";
-import Header from "../components/ui/Header/Header";
-import Footer from "../components/ui/Footer/Footer";
+import Header from "../components/ui/header";
+import Footer from "../components/ui/footer";
+import { Anton, Outfit } from "../components/fonts";
 
 export const metadata: Metadata = {
-  title: "test",
-  description: "test",
+  title: "Team",
+  description: "We are a tech company that turns ideas into smart solutions.",
 };
 
 export default function RootLayout({
@@ -18,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${outfit.variable} ${anton.variable}`}>
-      <body className={`${outfit.className} main-container`}>
+    <html lang="en" className={`${Outfit.variable} ${Anton.variable}`}>
+      <body className={`${Outfit.className} main-container`}>
         <Providers>
           <Header />
           {children}

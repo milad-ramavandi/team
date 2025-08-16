@@ -13,7 +13,7 @@ export default function NotFoundPage() {
                   width={1920}
                   height={1740}
                   priority
-                  src="/img/shapes/6.png"
+                  src="/img/5.png"
                   alt="shapes"
                   className="mil-hero-animation"
                   data-depth="0.25"
