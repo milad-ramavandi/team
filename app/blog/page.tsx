@@ -51,7 +51,7 @@ const BlogsPage = async ({
   const page = Number(paged) || 1;
   return (
     <main>
-      <Script type="application/ld+json">
+      <Script type="application/ld+json" id="blog-page">
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Blog",

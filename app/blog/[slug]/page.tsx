@@ -114,7 +114,7 @@ const BlogItemPage = async ({ params }: IBlogPageProps) => {
   }
   return (
     <main>
-      <Script type="application/ld+json">
+      <Script type="application/ld+json" id="blog-single-page">
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "BlogPosting",
