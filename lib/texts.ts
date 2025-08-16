@@ -12,7 +12,7 @@ export const texts = {
       "Portfolio",
       "Blog",
       "About",
-      "Us"
+      "Us",
     ],
 
     rights: "©2024. All rights reserved.",
@@ -38,19 +38,39 @@ export const texts = {
   blogs: [
     {
       imageUrl: "/img/blog/1.jpg",
+      category: "design",
+      date: "29.08.24",
       title: "How to Become a Graphic Designer in 10 Simple Steps",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
+      link: "publication-stl.html",
     },
     {
       imageUrl: "/img/blog/2.jpg",
+      category: "Branding",
+      date: "29.08.24",
       title: "10 Essential Tools Every Graphic Designer Should Master",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
+      link: "publication-stl.html",
     },
     {
       imageUrl: "/img/blog/3.jpg",
-      title: "The Ultimate Guide to UI/UX Design for Beginners",
+      category: "Art",
+      date: "29.08.24",
+      title: "From Concept to Creation: The Design Process Explained",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
+      link: "publication-stl.html",
     },
     {
       imageUrl: "/img/blog/4.jpg",
-      title: "How to Create Stunning Visuals with Minimal Effort",
+      category: "Interior",
+      date: "29.08.24",
+      title: "The Ultimate Guide to UI/UX Design for Beginners",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
+      link: "publication-stl.html",
     },
   ],
   members: [
@@ -492,12 +512,81 @@ export const texts = {
     },
   },
   blogPage: {
-    h1: {
-      span1: "Blog",
-      span2: ": Your ",
-      span3: "gateway",
-      span4: "to",
-      span5: "web3 & crypto",
+    hero: {
+      h1: "Newsletter",
+    },
+    latestPublication: [
+      {
+        imageUrl: "/img/blog/1.jpg",
+        category: "design",
+        date: "29.08.24",
+        title: "How to Become a Graphic Designer in 10 Simple Steps",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
+        link: "publication-stl.html",
+      },
+      {
+        imageUrl: "/img/blog/5.jpg",
+        category: "design",
+        date: "29.08.24",
+        title: "The Ultimate Guide to UI/UX Design for Beginners",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
+        link: "publication-stl.html",
+      },
+      {
+        imageUrl: "/img/blog/6.jpg",
+        category: "design",
+        date: "29.08.24",
+        title: "From Concept to Creation: The Design Process Explained",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
+        link: "publication-stl.html",
+      },
+      {
+        imageUrl: "/img/blog/4.jpg",
+        category: "design",
+        date: "29.08.24",
+        title: "How to Become a Graphic Designer in 10 Simple Steps",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
+        link: "publication-stl.html",
+      },
+      {
+        imageUrl: "/img/blog/7.jpg",
+        category: "design",
+        date: "29.08.24",
+        title: "The Ultimate Guide to UI/UX Design for Beginners",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
+        link: "publication-stl.html",
+      },
+      {
+        imageUrl: "/img/blog/8.jpg",
+        category: "design",
+        date: "29.08.24",
+        title: "From Concept to Creation: The Design Process Explained",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
+        link: "publication-stl.html",
+      },
+    ],
+    subscribe: {
+      p1: "Newsletter",
+      h2: {
+        heading1: "Subscribe",
+        span: "our",
+        heading2: "newsletter",
+      },
+      form: {
+        placeholders: {
+          email: "Enter your email",
+        },
+      },
+      p2: {
+        para1: "By clicking the submit button, you agree to the",
+        para2: "rules for processing personal data",
+      },
     },
   },
   servicesPage: {

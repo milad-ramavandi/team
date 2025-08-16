@@ -5,10 +5,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
 import SliderCard from "./slider-card";
-import { IBlog } from "../../../../../types/blog";
 import { texts } from "../../../../../lib/texts";
+import { IBlogCard } from "../../../../../types/blog";
 
-const blogs: IBlog[] = texts?.blogs;
+const blogs: IBlogCard[] = texts?.blogs;
 
 const Slider = () => {
   const swiperRef = useRef<{ swiper: SwiperType } | null>(null);

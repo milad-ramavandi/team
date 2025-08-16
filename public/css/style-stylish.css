@@ -5594,6 +5594,11 @@ footer
   position: relative;
   width: 100%;
 }
+@media (min-width: 992px) {
+  .mil-subscribe-form {
+    width: 95%;
+  }
+}
 .mil-subscribe-form input {
   border-radius: 90px;
   background-color: #000000;
