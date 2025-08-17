@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import Menu from "./menu";
-import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { texts } from "../../../lib/texts";
 import Image from "next/image";

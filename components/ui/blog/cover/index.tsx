@@ -22,10 +22,10 @@ const Cover = ({ title, imageUrl }: { title: string; imageUrl: string }) => {
           </div>
           <div className="col-lg-8">
             <p className="mil-text-xl mil-m1 mil-mb60">
-              In today's visually driven world, creating eye-catching visuals is
-              essential. Fortunately, you don't need to be a graphic designer to
-              achieve stunning results with minimal effort. Here's how you can
-              do it.
+              In today&apos;s visually driven world, creating eye-catching
+              visuals is essential. Fortunately, you don&apos;t need to be a
+              graphic designer to achieve stunning results with minimal effort.
+              Here&apos;s how you can do it.
             </p>
 
             <p className="mil-text-md mil-mb90">
@@ -51,10 +51,10 @@ const Cover = ({ title, imageUrl }: { title: string; imageUrl: string }) => {
               Optimize your visuals for different platforms by using the correct
               dimensions and formats. Ensure your content is mobile-friendly
               with clear, legible text and fast-loading images. Automation can
-              also save time: tools like Photoshop's batch processing feature
-              allow you to apply edits to multiple images at once. Scheduling
-              tools like Buffer or Hootsuite help you plan posts in advance,
-              ensuring consistent posting without extra effort.
+              also save time: tools like Photoshop&apos;s batch processing
+              feature allow you to apply edits to multiple images at once.
+              Scheduling tools like Buffer or Hootsuite help you plan posts in
+              advance, ensuring consistent posting without extra effort.
             </p>
 
             <h3 className="mil-head4 mil-mb30">Conclusion</h3>
