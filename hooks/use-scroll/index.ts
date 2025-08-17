@@ -1,10 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
 
-const useMenu = () => {
+const useScroll = () => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
-  const onCloseMenu = () => setIsMenuOpen((prev) => !prev)
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,7 +19,7 @@ const useMenu = () => {
     // Cleanup
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  return { isScrolled, isMenuOpen, onCloseMenu };
+  return { isScrolled };
 };
 
-export default useMenu;
+export default useScroll;

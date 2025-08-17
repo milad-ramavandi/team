@@ -1,21 +1,24 @@
 "use client";
 import Link from "next/link";
-import Menu from "./menu";
 import { usePathname } from "next/navigation";
 import { texts } from "../../../lib/texts";
 import Image from "next/image";
-import useMenu from "../../../hooks/use-menu";
+import useScroll from "../../../hooks/use-scroll";
+import { useContext } from "react";
+import { ContextHeader } from "../../../context/header/ContextHeader";
+import Menu from "./menu";
 
 export default function Header() {
-  const { isScrolled, isMenuOpen, onCloseMenu } = useMenu();
+  const contextHeader = useContext(ContextHeader)
+  const { isScrolled } = useScroll();
   const pathname = usePathname();
   
   return (
     <>
       <div className="mil-fixed">
         <div
-          className={`mil-top-panel-2 ${isMenuOpen && "mil-menu-open"} ${
-            isScrolled && !isMenuOpen && "mil-scroll"
+          className={`mil-top-panel-2 ${contextHeader?.isMenuOpen && "mil-menu-open"} ${
+            isScrolled && !contextHeader?.isMenuOpen && "mil-scroll"
           }`}
         >
           <div className="container">
@@ -72,7 +75,7 @@ export default function Header() {
 
             <div
               className={`mil-buttons-tp-frame mil-c-gone ${
-                isMenuOpen && "mil-active"
+                contextHeader?.isMenuOpen && "mil-active"
               }`}
             >
               <div className="mil-buttons">
@@ -81,8 +84,8 @@ export default function Header() {
                 </Link>
                 <div className="mil-tp-btn">
                   <div
-                    className={`mil-menu-btn ${isMenuOpen && "mil-active"}`}
-                    onClick={onCloseMenu}
+                    className={`mil-menu-btn ${contextHeader?.isMenuOpen && "mil-active"}`}
+                    onClick={contextHeader?.toggleMenu}
                   >
                     <span></span>
                   </div>

@@ -2,11 +2,11 @@
 import Link from "next/link";
 import Slider from "./slider";
 import { texts } from "../../../../lib/texts";
-import { useEffect } from "react";
-import useMenu from "../../../../hooks/use-menu";
+import { useContext, useEffect } from "react";
+import { ContextHeader } from "../../../../context/header/ContextHeader";
 
 export default function Menu() {
-  const {isMenuOpen, onCloseMenu} = useMenu()
+  const contextHeader = useContext(ContextHeader)
   useEffect(() => {
     document.querySelectorAll(".mil-has-children > a").forEach((link) => {
       link.addEventListener("click", function (event) {
@@ -33,7 +33,7 @@ export default function Menu() {
 
   return (
     <div
-      className={`mil-menu-frame mil-menu-frame-2 ${isMenuOpen && "mil-active"}`}
+      className={`mil-menu-frame mil-menu-frame-2 ${contextHeader?.isMenuOpen && "mil-active"}`}
     >
       <div className="mil-menu-window">
         <div className="container">
@@ -43,33 +43,33 @@ export default function Menu() {
                 <div className="mil-menu-part mil-inner-scroll" id="swupMenu">
                   <ul className="mil-main-menu mil-c-gone">
                     <li>
-                      <Link href="/team" onClick={onCloseMenu}>
+                      <Link href="/team" onClick={contextHeader?.toggleMenu}>
                         {texts.menu.items[0]}
                       </Link>
                     </li>
                     <li>
-                      <Link href="/contact-us" onClick={onCloseMenu}>
+                      <Link href="/contact-us" onClick={contextHeader?.toggleMenu}>
                         {texts.menu.items[1]}
                       </Link>
                     </li>
                     <li>
-                      <Link href="/services" onClick={onCloseMenu}>
+                      <Link href="/services" onClick={contextHeader?.toggleMenu}>
                         {texts.menu.items[2]}
                       </Link>
                     </li>
 
                     <li>
-                      <Link href="/portfolio" onClick={onCloseMenu}>
+                      <Link href="/portfolio" onClick={contextHeader?.toggleMenu}>
                         {texts.menu.items[3]}
                       </Link>
                     </li>
                     <li>
-                      <Link href="/blog" onClick={onCloseMenu}>
+                      <Link href="/blog" onClick={contextHeader?.toggleMenu}>
                         {texts.menu.items[4]}
                       </Link>
                     </li>
                     <li>
-                      <Link href="/about" onClick={onCloseMenu}>
+                      <Link href="/about" onClick={contextHeader?.toggleMenu}>
                         {texts.menu.items[5]}
                       </Link>
                     </li>
@@ -85,22 +85,22 @@ export default function Menu() {
                 <div className="mil-links-part">
                   <ul className="mil-links">
                     <li>
-                      <Link href="/privacy-policy" onClick={onCloseMenu}>
+                      <Link href="/privacy-policy" onClick={contextHeader?.toggleMenu}>
                         {texts.menu.items2[0].label}
                       </Link>
                     </li>
                     <li>
-                      <Link href="/terms-and-conditions" onClick={onCloseMenu}>
+                      <Link href="/terms-and-conditions" onClick={contextHeader?.toggleMenu}>
                         {texts.menu.items2[1].label}
                       </Link>
                     </li>
                     <li>
-                      <Link href="/site-map" onClick={onCloseMenu}>
+                      <Link href="/site-map" onClick={contextHeader?.toggleMenu}>
                         {texts.menu.items2[2].label}
                       </Link>
                     </li>
                     <li>
-                      <Link href="/careers" onClick={onCloseMenu}>
+                      <Link href="/careers" onClick={contextHeader?.toggleMenu}>
                         {texts.menu.items2[3].label}
                       </Link>
                     </li>

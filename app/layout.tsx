@@ -5,6 +5,7 @@ import Providers from "../components/providers";
 import Header from "../components/ui/header";
 import Footer from "../components/ui/footer";
 import { Anton, Outfit } from "../components/fonts";
+import { ContextHeaderProvider } from "../context/header/ContextHeader";
 
 export const metadata: Metadata = {
   title: "Team",
@@ -20,7 +21,9 @@ export default function RootLayout({
     <html lang="en" className={`${Outfit.variable} ${Anton.variable}`}>
       <body className={`${Outfit.className} main-container`}>
         <Providers>
-          <Header />
+          <ContextHeaderProvider>
+            <Header />
+          </ContextHeaderProvider>
           {children}
           <Footer />
         </Providers>
