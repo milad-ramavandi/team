@@ -3,7 +3,7 @@ import BlogItem from "./blog-item";
 import { texts } from "../../../lib/texts";
 import { IBlogCard } from "../../../types/blog";
 
-const blogs: IBlogCard[] = texts?.blogs;
+const blogs: IBlogCard[] = texts?.blogs.slice(0, 4);
 
 const BlogList = () => {
   return (
