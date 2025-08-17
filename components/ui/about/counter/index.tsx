@@ -1,4 +1,4 @@
-import { ICounter } from "../../../../types/us";
+import { ICounter } from "../../../../types/about";
 
 const Counter = ({ title, number }: ICounter) => {
   return (

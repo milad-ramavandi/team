@@ -1,7 +1,7 @@
 export const texts = {
   header: {
     name: "PIXY",
-    items: ["About", "Portfolio", "Blog", "Us"],
+    items: ["About", "Portfolio", "Blog", "Services"],
   },
 
   menu: {
@@ -41,36 +41,90 @@ export const texts = {
       category: "design",
       date: "29.08.24",
       title: "How to Become a Graphic Designer in 10 Simple Steps",
+      slug: "how-to-become-a-graphic-designer-in-10-simple-steps",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
-      link: "publication-stl.html",
     },
     {
       imageUrl: "/img/blog/2.jpg",
       category: "Branding",
       date: "29.08.24",
       title: "10 Essential Tools Every Graphic Designer Should Master",
+      slug: "10-essential-tools-every-graphic-designer-should-master",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
-      link: "publication-stl.html",
     },
     {
       imageUrl: "/img/blog/3.jpg",
       category: "Art",
       date: "29.08.24",
       title: "From Concept to Creation: The Design Process Explained",
+      slug: "from-concept-to-creation:-the-design-process-explained",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
-      link: "publication-stl.html",
     },
     {
       imageUrl: "/img/blog/4.jpg",
       category: "Interior",
       date: "29.08.24",
       title: "The Ultimate Guide to UI/UX Design for Beginners",
+      slug: "the-ultimate-guide-to-ui/ux-design-for-beginners",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
-      link: "publication-stl.html",
+    },
+    {
+      imageUrl: "/img/blog/1.jpg",
+      category: "design",
+      date: "29.08.24",
+      title: "How to Become a Graphic Designer in 10 Simple Steps",
+      slug: "how-to-become-a-graphic-designer-in-10-simple-steps",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
+    },
+    {
+      imageUrl: "/img/blog/5.jpg",
+      category: "design",
+      date: "29.08.24",
+      title: "The Ultimate Guide to UI/UX Design for Beginners",
+      slug: "the-ultimate-guide-to-ui/ux-design-for-beginners",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
+    },
+    {
+      imageUrl: "/img/blog/6.jpg",
+      category: "design",
+      date: "29.08.24",
+      title: "From Concept to Creation: The Design Process Explained",
+      slug: "from-concept-to-creation:-the-design-process-explained",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
+    },
+    {
+      imageUrl: "/img/blog/4.jpg",
+      category: "design",
+      date: "29.08.24",
+      title: "How to Become a Graphic Designer in 10 Simple Steps",
+      slug: "how-to-become-a-graphic-designer-in-10-simple-steps",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
+    },
+    {
+      imageUrl: "/img/blog/7.jpg",
+      category: "design",
+      date: "29.08.24",
+      title: "The Ultimate Guide to UI/UX Design for Beginners",
+      slug: "the-ultimate-guide-to-ui/ux-design-for-beginners",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
+    },
+    {
+      imageUrl: "/img/blog/8.jpg",
+      category: "design",
+      date: "29.08.24",
+      title: "From Concept to Creation: The Design Process Explained",
+      slug: "from-concept-to-creation:-the-design-process-explained",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
     },
   ],
   members: [
@@ -413,11 +467,51 @@ export const texts = {
       // span4: "possible",
       // span5: "Pixy",
     },
-    counters: [
-      { number: "14", title: "SERVICE OFFERING" },
-      { number: "45", title: "APPLIED RESEARCH" },
-      { number: "57", title: "COMPLETED PROJECTS" },
-    ],
+    services: {
+      p: "Our Services",
+      h2: {
+        span1: "We generate",
+        span2: "unique",
+        span3: "ideas",
+      },
+      services_list: [
+        {
+          title: "UI/IX design",
+          slug: "ui-ux-design",
+          description:
+            " Design of intuitive and visually appealing user interfaces for web and mobile applications, focusing on enhancing the user experience and usability.",
+        },
+        {
+          title: "Brand strategy",
+          slug: "brand-strategy",
+          description:
+            "Comprehensive brand development, including logo creation, color scheme selection, and visual style design to ensure a cohesive and memorable brand identity.",
+        },
+        {
+          title: "Marketing and SMM",
+          slug: "marketing-and-smm",
+          description:
+            "Creation of impactful advertising campaigns and marketing materials designed to increase brand visibility, engage target audiences, and drive customer acquisition.",
+        },
+      ],
+      counters_list: [
+        { number: "14", title: "Years Experince" },
+        { number: "45", title: "Unique customers" },
+        { number: "57", title: "Completed projects" },
+      ],
+    },
+    contact_us: {
+      p1: "Contact Us",
+      h2: {
+        span1: "Get in Touch with Our ",
+        span2: "Team",
+      },
+      button: "Contact Us",
+      p2: {
+        span1: "By clicking the contact us button, you agree to our",
+        span2: "personal data processing policy",
+      },
+    },
     team: {
       p: "Team members",
       h2: {
@@ -515,62 +609,6 @@ export const texts = {
     hero: {
       h1: "Newsletter",
     },
-    latestPublication: [
-      {
-        imageUrl: "/img/blog/1.jpg",
-        category: "design",
-        date: "29.08.24",
-        title: "How to Become a Graphic Designer in 10 Simple Steps",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
-        link: "publication-stl.html",
-      },
-      {
-        imageUrl: "/img/blog/5.jpg",
-        category: "design",
-        date: "29.08.24",
-        title: "The Ultimate Guide to UI/UX Design for Beginners",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
-        link: "publication-stl.html",
-      },
-      {
-        imageUrl: "/img/blog/6.jpg",
-        category: "design",
-        date: "29.08.24",
-        title: "From Concept to Creation: The Design Process Explained",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
-        link: "publication-stl.html",
-      },
-      {
-        imageUrl: "/img/blog/4.jpg",
-        category: "design",
-        date: "29.08.24",
-        title: "How to Become a Graphic Designer in 10 Simple Steps",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
-        link: "publication-stl.html",
-      },
-      {
-        imageUrl: "/img/blog/7.jpg",
-        category: "design",
-        date: "29.08.24",
-        title: "The Ultimate Guide to UI/UX Design for Beginners",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
-        link: "publication-stl.html",
-      },
-      {
-        imageUrl: "/img/blog/8.jpg",
-        category: "design",
-        date: "29.08.24",
-        title: "From Concept to Creation: The Design Process Explained",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
-        link: "publication-stl.html",
-      },
-    ],
     subscribe: {
       p1: "Newsletter",
       h2: {
@@ -656,67 +694,6 @@ export const texts = {
         ],
       },
     ],
-  },
-  usPage: {
-    hero: {
-      heading1: "we are a",
-      heading2:
-        "that turns ideas into smart solutions. we build powerful platforms, transform how businesses",
-      // heading3: "",
-      heading3: ", and bring the future to life today. choose techway because",
-      // heading5: "",
-      // heading6: "because we are worth it!",
-      span1: "tech company",
-      span2: "grow",
-      span3: "we make it happen!",
-      // span4: "possible",
-      // span5: "Pixy",
-    },
-    services: {
-      p: "Our Services",
-      h2: {
-        span1: "We generate",
-        span2: "unique",
-        span3: "ideas",
-      },
-      services_list: [
-        {
-          title: "UI/IX design",
-          slug: "ui-ux-design",
-          description:
-            " Design of intuitive and visually appealing user interfaces for web and mobile applications, focusing on enhancing the user experience and usability.",
-        },
-        {
-          title: "Brand strategy",
-          slug: "brand-strategy",
-          description:
-            "Comprehensive brand development, including logo creation, color scheme selection, and visual style design to ensure a cohesive and memorable brand identity.",
-        },
-        {
-          title: "Marketing and SMM",
-          slug: "marketing-and-smm",
-          description:
-            "Creation of impactful advertising campaigns and marketing materials designed to increase brand visibility, engage target audiences, and drive customer acquisition.",
-        },
-      ],
-      counters_list: [
-        { number: "14", title: "Years Experince" },
-        { number: "45", title: "Unique customers" },
-        { number: "57", title: "Completed projects" },
-      ],
-    },
-    contact_us: {
-      p1: "Contact Us",
-      h2: {
-        span1: "Get in Touch with Our ",
-        span2: "Team",
-      },
-      button: "Contact Us",
-      p2: {
-        span1: "By clicking the contact us button, you agree to our",
-        span2: "personal data processing policy",
-      },
-    },
   },
   teamPage: {
     h1: {

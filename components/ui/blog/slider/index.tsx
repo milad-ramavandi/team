@@ -23,7 +23,7 @@ export default function Slider() {
     }
   };
 
-  const slidesData = texts?.blogs;
+  const slidesData = texts?.blogs.slice(0, 4);
 
   return (
     <div className="mil-p-0-160">
@@ -76,12 +76,7 @@ export default function Slider() {
           {slidesData.map((slide, index) => (
             <SwiperSlide key={index} className="swiper-slide">
               <SliderCard
-                imageUrl={slide.imageUrl}
-                category={slide.category}
-                date={slide.date}
-                title={slide.title}
-                description={slide.description}
-                link={slide.link}
+                {...slide}
               />
             </SwiperSlide>
           ))}

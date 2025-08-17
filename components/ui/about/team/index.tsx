@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { texts } from "../../../../lib/texts";
 import { IMember } from "../../../../types/team";
-import Member from "./Member";
+import Member from "./member";
 
 const members: IMember[] = texts?.members?.slice(0, 4);
 
 const Team = () => {
   return (
-    <div className="mil-team-about-bg mil-team-about-p">
+    <div className="mil-team-about-bg mil-team-about-p mil-mb130">
       <div className="container">
         <div className="row mil-jcb mil-aic">
           <div className="col-lg-5 mil-mb90">
@@ -24,24 +24,8 @@ const Team = () => {
             <p className="mil-text-md mil-mb30 mil-deco-text mil-mb90">
               {texts?.aboutPage?.team?.p2}
             </p>
-
-            {/* <div className="mil-team-quote mil-mb60">
-              <div className="mil-portrait">
-                <img src="../img/team/ceo.jpg" alt="SEO portrait" />
-              </div>
-              <p className="mil-text-md mil-m1">
-                <span className="mil-bold">
-                  {texts?.aboutPage?.team?.p3?.span1}
-                </span>{" "}
-                {texts?.aboutPage?.team?.p3?.para1} <br />
-                <span className="mil-bold">
-                  {texts?.aboutPage?.team?.p3?.span2}
-                </span>{" "}
-                {texts?.aboutPage?.team?.p3?.para2}
-              </p>
-            </div> */}
             <div>
-              <Link href="team-frl.html" className="mil-btn mil-a1 mil-c-gone">
+              <Link href="/team" className="mil-btn mil-a1 mil-c-gone">
                 {texts?.aboutPage?.team?.button}
               </Link>
             </div>

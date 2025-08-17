@@ -8,12 +8,12 @@ const ContactUs = () => {
       <div className="mil-half-container mil-stl mil-reverse overflow-hidden">
         <div className="mil-text-box mil-g-m4 mil-p-160-160">
           <p className="mil-stylized mil-m2 mil-mb60">
-            {texts?.usPage?.contact_us?.p1}
+            {texts?.aboutPage?.contact_us?.p1}
           </p>
           <h2 className="mil-display3 mil-rubber mil-mb60">
-            {texts?.usPage?.contact_us?.h2?.span1}
+            {texts?.aboutPage?.contact_us?.h2?.span1}
             <span className="mil-a1">
-              {texts?.usPage?.contact_us?.h2?.span2}
+              {texts?.aboutPage?.contact_us?.h2?.span2}
             </span>
           </h2>
           <div>
@@ -21,7 +21,7 @@ const ContactUs = () => {
               href="/contact-us"
               className="mil-btn mil-btn-border mil-m1 mil-c-gone"
             >
-              {texts?.usPage?.contact_us?.button}
+              {texts?.aboutPage?.contact_us?.button}
             </Link>
           </div>
         </div>
@@ -47,9 +47,9 @@ const ContactUs = () => {
         <div className="col-lg-6 mil-992-gone">
           <div className="mil-text-pad">
             <p className="mil-text-sm">
-              {texts?.usPage?.contact_us?.p2?.span1} <br />
+              {texts?.aboutPage?.contact_us?.p2?.span1} <br />
               <span className="mil-text-link mil-a2 mil-c-gone">
-                {texts?.usPage?.contact_us?.p2?.span2}
+                {texts?.aboutPage?.contact_us?.p2?.span2}
               </span>
               .
             </p>

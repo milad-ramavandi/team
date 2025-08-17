@@ -1,8 +1,9 @@
 import Image from "next/image";
 import { IBlogCard } from "../../../../../../types/blog";
-const SliderCard = ({imageUrl, title}:IBlogCard) => {
+import Link from "next/link";
+const SliderCard = ({imageUrl, title, slug}:IBlogCard) => {
   return (
-    <a className="mil-blog-card-sm mil-c-gone">
+    <Link href={`/blog/${slug}`} className="mil-blog-card-sm mil-c-gone">
       <div className="mil-cover">
         <div className="mil-hover-frame">
           <Image fill priority src={imageUrl} alt="cover" />
@@ -13,7 +14,7 @@ const SliderCard = ({imageUrl, title}:IBlogCard) => {
           {title}
         </h4>
       </div>
-    </a>
+    </Link>
   );
 };
 

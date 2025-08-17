@@ -1,17 +1,16 @@
 "use client";
 import Link from "next/link";
-import useScroll from "../../../hooks/use-scroll";
 import Menu from "./menu";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { texts } from "../../../lib/texts";
 import Image from "next/image";
+import useMenu from "../../../hooks/use-menu";
 
 export default function Header() {
-  const { isScrolled } = useScroll();
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const { isScrolled, isMenuOpen, onCloseMenu } = useMenu();
   const pathname = usePathname();
-  const onCloseMenu = () => setIsMenuOpen((prev) => !prev)
+  
   return (
     <>
       <div className="mil-fixed">
@@ -23,8 +22,6 @@ export default function Header() {
           <div className="container">
             <div className="mil-left-side mil-tp-transition" id="swupTpLeft">
               <Link href="/" className="mil-logo mil-scroll-to" data-no-swup>
-                {/* <i className="far fa-cube"></i>
-                <span>{texts.header.name}</span> */}
                 <Image width={68} height={81} src={"/img/logo.png"} alt="logo" />
               </Link>
             </div>
@@ -64,8 +61,8 @@ export default function Header() {
                 </li>
                 <li>
                   <Link
-                    href="/us"
-                    className={`${pathname === "/us" ? "mil-a1" : "mil-m1"}`}
+                    href="/services"
+                    className={`${pathname === "/services" ? "mil-a1" : "mil-m1"}`}
                     data-no-swup
                   >
                     {texts.header.items[3]}
@@ -95,7 +92,7 @@ export default function Header() {
             </div>
           </div>
         </div>
-        <Menu isOpen={isMenuOpen} onClose={onCloseMenu}/>
+        <Menu/>
       </div>
     </>
   );

@@ -8,7 +8,7 @@ export default function SliderCard({
   date,
   title,
   description,
-  link,
+  slug
 }: IBlogCard) {
   return (
     <div className="mil-blog-card">
@@ -28,7 +28,7 @@ export default function SliderCard({
           <div className="mil-date">{date}</div>
         </div>
       </div>
-      <Link href={link as string} className="mil-descr mil-c-gone">
+      <Link href={`/blog/${slug}`} className="mil-descr mil-c-gone">
         <div className="mil-text-frame">
           <h4 className="mil-head4 mil-max-2row-text mil-mb20 mil-up-removed">
             {title}

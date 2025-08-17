@@ -3,7 +3,7 @@ import { IBlogCard } from "../../../../types/blog";
 import { texts } from "../../../../lib/texts";
 import BlogCard from "./blog-card";
 export default function LatestPublications() {
-  const blogsData:IBlogCard[] = texts?.blogPage?.latestPublication;
+  const blogsData:IBlogCard[] = texts?.blogs;
 
   return (
     <>
@@ -20,12 +20,7 @@ export default function LatestPublications() {
             {blogsData.map((blog, index) => (
               <div key={index} className="col-lg-12">
                 <BlogCard
-                  imageUrl={blog.imageUrl}
-                  category={blog.category}
-                  date={blog.date}
-                  title={blog.title}
-                  description={blog.description}
-                  link={blog.link}
+                  {...blog}
                 />
               </div>
             ))}

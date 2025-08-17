@@ -1,11 +1,12 @@
 "use client";
 import Link from "next/link";
-import MenuSlider from "./slider";
+import Slider from "./slider";
 import { texts } from "../../../../lib/texts";
 import { useEffect } from "react";
-import { IMenu } from "../../../../types/menu";
+import useMenu from "../../../../hooks/use-menu";
 
-export default function Menu({ isOpen, onClose }: IMenu) {
+export default function Menu() {
+  const {isMenuOpen, onCloseMenu} = useMenu()
   useEffect(() => {
     document.querySelectorAll(".mil-has-children > a").forEach((link) => {
       link.addEventListener("click", function (event) {
@@ -32,7 +33,7 @@ export default function Menu({ isOpen, onClose }: IMenu) {
 
   return (
     <div
-      className={`mil-menu-frame mil-menu-frame-2 ${isOpen && "mil-active"}`}
+      className={`mil-menu-frame mil-menu-frame-2 ${isMenuOpen && "mil-active"}`}
     >
       <div className="mil-menu-window">
         <div className="container">
@@ -42,39 +43,34 @@ export default function Menu({ isOpen, onClose }: IMenu) {
                 <div className="mil-menu-part mil-inner-scroll" id="swupMenu">
                   <ul className="mil-main-menu mil-c-gone">
                     <li>
-                      <Link href="/team">
+                      <Link href="/team" onClick={onCloseMenu}>
                         {texts.menu.items[0]}
                       </Link>
                     </li>
                     <li>
-                      <Link href="/contact-us">
+                      <Link href="/contact-us" onClick={onCloseMenu}>
                         {texts.menu.items[1]}
                       </Link>
                     </li>
                     <li>
-                      <Link href="/services">
+                      <Link href="/services" onClick={onCloseMenu}>
                         {texts.menu.items[2]}
                       </Link>
                     </li>
 
                     <li>
-                      <Link href="/portfolio">
+                      <Link href="/portfolio" onClick={onCloseMenu}>
                         {texts.menu.items[3]}
                       </Link>
                     </li>
                     <li>
-                      <Link href="/blog">
+                      <Link href="/blog" onClick={onCloseMenu}>
                         {texts.menu.items[4]}
                       </Link>
                     </li>
                     <li>
-                      <Link href="/about">
+                      <Link href="/about" onClick={onCloseMenu}>
                         {texts.menu.items[5]}
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/us">
-                        {texts.menu.items[6]}
                       </Link>
                     </li>
                   </ul>
@@ -89,22 +85,22 @@ export default function Menu({ isOpen, onClose }: IMenu) {
                 <div className="mil-links-part">
                   <ul className="mil-links">
                     <li>
-                      <Link href="/privacy-policy" onClick={onClose}>
+                      <Link href="/privacy-policy" onClick={onCloseMenu}>
                         {texts.menu.items2[0].label}
                       </Link>
                     </li>
                     <li>
-                      <Link href="/terms-and-conditions" onClick={onClose}>
+                      <Link href="/terms-and-conditions" onClick={onCloseMenu}>
                         {texts.menu.items2[1].label}
                       </Link>
                     </li>
                     <li>
-                      <Link href="/site-map" onClick={onClose}>
+                      <Link href="/site-map" onClick={onCloseMenu}>
                         {texts.menu.items2[2].label}
                       </Link>
                     </li>
                     <li>
-                      <Link href="/careers" onClick={onClose}>
+                      <Link href="/careers" onClick={onCloseMenu}>
                         {texts.menu.items2[3].label}
                       </Link>
                     </li>
@@ -125,7 +121,7 @@ export default function Menu({ isOpen, onClose }: IMenu) {
                         </div>
                       </div>
                     </div>
-                    <MenuSlider />
+                    <Slider/>
                   </div>
                   <div className="mil-menu-social">
                     <ul className="mil-social mil-c-gone">

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { IMember } from "../../../../types/team";
+import { IMember } from "../../../../../types/team";
 import Image from "next/image";
 
 const Member = ({ imageUrl, name, slug, career, isLarge }: IMember) => {

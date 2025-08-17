@@ -8,7 +8,7 @@ import SliderCard from "./slider-card";
 import { texts } from "../../../../../lib/texts";
 import { IBlogCard } from "../../../../../types/blog";
 
-const blogs: IBlogCard[] = texts?.blogs;
+const blogs: IBlogCard[] = texts?.blogs.slice(0, 4);
 
 const Slider = () => {
   const swiperRef = useRef<{ swiper: SwiperType } | null>(null);

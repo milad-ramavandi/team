@@ -18,7 +18,7 @@ const Hero = () => {
         {texts?.aboutPage?.hero?.heading3}{" "}
         <span className="mil-a1">{texts?.aboutPage?.hero?.span3}</span>{" "}
       </h1>
-      <CircleScroll Goto="#counters" isRight />
+      <CircleScroll Goto="#services" isRight />
     </div>
   );
 };
