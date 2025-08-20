@@ -25,7 +25,7 @@ const CallAction = () => {
             <Image
               fill
               priority
-              src="/img/pages/5 2.jpg"
+              src="/img/6.jpg"
               alt="img"
               className="mil-scale-img"
               data-value-1="1.20"

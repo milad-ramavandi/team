@@ -3,7 +3,7 @@ import { texts } from "../../../../lib/texts";
 
 const CallAction = () => {
   return (
-    <div className="mil-p-0-130">
+    <div className="mil-p-0-130 overflow-hidden">
       <div className="container mil-relative">
         <div className="mil-objects">
           <div className="mil-obj-1"></div>
