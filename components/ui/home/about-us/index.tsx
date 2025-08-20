@@ -54,7 +54,7 @@ const AboutUs = () => {
             </div>
             <div className="mil-button-box">
               <div>
-                <Link href="/us" className="mil-btn mil-btn-border mil-c-gone">
+                <Link href="/about" className="mil-btn mil-btn-border mil-c-gone">
                   {texts.homePage.aboutUS.button}
                 </Link>
               </div>

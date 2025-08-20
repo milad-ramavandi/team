@@ -59,7 +59,7 @@ export const texts = {
       category: "Art",
       date: "29.08.24",
       title: "From Concept to Creation: The Design Process Explained",
-      slug: "from-concept-to-creation:-the-design-process-explained",
+      slug: "from-concept-to-creation-the-design-process-explained",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
     },
@@ -68,7 +68,7 @@ export const texts = {
       category: "Interior",
       date: "29.08.24",
       title: "The Ultimate Guide to UI/UX Design for Beginners",
-      slug: "the-ultimate-guide-to-ui/ux-design-for-beginners",
+      slug: "the-ultimate-guide-to-ui-ux-design-for-beginners",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
     },
@@ -86,7 +86,7 @@ export const texts = {
       category: "design",
       date: "29.08.24",
       title: "The Ultimate Guide to UI/UX Design for Beginners",
-      slug: "the-ultimate-guide-to-ui/ux-design-for-beginners",
+      slug: "the-ultimate-guide-to-ui-ux-design-for-beginners",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
     },
@@ -95,7 +95,7 @@ export const texts = {
       category: "design",
       date: "29.08.24",
       title: "From Concept to Creation: The Design Process Explained",
-      slug: "from-concept-to-creation:-the-design-process-explained",
+      slug: "from-concept-to-creation-the-design-process-explained",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
     },
@@ -113,7 +113,7 @@ export const texts = {
       category: "design",
       date: "29.08.24",
       title: "The Ultimate Guide to UI/UX Design for Beginners",
-      slug: "the-ultimate-guide-to-ui/ux-design-for-beginners",
+      slug: "the-ultimate-guide-to-ui-ux-design-for-beginners",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
     },
@@ -122,7 +122,7 @@ export const texts = {
       category: "design",
       date: "29.08.24",
       title: "From Concept to Creation: The Design Process Explained",
-      slug: "from-concept-to-creation:-the-design-process-explained",
+      slug: "from-concept-to-creation-the-design-process-explained",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.",
     },
