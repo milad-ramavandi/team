@@ -31,7 +31,7 @@ export const texts = {
     h6: "Let’s TALK",
     button: "here",
     items: ["Home", "Services", "About", "Portfolio", "Blog", "US"],
-    p: "©2024. All rights reserved.",
+    p: "©2025. All rights reserved.",
   },
 
   circleScroll: "We are what we think - We are what we think - ",
