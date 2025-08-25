@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { texts } from "../../../../lib/texts";
 import Link from "next/link";
 
@@ -29,7 +28,7 @@ const CallAction = () => {
         </div>
         <div className="mil-image-box">
           <div className="mil-image-frame">
-            <Image
+            {/* <Image
               width={992}
               height={1347}
               priority
@@ -38,7 +37,7 @@ const CallAction = () => {
               className="mil-scale-img"
               data-value-1="1.20"
               data-value-2="1"
-            />
+            /> */}
             <video
               // className="mil-scale-img"
               data-value-1="1"
@@ -46,28 +45,27 @@ const CallAction = () => {
               autoPlay
               loop
               muted
-              //   playsInline
-              //   preload="auto"
+              playsInline
+              preload="auto"
             >
-              <source src="/img/pages/3.mp4" />
+              <source src="/video/1.mp4" />
             </video>
             {/* <div className="mil-overlay"></div> */}
           </div>
         </div>
       </div>
-      <div className="mil-half-container mil-aic mil-jcb mil-no-g overflow-hidden">
+      <div className="row mil-aic mil-jcb mil-no-g overflow-hidden">
         <div className="col-lg-4 mil-992-gone">
-          {/* <p className="mil-text-sm">
+          <p className="mil-text-sm">
             {texts.homePage.callaction.p2.span1}
             <Link
-              // href="contact-stl.html"
-              href="#home"
+              href="/contact-us"
               className="mil-text-link mil-a2 mil-c-gone"
             >
               {texts.homePage.callaction.p2.span2}
             </Link>
             {texts.homePage.callaction.p2.span3}
-          </p> */}
+          </p>
         </div>
         <div className="col-lg-6 p-0">
           <div className="mil-button-pad mil-a2">

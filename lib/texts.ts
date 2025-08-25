@@ -589,7 +589,7 @@ export const texts = {
       heading2:
         "that blends knowledge, skill, and up-to-date expertise to design, develop",
     },
-    h6: "CONTACT US",
+    p1: "CONTACT US",
     h2: {
       heading1: "GET IN TOUCH WITH OUR TEAM FOR",
       span: "INQUIRIES",

@@ -17,7 +17,7 @@ const PortfolioSinglePage = async ({
   const mainPortfolio = portfolios_list?.filter((item) => item?.id === slug)[0];
   const nextProject = portfolios_list?.filter(
     (item) => Number(item?.id) === Number(mainPortfolio?.id) + 1
-  )[0];
+  )[0] ?? portfolios_list[0];
   if (!mainPortfolio) {
     notFound()
   }

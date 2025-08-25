@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Details = ({ portfolioImage }: { portfolioImage: string }) => {
   return (
@@ -31,13 +32,13 @@ const Details = ({ portfolioImage }: { portfolioImage: string }) => {
                   <h6 className="mil-head4 mil-mb30">Client</h6>
                   <p className="mil-text-md mb-0">Envato Market</p>
                   <p className="mil-text-md mb-0">
-                    <a
-                      href="#."
+                    <Link
+                      href="/"
                       className="mil-text-link mil-a2"
                       data-no-swup=""
                     >
                       Visit website
-                    </a>
+                    </Link>
                   </p>
                 </div>
                 <div className="col-lg-4 mil-mb60">
