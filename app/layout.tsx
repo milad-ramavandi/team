@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${Outfit.variable} ${Anton.variable}`}>
-      <body className={`${Outfit.className} main-container`}>
+      <body className="main-container">
         <Providers>
           <ContextHeaderProvider>
             <Header />

@@ -19,7 +19,6 @@ const TeamMember = ({
         <div className="mil-hover-frame">
           <Image
             fill
-            priority
             src={imageUrl}
             alt="team member"
             // className="mil-scale-img"

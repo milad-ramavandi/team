@@ -21,7 +21,6 @@ const AboutUs = () => {
               <Image
                 width={240}
                 height={240}
-                priority
                 src="/img/team/ceo.jpg"
                 alt="SEO portrait"
               />
@@ -44,7 +43,6 @@ const AboutUs = () => {
               <Image
                 width={992}
                 height={1347}
-                priority
                 src="/img/2.jpg"
                 alt="About"
                 // className="mil-scale-img"

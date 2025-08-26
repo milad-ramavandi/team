@@ -11,7 +11,6 @@ const PortfolioCard = ({ imageUrl, title, id, template }: IPortfolio) => {
         <div className="mil-hover-frame">
           <Image
             fill
-            priority
             src={imageUrl}
             alt="cover"
             // className="mil-scale-img"

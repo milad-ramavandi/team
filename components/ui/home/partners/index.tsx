@@ -13,7 +13,7 @@ const Partners = () => {
               // target="_blank"
               data-no-swup
             >
-              <Image width={179} height={181} priority src="/img/brands/1.png" alt="partner logo" />
+              <Image width={179} height={181} src="/img/brands/1.png" alt="partner logo" />
             </Link>
           </div>
           <div className="col-6 col-md-3">
@@ -23,7 +23,7 @@ const Partners = () => {
               // target="_blank"
               data-no-swup
             >
-              <Image width={167} height={180} priority src="/img/brands/2.png" alt="partner logo" />
+              <Image width={167} height={180} src="/img/brands/2.png" alt="partner logo" />
             </Link>
           </div>
           <div className="col-6 col-md-3">
@@ -33,7 +33,7 @@ const Partners = () => {
               // target="_blank"
               data-no-swup
             >
-              <Image width={220} height={181} priority src="/img/brands/3.png" alt="partner logo" />
+              <Image width={220} height={181} src="/img/brands/3.png" alt="partner logo" />
             </Link>
           </div>
           <div className="col-6 col-md-3">
@@ -43,7 +43,7 @@ const Partners = () => {
               // target="_blank"
               data-no-swup
             >
-              <Image width={132} height={168} priority src="/img/brands/4.png" alt="partner logo" />
+              <Image width={132} height={168} src="/img/brands/4.png" alt="partner logo" />
             </Link>
           </div>
         </div>
