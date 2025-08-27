@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { IBlogCard } from "../../../../../../types/blog";
 import Link from "next/link";
-const SliderCard = ({imageUrl, title, slug}:IBlogCard) => {
+const SliderCard = ({imageUrl, title, slug, onClick}:IBlogCard) => {
   return (
-    <Link href={`/blog/${slug}`} className="mil-blog-card-sm mil-c-gone">
+    <Link href={`/blog/${slug}`} className="mil-blog-card-sm mil-c-gone" onClick={onClick}>
       <div className="mil-cover">
         <div className="mil-hover-frame">
-          <Image fill priority src={imageUrl} alt="cover" />
+          <Image fill src={imageUrl} alt="cover" />
         </div>
       </div>
       <div className="mil-text-frame">

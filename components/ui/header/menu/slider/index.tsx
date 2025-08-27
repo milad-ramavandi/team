@@ -1,17 +1,19 @@
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useContext } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
 import SliderCard from "./slider-card";
 import { texts } from "../../../../../lib/texts";
 import { IBlogCard } from "../../../../../types/blog";
+import { ContextHeader } from "../../../../../context/header/ContextHeader";
 
 const blogs: IBlogCard[] = texts?.blogs.slice(0, 4);
 
 const Slider = () => {
   const swiperRef = useRef<{ swiper: SwiperType } | null>(null);
+  const contextHeader = useContext(ContextHeader);
 
   useEffect(() => {
     const nextBtn = document.querySelector(".mil-sb-next") as HTMLElement;
@@ -46,7 +48,7 @@ const Slider = () => {
       >
         {blogs.map((item, index) => (
           <SwiperSlide key={index}>
-            <SliderCard {...item} />
+            <SliderCard {...item} onClick={contextHeader?.toggleMenu} />
           </SwiperSlide>
         ))}
       </Swiper>

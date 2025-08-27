@@ -85,22 +85,22 @@ export default function Menu() {
                 <div className="mil-links-part">
                   <ul className="mil-links">
                     <li>
-                      <Link href="/privacy-policy" onClick={contextHeader?.toggleMenu}>
+                      <Link href="/privacy-policy" prefetch={false} onClick={contextHeader?.toggleMenu}>
                         {texts.menu.items2[0].label}
                       </Link>
                     </li>
                     <li>
-                      <Link href="/terms-and-conditions" onClick={contextHeader?.toggleMenu}>
+                      <Link href="/terms-and-conditions" prefetch={false} onClick={contextHeader?.toggleMenu}>
                         {texts.menu.items2[1].label}
                       </Link>
                     </li>
                     <li>
-                      <Link href="/site-map" onClick={contextHeader?.toggleMenu}>
+                      <Link href="/site-map" prefetch={false} onClick={contextHeader?.toggleMenu}>
                         {texts.menu.items2[2].label}
                       </Link>
                     </li>
                     <li>
-                      <Link href="/careers" onClick={contextHeader?.toggleMenu}>
+                      <Link href="/careers" prefetch={false} onClick={contextHeader?.toggleMenu}>
                         {texts.menu.items2[3].label}
                       </Link>
                     </li>
