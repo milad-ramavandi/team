@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import { texts } from "../../../lib/texts";
 import Image from "next/image";
 import useScroll from "../../../hooks/use-scroll";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ContextHeader } from "../../../context/header/ContextHeader";
 import Menu from "./menu";
 
@@ -12,6 +12,16 @@ export default function Header() {
   const contextHeader = useContext(ContextHeader)
   const { isScrolled } = useScroll();
   const pathname = usePathname();
+  useEffect(() => {
+    if (contextHeader?.isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [contextHeader?.isMenuOpen]);
   
   return (
     <>
